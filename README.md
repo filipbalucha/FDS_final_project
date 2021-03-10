@@ -1,7 +1,4 @@
-This is a skeleton repository for the Inf2-FDS final project
+Please unzip the following archives:
 
-It contains the following directories:
-
-- `datasets`: place store raw data
-- `report`: template files for the report 
-
+- The DoBIH dataset `datasets/DoBIH_v17_1.zip`
+- The munro HTML subpages `cache/munros.zip`
