@@ -2,7 +2,7 @@ name,altitude,ascent_count,rating
 Ben Lomond,974,20532,3.8
 Ben Nevis,1345,17892,3.9
 Ben Lawers,1214,16063,3.9
-Schiehallion,1083,15925,3.6
+Schiehallion,1083,15926,3.6
 Beinn Ghlas,1103,15646,3.4
 Ben Vorlich (Loch Earn),985,14997,3.3
 Ben Chonzie,931,13432,3.0
@@ -14,8 +14,8 @@ Driesh,947,11589,3.2
 The Cairnwell,933,11256,2.1
 Lochnagar,1155,11177,4.3
 Carn Aosda,917,11168,2.1
-Meall nan Tarmachan,1044,10838,4.1
-Stuc a' Chroin,975,10812,3.8
+Meall nan Tarmachan,1044,10839,4.1
+Stuc a' Chroin,975,10813,3.8
 Ben Vorlich (Loch Lomond),943,10685,3.4
 Ben Vane,915,10453,3.7
 Ben Macdui,1309,10446,3.8
@@ -23,18 +23,18 @@ Carn a' Gheoidh,975,10242,2.8
 Glas Maol,1068,10099,2.8
 Mount Keen,939,9973,3.1
 Stob Dearg (Buachaille Etive Mor),1021,9876,4.6
-Ben More,1174,9690,3.8
+Ben More,1174,9691,3.8
 Carn an Tuirc,1019,9442,2.8
 An Caisteal,995,9436,3.4
 Cairn of Claise,1064,9375,2.4
 Creag Leacach,987,9188,3.3
 Stob Dubh (Buachaille Etive Beag),956,9161,4.2
 Stob Coire Raineach (Buachaille Etive Beag),925,8965,3.9
-Stob Binnein,1165,8875,4.0
+Stob Binnein,1165,8876,4.0
 Carn Gorm,1029,8766,3.0
 Beinn a' Chroin,942,8748,3.4
 Meall Garbh (Carn Mairg),968,8555,2.6
-Meall Corranaich,1069,8476,3.0
+Meall Corranaich,1069,8477,3.0
 Meall Garbh (Ben Lawers),1118,8473,3.3
 Carn Mairg,1042,8419,3.2
 Beinn Dorain,1076,8235,3.9
@@ -164,7 +164,7 @@ Beinn a' Chaorainn (Cairngorms),1082,3828,2.8
 Beinn a'Bhuird,1197,3825,3.7
 Sgurr Eilde Mor,1010,3824,3.7
 Sron a' Choire Ghairbh,937,3794,3.2
-Sgurr na Banachdich,965,3765,4.0
+Sgurr na Banachdich,965,3766,4.0
 Ben Avon,1171,3752,4.1
 Beinn Teallach,915,3745,2.5
 Carn Ghluasaid,957,3743,3.0
@@ -190,7 +190,7 @@ Beinn Fhionnlaidh,959,3448,3.3
 Creag Pitridh,924,3447,3.0
 Sgurr Alasdair,992,3435,4.6
 Tom a' Choinich,1112,3427,3.4
-Inaccessible Pinnacle,986,3421,4.6
+Inaccessible Pinnacle,986,3422,4.6
 Spidean Mialach,996,3393,3.7
 Sail Chaorainn,1002,3389,3.1
 Sgurr nan Clach Geala,1093,3381,4.1
@@ -233,7 +233,7 @@ Am Basteir,934,2870,4.4
 Sgurr Thuilm,963,2869,3.7
 Sgorr Ruadh,962,2859,4.0
 Sgurr nan Coireachan (Glenfinnan),956,2847,3.8
-Sgurr a' Ghreadaidh,973,2797,4.4
+Sgurr a' Ghreadaidh,973,2798,4.4
 Geal-charn (Alder),1132,2787,3.3
 An Sgarsoch,1006,2760,2.8
 Sgurr Mhic Choinnich,948,2756,4.7
