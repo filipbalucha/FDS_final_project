@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]><!--><html class='not-ie no-js' lang='en'><!--<![endif]-->
+<head>
+<title>Am Bodach - Munro (Walkhighlands)</title>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<meta name='description' content='Am Bodach is a fine, steep and stony mountain on the main ridge of the Mamores between Kinlochleven and Fort William.'>
+<link rel='stylesheet' href='https://unpkg.com/leaflet@1.7.1/dist/leaflet.css' integrity='sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==' crossorigin='' />
+<script defer src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js' integrity='sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==' crossorigin=''></script>
+<link rel='canonical' href='https://www.walkhighlands.co.uk/munros/am-bodach' />
+<script defer src='https://cdn.rawgit.com/kartena/Proj4Leaflet/master/lib/proj4-compressed.js'></script><!-- proj4js -->
+<script defer src='https://cdn.rawgit.com/kartena/Proj4Leaflet/master/src/proj4leaflet.js'></script><!--  proj4leaflet -->
+<script defer src='//d3teiib5p3f439.cloudfront.net/js/whleaf.js'></script>
+<script defer src='//d3teiib5p3f439.cloudfront.net/js/KML.js'></script>
+<script defer src='//d3teiib5p3f439.cloudfront.net/js/munros.js'></script>
+<script defer src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script defer src='//d3teiib5p3f439.cloudfront.net/js/soundmanager2.js'></script>
+<script defer src='//d3teiib5p3f439.cloudfront.net/munros/js/rating.js' async></script>
+<meta property='og:title' content='Am Bodach - Munro (Walkhighlands)'/><meta property='fb:admins' content='758511963' />
+<meta property='og:type' content='article' />
+<meta property='article:publisher' content='https://www.facebook.com/walkhighlands' />
+<meta property='article:author' content='https://www.facebook.com/walkhighlands' />
+<meta property='og:site_name' content='Walkhighlands' />
+<meta property='og:image' content='https://www.walkhighlands.co.uk/munros/am-bodach-1.JPG' />
+<meta property='og:url' content='https://www.walkhighlands.co.uk/munros/am-bodach' />
+<meta property='og:description' content='Am Bodach is a fine, steep and stony mountain on the main ridge of the Mamores between Kinlochleven and Fort William.'>
+<meta name='twitter:card' content='summary_large_image'>
+<meta name='twitter:site' content='@walkhighlands'>
+<meta name='twitter:creator' content='@walkhighlands'>
+<meta name='twitter:title' content='Am Bodach - Munro (Walkhighlands)' />
+<meta name='twitter:description' content='Am Bodach is a fine, steep and stony mountain on the main ridge of the Mamores between Kinlochleven and Fort William.'><meta name='twitter:image:src' content='https://www.walkhighlands.co.uk/munros/am-bodach-1.JPG'>
+<script>
+var mlng =-4.9835518;
+var mlat =56.741768;
+</script>
+<link rel="stylesheet" href="//d3teiib5p3f439.cloudfront.net/css/design.css?ver=211">
+<link rel="stylesheet" href="//d3teiib5p3f439.cloudfront.net/css/print.css" type="text/css" media="print" />
+<script async src="//cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+</head>
+<body id="index" onload="initialize()">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-826197-15"></script>
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-826197-15', { 'anonymize_ip': true });
+var vis="'display':'none'";
+</script>
+<div id="usernav"><ul id="usn_not_logged_in"><li><a href="/Forum/ucp.php?mode=login">REGISTER OR LOGIN</a></li></ul></div>   <div id="container">
+  
+    <header id="top">
+      <p><a href="/"><img width=228 height=128 src="//d3teiib5p3f439.cloudfront.net/images/walkhighlands.png" alt="walkhighlands" /></a></p>
+      <div class='mobhide'><form class='noprint' id="searchbox_016328473243111834892:n2bb88e7mm8" action="/results.shtml">
+      	<input type="hidden" name="cx" value="016328473243111834892:n2bb88e7mm8" />
+        <input type="hidden" name="cof" value="FORID:9" />
+        <input  name="q" type="search" size="14" />
+        <input type="submit" name="sa" class="button" value="Search" />
+      </form></div>
+    
+    	<nav role="navigation">
+	<div class="navstrip"><a href="#" class="mobile_link"><span class="icon icon-menu"></span> <b>Menu</b></a> <a href="#" class="search_link"><b>Search</b> <span class="icon icon-search"></span></a></div>
+        <ul id="nav">
+                             <li><a href="#" class="clickit arr">Walks<span>&#9660;</span></a>
+            <div class="dropnav">
+              <ul>
+                <li><a href="#" class="clickit">Highlands</a>
+									<div class="dropnav2">
+                    <ul>
+                      <li><a href='/sutherland/'>Sutherland &amp; Caithness</a></li>
+                      <li><a href='/ullapool/'>Ullapool &amp; Assynt</a></li>
+                      <li><a href='/torridon/'>Torridon &amp; Gairloch</a></li>
+                      <li><a href='/kintail/'>Kintail &amp; Lochalsh</a></li>
+                      <li><a href='/lochness/'>Loch Ness &amp; Affric</a></li>
+                      <li><a href='/moray/'>Moray</a></li>
+                      <li><a href='/fortwilliam/'>Fort William</a></li>
+                      <li><a href='/cairngorms/'>Cairngorms &amp; Aviemore</a></li>
+                      <li><a href='/perthshire/'>Perthshire</a></li>
+                      <li><a href='/argyll/'>Argyll &amp; Oban</a></li>
+                      <li><a href='/lochlomond/'>Loch Lomond</a></li>
+                      <li><a href='/aberdeenshire/'>Aberdeenshire</a></li>
+                      <li><a href='/angus/'>Angus</a></li>
+                    </ul>
+                  </div>
+                </li>
+                
+                <li><a href="#" class="clickit">Islands</a>
+                  <div class="dropnav2">
+                    <ul>
+                      <li><a href='/skye/'>Isle of Skye</a></li>
+                      <li><a href='/mull/'>Isle of Mull</a></li>
+                      <li><a href='/outer-hebrides/'>Outer Hebrides</a></li>
+                      <li><a href='/arran/'>Isle of Arran</a></li>
+                      <li><a href='/islands/'>Coll, Tiree and the Small Isles</a></li>
+                      <li><a href='/islay-jura/'>Islay, Jura &amp; Colonsay</a></li>
+                      <li><a href='/orkney/'>Orkney</a></li>
+                      <li><a href='/shetland/'>Shetland</a></li>
+                      <li><a href='/argyll/isle-of-bute.shtml'>Isle of Bute</a></li>
+                      <li><a href='/argyll/gigha.shtml'>Isle of Gigha</a></li>
+                      <li><a href='/argyll/isle-of-lismore.shtml'>Isle of Lismore</a></li>
+                      <li><a href='/skye/isle-of-raasay.shtml'>Isle of Raasay</a></li>
+                      <li><a href='/mull/isle-of-ulva.shtml'>Isle of Ulva</a></li>
+                    </ul>
+                  </div>
+                </li>
+                
+                <li><a href="#" class="clickit">Lowlands</a>
+                  <div class="dropnav2">
+                    <ul>
+                      <li><a href='/fife-stirling/'>Fife &amp; Stirling</a></li>
+                      <li><a href='/lothian/'>Edinburgh &amp; Lothian</a></li>
+                      <li><a href='/glasgow/'>Glasgow &amp; Ayrshire</a></li>
+                      <li><a href='/galloway/'>Dumfries &amp; Galloway</a></li>
+                      <li><a href='/borders/'>Scottish Borders</a></li>
+                    </ul>
+                  </div>
+                </li>
+                  
+                <li><a href="/long-distance-routes.shtml">Long Distance Walks</a></li>
+					<li><a href="/walk-search.php">Search all walks</a></li>
+              </ul>
+            </div>
+          </li>
+               
+          <li><a href="#" class="clickit arr">Articles<span>&#9660;</span></a>
+	           <div class="dropnav">
+              <ul>
+                <li><a href="/news/category/walking-news/">News</a></li>
+                <li><a href="/news/category/features/">Features</a></li>
+                <li><a href="/news/category/our-picks/">Our Picks (Best of Scotland)</a></li>
+              </ul>
+            </div>	  
+		  
+		  </li>
+		  
+          <li><a href="#" class="clickit arr">Gear reviews<span>&#9660;</span></a>
+		  	           <div class="dropnav">
+              <ul>
+                <li><a href="/news/category/reviews/accessories/">Accessories</a></li>
+                <li><a href="/news/category/reviews/baselayers/">Baselayers</a></li>
+                <li><a href="/news/category/reviews/camping/">Camping</a></li>
+                <li><a href="/news/category/reviews/footwear/">Footwear</a></li>
+                <li><a href="/news/category/reviews/jackets/">Jackets</a></li>
+                <li><a href="/news/category/reviews/midlayers/">Midlayers</a></li>
+                <li><a href="/news/category/reviews/rucksacks/">Rucksacks</a></li>
+                <li><a href="/news/category/reviews/trousers/">Trousers</a></li>
+              </ul>
+            </div>	</li>
+		  
+          <li><a href="#" class="clickit arr">Buy<span>&#9660;</span></a>
+		                    <div class="dropnav">
+		<ul>
+          <li><a href="https://uk.bookshop.org/shop/walkhighlands">Books</a></li>
+		 <li><a href="https://photos.walkhighlands.co.uk/">Photography / prints</a></li>
+		 </ul> </div>
+</li>
+          <li><a href="#" class="clickit arr">Accommodation<span>&#9660;</span></a>
+            <div class="dropnav">
+              <ul>
+                <li><a href="/cottages.shtml">Self-catering cottages</a></li>
+                <li><a href="/hotels.shtml">Hotels and Inns</a></li>
+                <li><a href="/bedandbreakfast.shtml">Bed and Breakfast</a></li>
+                <li><a href="/hostels.shtml">Hostels and Bunkhouses</a></li>
+				<li><a href="/campsites.shtml">Glamping &amp; Camping</a></li>
+                <li><a href="/campervans.shtml">Campervan Hire</a></li>
+              </ul>
+            </div>
+          </li>
+            
+          <li><a href="/guides.shtml">Guides &amp; Holidays</a></li>
+		  
+		
+
+          <li><a href="/Forum/">Forum</a></li>
+          
+          <li><a href="#" class="clickit arr">Bagging<span>&#9660;</span></a>
+            <div class="dropnav">
+              <ul>
+                <li><a href="/island-bagging.php">Islands</a></li>
+                <li><a href="/munros/">Munros</a></li>
+                <li><a href="/corbetts/">Corbetts</a></li>
+                <li><a href="/grahams/">Grahams  </a></li>
+                <li><a href="/donalds/">Donalds  </a></li>
+                <li><a href="/sub2000/">Sub 2000ers  </a></li>
+                <li><a href="/wainwrights/">Wainwrights</a></li>
+                <li><a href="/hewitts/">Hewitts (England &amp; Wales)</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li><a href="/safety/">Safety</a></li>
+          
+          <li class='mobhide'><a href="/maps/">GPS</a></li>
+        </ul>
+      </nav>
+    </header><nav id='breadcrumb'>
+<ol><li><a href='/'>Home</a></li>
+<li><a href='/munros/'>The Munros</a></li>
+<li><a href='#'>Am Bodach</a></li>
+</ol></nav>
+<div itemscope itemtype='http://schema.org/LocalBusiness' id='walk_info' class='pr' role='main'>
+<div style='width:450px; max-width:100%; float:left; overflow:none;'>
+<h1><span itemprop='name'>Am Bodach</span></h1>
+<p><a href='/munros/am-bodach.mp3' class='sm2_button'>Hear pronunciation</a> Press to hear pronunciation</p>
+<p><b>Am Bodach is a fine, steep and stony mountain on the main ridge of the Mamores between Kinlochleven and Fort William.</b></p>
+<p><a href='//www.walkhighlands.co.uk/Forum/ucp.php?mode=login&url=//www.walkhighlands.co.uk/munros/am-bodach.php'><img style='float:left;' alt='Unchecked box' src='/images/box.GIF' border=0></a><b>&nbsp;You have not climbed Am Bodach.</b></p><p>Region: <a href ='/fortwilliam/'>Fort William</a></p>
+<p>Altitude: 1032 metres</p>
+<p><div style='float:left; padding:0px'>Users' Rating:</div>
+<div class="ratingblock" style="padding-left: 95px; margin-top:-5px; padding-bottom:0px; height:40px; overflow:hidden;" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><div id="unit_long99"><ul id="unit_ul99" class="unit-rating" style="width:125px;"><li class="current-rating" style="width:98.25px;">Currently 3.93/5</li></ul></div>Rating: <strong itemprop="ratingValue">3.9</strong>/5 (<span itemprop="ratingCount">81</span> votes cast)</div><p style='clear:both'>You must be <A href='http://www.walkhighlands.co.uk/Forum/ucp.php?mode=login'>registered and signed-in</a> to vote</p></p>
+<h2>Detailed route description and map</h2>
+<p><b><a href='/fortwilliam/ringofsteall.shtml'>The Ring of Steall</a></b></p>
+<h3>Other routes and challenges</h3><p>The Am Bodach part of the Mamores ridge could also be climbed from Kinlochleven, perhaps combining with Stob Coire a' Chairn and Na Gruagaichean.</p>
+<p>The classic epic challenge for the hyper-fit is to traverse the whole Mamores ridge in a day - a major undertaking. There are eight Munros on or close to the main ridge itself, plus two eastern outliers which are traditionally included.</p>
+<h3>Walker-friendly accommodation in the area</h3>
+<p><b><a href='/fortwilliam/hotels_glencoe.shtml'>Glencoe Hotels</a></b></p><p><b><a href='/fortwilliam/bedandbreakfast_glencoe.shtml'>Glencoe B&B</a></b></p><p><b><a href='/fortwilliam/cottages_glencoe.shtml'>Glencoe Cottages</a></b></p><p><b><a href='/fortwilliam/hostels.shtml'>Lochaber Hostels</a></b></p><h3><a class='view'>Panoramic summit view (click to open)</a></h3>
+<br /></div>
+<script defer src='/js/pano.js' id='panorama' data-lat='56.741768' data-lon='-4.9835518' data-alt='1032' ></script>
+<div id='areamap' style='width:470px; max-width:470px;'><div style='border: solid 5px #ddd;'>
+<img height=308 width=460 itemprop="image" src='//d3teiib5p3f439.cloudfront.net/munros/am-bodach-1.JPG' alt='Am Bodach'><div id="map" style="border-top: solid 5px #ddd; height:323px; width:100%; max-width:460px"></div></div><br />
+<div style='max-width:336px !important; overflow:hidden; margin:auto;'>
+<script src='https://uk.bookshop.org/widgets.js' data-type='book' data-affiliate-id='2573' data-sku='9781907025273'></script>
+</div></div><Br clear=both />
+<div id='pano' style='width:99%; height:0px; overflow:hidden; padding:0px; margin:-20px 5px -20px 5px; background:#ffffff; clear:both;'></div>
+<br />
+<h2>Users' walk reports for Am Bodach</h2>
+<p>There are <a onclick='showusers()'>5839 Walkhighlanders</a> who have climbed Am Bodach. <script type='text/javascript'>
+function showusers()	{
+		$.get('whom.php?w=99', function(data) { $('<div class="popup" style="z-index:999999999 !important;"><div><div style="max-height:400px; overflow:auto; "><a href="#"><img src="/images/close.png" alt="close" /></a>' + data + '</div></div></div>').appendTo('body'); });
+		return false;
+	};
+</script>They have contributed 116 public walk reports including this summit. These are ordered below with the most popular ones first. The rightmost column shows how many summits were included in their report, which may help you to find the most relevant reports.</p><div style='height:488px; width:100%; overflow-y:scroll; overflow-x:hidden;'>
+<table class='table1' style='table-layout:fixed; width:100%'>
+<thead><tr><th width='50%'>Walk report</th>
+<th>Author</th><th width='55px'><A href='am-bodach.php?s=1'>Date walked</a></th>
+<th class='mobhide' width=40px' ><a href='am-bodach.php#'>Likes</a></th><th width=60px class='mobhide'>Hills</th>
+</tr>
+</thead><tbody><tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=72603'><span itemprop="name">High Camp on the Ring of Steall - Fire Below &amp; Stars Above</span></a>&nbsp;</td>
+<td itemprop="author">andygunn23</td>
+<td>6/5/17</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:36">&nbsp;36</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:18">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=101025'><span itemprop="name">Mamores 10 - all ten in one day</span></a>&nbsp;</td>
+<td itemprop="author">grishicles</td>
+<td>19/9/20</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:32">&nbsp;32</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:14">M10</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=72789'><span itemprop="name">Mamores barbecue:  10 Munros &amp; 7 tops on a very hot day</span></a>&nbsp;</td>
+<td itemprop="author">Alteknacker</td>
+<td>25/5/17</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:28">&nbsp;28</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:35">M10</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=13581'><span itemprop="name">Complete Mamore Ridge traverse</span></a>&nbsp;</td>
+<td itemprop="author">ketzster</td>
+<td>19/7/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:25">&nbsp;25</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:21">M10</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=20196'><span itemprop="name">The Ring of Steall - ca m'a coupe le souffle</span></a>&nbsp;</td>
+<td itemprop="author">kevsbald</td>
+<td>13/4/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:22">&nbsp;22</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:37">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=86198'><span itemprop="name">Mamores on a crisp day - 10 Munros, 23 miles, 11.5 hours</span></a>&nbsp;</td>
+<td itemprop="author">goingforawii</td>
+<td>27/10/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:19">&nbsp;19</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:8">M10</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=46669'><span itemprop="name">Private Pile, get off Nature's Assault Course!!!</span></a>&nbsp;</td>
+<td itemprop="author">J888ohn</td>
+<td>4/10/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:18">&nbsp;18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:14">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=63369'><span itemprop="name">Ten Mamores on a glorious sunny day</span></a>&nbsp;</td>
+<td itemprop="author">ronofcam</td>
+<td>3/6/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:17">&nbsp;17</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:20">M10</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=20350'><span itemprop="name">Ring of Steall? I'd say it's a basic requirement!</span></a>&nbsp;</td>
+<td itemprop="author">Graeme D</td>
+<td>13/4/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:17">&nbsp;17</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:29">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=22582'><span itemprop="name">The Mamores:  a rather long day in the rain, wind and clag</span></a>&nbsp;</td>
+<td itemprop="author">rockhopper</td>
+<td>16/6/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:15">&nbsp;15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:23">M10</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=20625'><span itemprop="name">A wee bit scared at The Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">erin_niamh</td>
+<td>20/4/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:14">&nbsp;14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:20">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=72777'><span itemprop="name">Sunkissed at Steall</span></a>&nbsp;</td>
+<td itemprop="author">Jaxter</td>
+<td>26/5/17</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:13">&nbsp;13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:12">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=84821'><span itemprop="name">Mamores Challenge (10 munros in 1 day)</span></a>&nbsp;</td>
+<td itemprop="author">Roidz</td>
+<td>1/10/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:12">&nbsp;12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:12">M9</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=63371'><span itemprop="name">Mamore Mia - Wild camping in the Mamores</span></a>&nbsp;</td>
+<td itemprop="author">portinscale</td>
+<td>28/5/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:12">&nbsp;12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M10</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=14786'><span itemprop="name">The 10 Mamores in a day - a walk for mental unstable ;-)</span></a>&nbsp;</td>
+<td itemprop="author">Mountainlove</td>
+<td>29/4/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:12">&nbsp;12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:13">M8</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=73088'><span itemprop="name">Cookin on the Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">Sunset tripper</td>
+<td>25/5/17</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:11">&nbsp;11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:9">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=58042'><span itemprop="name">Bagging the Mamores in a day</span></a>&nbsp;</td>
+<td itemprop="author">The Kraken</td>
+<td>11/9/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:11">&nbsp;11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:14">M10</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=66414'><span itemprop="name">Mamores 10 in a day</span></a>&nbsp;</td>
+<td itemprop="author">alyg95</td>
+<td>30/7/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:11">&nbsp;11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:10">M10</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=25394'><span itemprop="name">Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">gman</td>
+<td>12/9/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:10">&nbsp;10</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:14">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=62805'><span itemprop="name">GREAT 5 DAYS -  Steall to Corrour - Mamores, Aonachs &amp; Greys</span></a>&nbsp;</td>
+<td itemprop="author">Mancunian</td>
+<td>6/5/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:8">&nbsp;8</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:19">M13</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=50517'><span itemprop="name">The Ring of Steall - Classic &amp; Popular</span></a>&nbsp;</td>
+<td itemprop="author">Petr Dakota</td>
+<td>14/9/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:8">&nbsp;8</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:11">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=45459'><span itemprop="name">Ring of Steall and Friends</span></a>&nbsp;</td>
+<td itemprop="author">garyoppolis</td>
+<td>23/8/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:8">&nbsp;8</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:8">M6</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=21325'><span itemprop="name">The Four Seasons</span></a>&nbsp;</td>
+<td itemprop="author">jonny616</td>
+<td>12/5/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:8">&nbsp;8</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:36">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=102580'><span itemprop="name">Ring of Steall - A fool falls in</span></a>&nbsp;</td>
+<td itemprop="author">Verylatestarter</td>
+<td>5/9/20</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:7">&nbsp;7</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:3">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=73222'><span itemprop="name">Wow I did it!</span></a>&nbsp;</td>
+<td itemprop="author">jackiep</td>
+<td>26/5/17</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:7">&nbsp;7</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:7">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=55331'><span itemprop="name">The Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">Beaner001</td>
+<td>16/8/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:7">&nbsp;7</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:16">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=33881'><span itemprop="name">Lords of the Ring: The Four Towers</span></a>&nbsp;</td>
+<td itemprop="author">laconic surf</td>
+<td>9/7/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:7">&nbsp;7</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:19">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=24268'><span itemprop="name">Ring of Steall, Legs of Jelly</span></a>&nbsp;</td>
+<td itemprop="author">BobMcBob</td>
+<td>10/8/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:7">&nbsp;7</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=90782'><span itemprop="name">Spate solution: climb a tree</span></a>&nbsp;</td>
+<td itemprop="author">nadine25x</td>
+<td>10/7/19</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:6">&nbsp;6</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:4">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=85707'><span itemprop="name">Three Winter Crackers</span></a>&nbsp;</td>
+<td itemprop="author">weaselmaster</td>
+<td>25/11/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:6">&nbsp;6</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M9</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=93779'><span itemprop="name">Beautiful day on the Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">Grisu</td>
+<td>3/7/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:6">&nbsp;6</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:3">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=80480'><span itemprop="name">Ring of Steall, Stob Ban and Mullach nan Coirean</span></a>&nbsp;</td>
+<td itemprop="author">Broggy1</td>
+<td>12/5/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:6">&nbsp;6</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:4">M6</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=56139'><span itemprop="name">A marriage proposal on Loch Lomond, celebrated by a hike</span></a>&nbsp;</td>
+<td itemprop="author">inaweofscotland</td>
+<td>7/8/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:6">&nbsp;6</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:9">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=54335'><span itemprop="name">The Ring of Steall - or Mischa and the Magic Motor!</span></a>&nbsp;</td>
+<td itemprop="author">JimboJim</td>
+<td>9/7/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:6">&nbsp;6</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:9">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=54082'><span itemprop="name">Steall Ring with extra sting</span></a>&nbsp;</td>
+<td itemprop="author">simon-b</td>
+<td>3/7/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:6">&nbsp;6</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:18">M6</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=48983'><span itemprop="name">Ring of Steall, Winter whiteout and wind.</span></a>&nbsp;</td>
+<td itemprop="author">sneaks</td>
+<td>22/1/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:6">&nbsp;6</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:3">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=13715'><span itemprop="name">Ring of Steall - 4 eggs in one basket</span></a>&nbsp;</td>
+<td itemprop="author">BlackPanther</td>
+<td>24/7/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:6">&nbsp;6</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:9">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=83263'><span itemprop="name">Return to The Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">tomyboy73</td>
+<td>21/7/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:5">&nbsp;5</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=75566'><span itemprop="name">The Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">Cairngorm creeper</td>
+<td>1/9/17</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:5">&nbsp;5</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:10">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=48526'><span itemprop="name">Half Ring of Steall...on a beautiful winter's day</span></a>&nbsp;</td>
+<td itemprop="author">Barnety2000</td>
+<td>29/12/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:5">&nbsp;5</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:3">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=26178'><span itemprop="name">Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">LeithySuburbs</td>
+<td>14/10/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:5">&nbsp;5</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:21">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=20487'><span itemprop="name">Get High And Stay High (Part One - Friday)</span></a>&nbsp;</td>
+<td itemprop="author">CurlyWurly</td>
+<td>13/4/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:5">&nbsp;5</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:7">M6</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=100405'><span itemprop="name">Ring of Steall (scrambling via NE ridge of Sgurr a'Mhaim)</span></a>&nbsp;</td>
+<td itemprop="author">IainMacG</td>
+<td>23/9/20</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:4">&nbsp;4</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:6">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=83865'><span itemprop="name">Breakfast mistake</span></a>&nbsp;</td>
+<td itemprop="author">Fife Flyer</td>
+<td>25/8/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:4">&nbsp;4</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:4">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=78708'><span itemprop="name">The Ring of Steall as I'd always hoped to see it</span></a>&nbsp;</td>
+<td itemprop="author">madprof</td>
+<td>21/2/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:4">&nbsp;4</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=73870'><span itemprop="name">10 Mamores in a day. A nice challenge</span></a>&nbsp;</td>
+<td itemprop="author">montie</td>
+<td>10/7/17</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:4">&nbsp;4</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:6">M10</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=64326'><span itemprop="name">Ring of Steall, a walk with nearly everything</span></a>&nbsp;</td>
+<td itemprop="author">The Rodmiester</td>
+<td>26/6/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:4">&nbsp;4</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:17">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=64109'><span itemprop="name">Ring of Steall Revisited</span></a>&nbsp;</td>
+<td itemprop="author">jupe1407</td>
+<td>18/6/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:4">&nbsp;4</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:9">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=60925'><span itemprop="name">The Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">dav2930</td>
+<td>20/3/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:4">&nbsp;4</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:14">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=22368'><span itemprop="name">Back for (ma)more</span></a>&nbsp;</td>
+<td itemprop="author">basscadet</td>
+<td>9/6/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:4">&nbsp;4</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M5</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=14980'><span itemprop="name">Finishing off The Mamores with The Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">Johnny Corbett</td>
+<td>28/8/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:4">&nbsp;4</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:17">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=94648'><span itemprop="name">I Got By With a Little Help From My Friends</span></a>&nbsp;</td>
+<td itemprop="author">ScotFinn65</td>
+<td>4/8/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:3">&nbsp;3</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=43852'><span itemprop="name">Rings off on the Ring of Steall?</span></a>&nbsp;</td>
+<td itemprop="author">shish</td>
+<td>28/6/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:3">&nbsp;3</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=43114'><span itemprop="name">Munro One Hundred and Eleven</span></a>&nbsp;</td>
+<td itemprop="author">Chris Henshall</td>
+<td>28/5/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:3">&nbsp;3</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M5</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=35056'><span itemprop="name">Stealling into the Mamores</span></a>&nbsp;</td>
+<td itemprop="author">weaselmaster</td>
+<td>10/8/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:3">&nbsp;3</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:14">M6</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=41427'><span itemprop="name">The Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">Silverhill</td>
+<td>10/6/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:3">&nbsp;3</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=6694'><span itemprop="name">Mamores Challenge</span></a>&nbsp;</td>
+<td itemprop="author">m16kra</td>
+<td>16/8/10</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:3">&nbsp;3</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:11">M10</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=92955'><span itemprop="name">Ring of Steall Skyrace</span></a>&nbsp;</td>
+<td itemprop="author">Nicholas</td>
+<td>21/9/19</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:5">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=96393'><span itemprop="name">Ring of Steall + 2 + traffic.</span></a>&nbsp;</td>
+<td itemprop="author">mamoset</td>
+<td>21/9/19</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M6</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=70831'><span itemprop="name">Ring of Steal in the sunshine</span></a>&nbsp;</td>
+<td itemprop="author">Louise993</td>
+<td>26/3/17</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=63327'><span itemprop="name">Ring of Steall is required after choir curry night...</span></a>&nbsp;</td>
+<td itemprop="author">bobble_hat_kenny</td>
+<td>29/5/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=57561'><span itemprop="name">German fool rushes in - Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">McFelix</td>
+<td>22/7/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:4">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=45400'><span itemprop="name">Wild Glamping on the Mamores - Day 1</span></a>&nbsp;</td>
+<td itemprop="author">Quadbarrel</td>
+<td>23/8/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M5</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=35750'><span itemprop="name">From mouth of Welshman - Mamores more epic than Welsh peaks!</span></a>&nbsp;</td>
+<td itemprop="author">dogplodder</td>
+<td>22/8/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:11">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=38576'><span itemprop="name">The perfect day</span></a>&nbsp;</td>
+<td itemprop="author">Brijesh</td>
+<td>31/7/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=34038'><span itemprop="name">The Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">mountainboy12</td>
+<td>13/7/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:4">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=32816'><span itemprop="name">Amazing circuit the ring of steall</span></a>&nbsp;</td>
+<td itemprop="author">JB likes a beer</td>
+<td>10/6/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:4">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=25597'><span itemprop="name">Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">soapy27</td>
+<td>22/9/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:9">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=22578'><span itemprop="name">Ring of Steall at last</span></a>&nbsp;</td>
+<td itemprop="author">pigeon</td>
+<td>17/6/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:14">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=21891'><span itemprop="name">The Ring of Fire</span></a>&nbsp;</td>
+<td itemprop="author">Fudgie</td>
+<td>2/6/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:16">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=98125'><span itemprop="name">The Ring of Steall/Ben Nevis</span></a>&nbsp;</td>
+<td itemprop="author">Haydn1996</td>
+<td>21/7/20</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M5</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=82511'><span itemprop="name">Ring of Steall and Glenfinnan hills</span></a>&nbsp;</td>
+<td itemprop="author">weaselmaster</td>
+<td>8/7/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M8</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=82387'><span itemprop="name">Am Bodach from Kinlochleven</span></a>&nbsp;</td>
+<td itemprop="author">U059361</td>
+<td>3/7/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M1</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=54857'><span itemprop="name">A Rough Hill, an Old Man and a Raven</span></a>&nbsp;</td>
+<td itemprop="author">johnkaysleftleg</td>
+<td>19/7/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:7">M2C1</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=54277'><span itemprop="name">Ring Of Steall</span></a>&nbsp;</td>
+<td itemprop="author">jamesb63</td>
+<td>15/7/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:6">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=53018'><span itemprop="name">The Mamores were so good, we had to go back for more</span></a>&nbsp;</td>
+<td itemprop="author">martin.h</td>
+<td>9/6/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:3">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=43326'><span itemprop="name">Stealling away for a walk</span></a>&nbsp;</td>
+<td itemprop="author">Driftwood</td>
+<td>3/6/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=42121'><span itemprop="name">Great tour</span></a>&nbsp;</td>
+<td itemprop="author">Dutch King</td>
+<td>12/5/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=36911'><span itemprop="name">A Wet Wander Round Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">jupe1407</td>
+<td>5/10/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:17">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=30207'><span itemprop="name">Using Steel on the Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">Jambo235</td>
+<td>23/2/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=25388'><span itemprop="name">Ring of Steall in two days</span></a>&nbsp;</td>
+<td itemprop="author">Turin</td>
+<td>9/8/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=24899'><span itemprop="name">Eastern Mamores 2012 Seven Up</span></a>&nbsp;</td>
+<td itemprop="author">JonAksel</td>
+<td>9/6/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M7</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=19924'><span itemprop="name">Fort william</span></a>&nbsp;</td>
+<td itemprop="author">RUGBYPLAYER</td>
+<td>31/3/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M9</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=17568'><span itemprop="name">Am Bodach - against the odds!</span></a>&nbsp;</td>
+<td itemprop="author">Redrock</td>
+<td>30/12/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:13">M1</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=15398'><span itemprop="name">Ring Of Steall</span></a>&nbsp;</td>
+<td itemprop="author">jester</td>
+<td>3/9/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:5">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=13684'><span itemprop="name">The Ring of Steall + 2</span></a>&nbsp;</td>
+<td itemprop="author">Barnety2000</td>
+<td>12/7/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:4">M6</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=12100'><span itemprop="name">Day Three in Glen Nevis - The Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">HighlandTrekker</td>
+<td>4/5/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:8">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=38813'><span itemprop="name">Aonach Eagach at 73 years old</span></a>&nbsp;</td>
+<td itemprop="author">Kate66</td>
+<td>20/4/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:8">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=8219'><span itemprop="name">Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">alanmurray</td>
+<td>6/11/10</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:9">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=6633'><span itemprop="name">The Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">Bod and Valerie</td>
+<td>13/8/10</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=102581'><span itemprop="name">Ring of Steall - A fool falls in</span></a>&nbsp;</td>
+<td itemprop="author">Verylatestarter</td>
+<td>5/9/20</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=83199'><span itemprop="name">A hard walk on the ring - Video overview</span></a>&nbsp;</td>
+<td itemprop="author">fourpads</td>
+<td>1/8/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=99553'><span itemprop="name">The Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">m0ns00n</td>
+<td>1/7/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=80777'><span itemprop="name">first munro/ridge</span></a>&nbsp;</td>
+<td itemprop="author">joe159</td>
+<td>18/1/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=71902'><span itemprop="name">Oh, such a perfect day</span></a>&nbsp;</td>
+<td itemprop="author">Coop</td>
+<td>3/5/17</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=67744'><span itemprop="name">The Ring Of Steall</span></a>&nbsp;</td>
+<td itemprop="author">Belle Morte</td>
+<td>6/9/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=65834'><span itemprop="name">Mamores 9/10 ain't bad, dog breaks the ton !</span></a>&nbsp;</td>
+<td itemprop="author">scotdavid63</td>
+<td>15/8/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M9</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=61726'><span itemprop="name">Ring of Steal</span></a>&nbsp;</td>
+<td itemprop="author">Kenny Monaghan</td>
+<td>16/4/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=56045'><span itemprop="name">The Mamores Ridge</span></a>&nbsp;</td>
+<td itemprop="author">davetherave</td>
+<td>5/9/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:6">M8</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=47787'><span itemprop="name">An absolute Steall</span></a>&nbsp;</td>
+<td itemprop="author">pmallan1</td>
+<td>20/9/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=46716'><span itemprop="name">RING OF STEALL</span></a>&nbsp;</td>
+<td itemprop="author">LAVA  JINTI</td>
+<td>24/8/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=45044'><span itemprop="name">Ring of Steall, we always intended to anticlockwise...</span></a>&nbsp;</td>
+<td itemprop="author">MountainHare22</td>
+<td>13/7/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:5">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=37187'><span itemprop="name">Ring of Steall the wrong way round!</span></a>&nbsp;</td>
+<td itemprop="author">Jabber</td>
+<td>12/10/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=38847'><span itemprop="name">Banish those winter blues</span></a>&nbsp;</td>
+<td itemprop="author">quinners161</td>
+<td>23/8/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=27144'><span itemprop="name">White Steall</span></a>&nbsp;</td>
+<td itemprop="author">Tom Lane</td>
+<td>17/11/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=26567'><span itemprop="name">Ring of Steall (Mostly)</span></a>&nbsp;</td>
+<td itemprop="author">seamus0</td>
+<td>27/10/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:4">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=29530'><span itemprop="name">#16 - 19; just!</span></a>&nbsp;</td>
+<td itemprop="author">Tazman</td>
+<td>12/8/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=15058'><span itemprop="name">Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">slemming</td>
+<td>5/9/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=16151'><span itemprop="name">Cearcall nan Steall /Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">Collaciotach</td>
+<td>14/8/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=7762'><span itemprop="name">Am Bodach</span></a>&nbsp;</td>
+<td itemprop="author">blanchie</td>
+<td>15/10/10</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=7892'><span itemprop="name">The Mamores – when the Devil was on his holiday</span></a>&nbsp;</td>
+<td itemprop="author">old danensian</td>
+<td>12/10/10</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:8">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=7411'><span itemprop="name">Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">Gwalke</td>
+<td>24/9/10</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:11">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=17868'><span itemprop="name">Mamores (minus one)</span></a>&nbsp;</td>
+<td itemprop="author">snowdonia7</td>
+<td>4/9/10</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M9</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=6097'><span itemprop="name">Stob Ban and part of Ring of Steall</span></a>&nbsp;</td>
+<td itemprop="author">dave munn</td>
+<td>24/7/10</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=1134'><span itemprop="name">Mamores</span></a>&nbsp;</td>
+<td itemprop="author">bootsandpaddles</td>
+<td>3/6/09</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:4">M6</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=171'><span itemprop="name">The Ring of Steall, Mamores - 5 star walk!</span></a>&nbsp;</td>
+<td itemprop="author">Myth</td>
+<td>22/5/08</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:6">M4</td></tr>
+</tbody></table></div><p><b><a href='//www.walkhighlands.co.uk/Forum/posting.php?mode=post&f=9'>Share your report</a> for the chance to <a href='/webtogs.shtml' rel='nofollow'>win gear</a> every month</b></p></div><br /><div class="notice social"><h2 style='margin:0px; float:left;'>Share on&nbsp;</h2><ul class="share-buttons">
+  <li><span title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;"><img width=32 height=32 alt="Share on Facebook" src="//d3teiib5p3f439.cloudfront.net/images/social_flat_rounded_rects_svg/Facebook.svg" /></span></li>
+  <li><span title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL) + '%20@walkhighlands'); return false;"><img alt="Tweet" width=32 height=32 src="//d3teiib5p3f439.cloudfront.net/images/social_flat_rounded_rects_svg/Twitter.svg" /></span></li>
+  <li><span title="Send email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img width=32 height=32 alt="Send email" src="//d3teiib5p3f439.cloudfront.net/images/social_flat_rounded_rects_svg/Email.svg" /></span></li>
+</ul>
+     <p style='clear:both'>Walking can be dangerous and is done entirely at your own risk. Information is provided free of charge; it is each walker's responsibility to check it and navigate 
+using a map and compass.</p>
+    </div>
+  </div><!-- #container -->
+  	<div id='shortlist' style='display:none'><A href='/shortlist.shtml'>View Shortlist</a></div><footer>
+    <nav>
+    	<ul>
+        <li><a href="/about.shtml">About</a></li>
+        <li><a href="/advertising.shtml">Advertising</a></li>
+        <li><a href="/Forum/ucp.php?mode=terms">Terms of Use</a></li>		
+        <li><a href="/cookies.shtml">Cookies &amp; Privacy</a></li>
+        <li><a href="#top">Top</a></li>
+      </ul>
+    </nav>
+    <p>&copy;2006-2021 walkhighlands.co.uk</p>
+  </footer>
+  <br /><br /><br />
+  <script defer src="//d3teiib5p3f439.cloudfront.net/js/foot-full.js?v=28"></script>
+   <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"Walkhighlands requires cookies to be able to fully function. Read our ","dismiss":"Got it!","learnMore":"Privacy Policy","link":"//www.walkhighlands.co.uk/cookies.shtml","theme":"dark-bottom","domain":"walkhighlands.co.uk"};
+	var sv = sv || '';
+</script>
+
+<script defer src="//d3teiib5p3f439.cloudfront.net/js/cookie.js"></script>
+<!-- End Cookie Consent plugin -->
+
+</body>
+</html>
+
+

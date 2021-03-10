@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]><!--><html class='not-ie no-js' lang='en'><!--<![endif]-->
+<head>
+<title>Glas Tulaichean - Munro (Walkhighlands)</title>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<meta name='description' content='Glas Tulaichean is a big dome-shaped mountain usually climbed from the Spittal of Glenshee. A landrover track leads almost all the way to the summit, whilst the lower slopes were once accessed by a private railway.'>
+<link rel='stylesheet' href='https://unpkg.com/leaflet@1.7.1/dist/leaflet.css' integrity='sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==' crossorigin='' />
+<script defer src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js' integrity='sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==' crossorigin=''></script>
+<link rel='canonical' href='https://www.walkhighlands.co.uk/munros/glas-tulaichean' />
+<script defer src='https://cdn.rawgit.com/kartena/Proj4Leaflet/master/lib/proj4-compressed.js'></script><!-- proj4js -->
+<script defer src='https://cdn.rawgit.com/kartena/Proj4Leaflet/master/src/proj4leaflet.js'></script><!--  proj4leaflet -->
+<script defer src='//d3teiib5p3f439.cloudfront.net/js/whleaf.js'></script>
+<script defer src='//d3teiib5p3f439.cloudfront.net/js/KML.js'></script>
+<script defer src='//d3teiib5p3f439.cloudfront.net/js/munros.js'></script>
+<script defer src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script defer src='//d3teiib5p3f439.cloudfront.net/js/soundmanager2.js'></script>
+<script defer src='//d3teiib5p3f439.cloudfront.net/munros/js/rating.js' async></script>
+<meta property='og:title' content='Glas Tulaichean - Munro (Walkhighlands)'/><meta property='fb:admins' content='758511963' />
+<meta property='og:type' content='article' />
+<meta property='article:publisher' content='https://www.facebook.com/walkhighlands' />
+<meta property='article:author' content='https://www.facebook.com/walkhighlands' />
+<meta property='og:site_name' content='Walkhighlands' />
+<meta property='og:image' content='https://www.walkhighlands.co.uk/munros/glas-tulaichean-1.JPG' />
+<meta property='og:url' content='https://www.walkhighlands.co.uk/munros/glas-tulaichean' />
+<meta property='og:description' content='Glas Tulaichean is a big dome-shaped mountain usually climbed from the Spittal of Glenshee. A landrover track leads almost all the way to the summit, whilst the lower slopes were once accessed by a private railway.'>
+<meta name='twitter:card' content='summary_large_image'>
+<meta name='twitter:site' content='@walkhighlands'>
+<meta name='twitter:creator' content='@walkhighlands'>
+<meta name='twitter:title' content='Glas Tulaichean - Munro (Walkhighlands)' />
+<meta name='twitter:description' content='Glas Tulaichean is a big dome-shaped mountain usually climbed from the Spittal of Glenshee. A landrover track leads almost all the way to the summit, whilst the lower slopes were once accessed by a private railway.'><meta name='twitter:image:src' content='https://www.walkhighlands.co.uk/munros/glas-tulaichean-1.JPG'>
+<script>
+var mlng =-3.558243;
+var mlat =56.8658215;
+</script>
+<link rel="stylesheet" href="//d3teiib5p3f439.cloudfront.net/css/design.css?ver=211">
+<link rel="stylesheet" href="//d3teiib5p3f439.cloudfront.net/css/print.css" type="text/css" media="print" />
+<script async src="//cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+</head>
+<body id="index" onload="initialize()">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-826197-15"></script>
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-826197-15', { 'anonymize_ip': true });
+var vis="'display':'none'";
+</script>
+<div id="usernav"><ul id="usn_not_logged_in"><li><a href="/Forum/ucp.php?mode=login">REGISTER OR LOGIN</a></li></ul></div>   <div id="container">
+  
+    <header id="top">
+      <p><a href="/"><img width=228 height=128 src="//d3teiib5p3f439.cloudfront.net/images/walkhighlands.png" alt="walkhighlands" /></a></p>
+      <div class='mobhide'><form class='noprint' id="searchbox_016328473243111834892:n2bb88e7mm8" action="/results.shtml">
+      	<input type="hidden" name="cx" value="016328473243111834892:n2bb88e7mm8" />
+        <input type="hidden" name="cof" value="FORID:9" />
+        <input  name="q" type="search" size="14" />
+        <input type="submit" name="sa" class="button" value="Search" />
+      </form></div>
+    
+    	<nav role="navigation">
+	<div class="navstrip"><a href="#" class="mobile_link"><span class="icon icon-menu"></span> <b>Menu</b></a> <a href="#" class="search_link"><b>Search</b> <span class="icon icon-search"></span></a></div>
+        <ul id="nav">
+                             <li><a href="#" class="clickit arr">Walks<span>&#9660;</span></a>
+            <div class="dropnav">
+              <ul>
+                <li><a href="#" class="clickit">Highlands</a>
+									<div class="dropnav2">
+                    <ul>
+                      <li><a href='/sutherland/'>Sutherland &amp; Caithness</a></li>
+                      <li><a href='/ullapool/'>Ullapool &amp; Assynt</a></li>
+                      <li><a href='/torridon/'>Torridon &amp; Gairloch</a></li>
+                      <li><a href='/kintail/'>Kintail &amp; Lochalsh</a></li>
+                      <li><a href='/lochness/'>Loch Ness &amp; Affric</a></li>
+                      <li><a href='/moray/'>Moray</a></li>
+                      <li><a href='/fortwilliam/'>Fort William</a></li>
+                      <li><a href='/cairngorms/'>Cairngorms &amp; Aviemore</a></li>
+                      <li><a href='/perthshire/'>Perthshire</a></li>
+                      <li><a href='/argyll/'>Argyll &amp; Oban</a></li>
+                      <li><a href='/lochlomond/'>Loch Lomond</a></li>
+                      <li><a href='/aberdeenshire/'>Aberdeenshire</a></li>
+                      <li><a href='/angus/'>Angus</a></li>
+                    </ul>
+                  </div>
+                </li>
+                
+                <li><a href="#" class="clickit">Islands</a>
+                  <div class="dropnav2">
+                    <ul>
+                      <li><a href='/skye/'>Isle of Skye</a></li>
+                      <li><a href='/mull/'>Isle of Mull</a></li>
+                      <li><a href='/outer-hebrides/'>Outer Hebrides</a></li>
+                      <li><a href='/arran/'>Isle of Arran</a></li>
+                      <li><a href='/islands/'>Coll, Tiree and the Small Isles</a></li>
+                      <li><a href='/islay-jura/'>Islay, Jura &amp; Colonsay</a></li>
+                      <li><a href='/orkney/'>Orkney</a></li>
+                      <li><a href='/shetland/'>Shetland</a></li>
+                      <li><a href='/argyll/isle-of-bute.shtml'>Isle of Bute</a></li>
+                      <li><a href='/argyll/gigha.shtml'>Isle of Gigha</a></li>
+                      <li><a href='/argyll/isle-of-lismore.shtml'>Isle of Lismore</a></li>
+                      <li><a href='/skye/isle-of-raasay.shtml'>Isle of Raasay</a></li>
+                      <li><a href='/mull/isle-of-ulva.shtml'>Isle of Ulva</a></li>
+                    </ul>
+                  </div>
+                </li>
+                
+                <li><a href="#" class="clickit">Lowlands</a>
+                  <div class="dropnav2">
+                    <ul>
+                      <li><a href='/fife-stirling/'>Fife &amp; Stirling</a></li>
+                      <li><a href='/lothian/'>Edinburgh &amp; Lothian</a></li>
+                      <li><a href='/glasgow/'>Glasgow &amp; Ayrshire</a></li>
+                      <li><a href='/galloway/'>Dumfries &amp; Galloway</a></li>
+                      <li><a href='/borders/'>Scottish Borders</a></li>
+                    </ul>
+                  </div>
+                </li>
+                  
+                <li><a href="/long-distance-routes.shtml">Long Distance Walks</a></li>
+					<li><a href="/walk-search.php">Search all walks</a></li>
+              </ul>
+            </div>
+          </li>
+               
+          <li><a href="#" class="clickit arr">Articles<span>&#9660;</span></a>
+	           <div class="dropnav">
+              <ul>
+                <li><a href="/news/category/walking-news/">News</a></li>
+                <li><a href="/news/category/features/">Features</a></li>
+                <li><a href="/news/category/our-picks/">Our Picks (Best of Scotland)</a></li>
+              </ul>
+            </div>	  
+		  
+		  </li>
+		  
+          <li><a href="#" class="clickit arr">Gear reviews<span>&#9660;</span></a>
+		  	           <div class="dropnav">
+              <ul>
+                <li><a href="/news/category/reviews/accessories/">Accessories</a></li>
+                <li><a href="/news/category/reviews/baselayers/">Baselayers</a></li>
+                <li><a href="/news/category/reviews/camping/">Camping</a></li>
+                <li><a href="/news/category/reviews/footwear/">Footwear</a></li>
+                <li><a href="/news/category/reviews/jackets/">Jackets</a></li>
+                <li><a href="/news/category/reviews/midlayers/">Midlayers</a></li>
+                <li><a href="/news/category/reviews/rucksacks/">Rucksacks</a></li>
+                <li><a href="/news/category/reviews/trousers/">Trousers</a></li>
+              </ul>
+            </div>	</li>
+		  
+          <li><a href="#" class="clickit arr">Buy<span>&#9660;</span></a>
+		                    <div class="dropnav">
+		<ul>
+          <li><a href="https://uk.bookshop.org/shop/walkhighlands">Books</a></li>
+		 <li><a href="https://photos.walkhighlands.co.uk/">Photography / prints</a></li>
+		 </ul> </div>
+</li>
+          <li><a href="#" class="clickit arr">Accommodation<span>&#9660;</span></a>
+            <div class="dropnav">
+              <ul>
+                <li><a href="/cottages.shtml">Self-catering cottages</a></li>
+                <li><a href="/hotels.shtml">Hotels and Inns</a></li>
+                <li><a href="/bedandbreakfast.shtml">Bed and Breakfast</a></li>
+                <li><a href="/hostels.shtml">Hostels and Bunkhouses</a></li>
+				<li><a href="/campsites.shtml">Glamping &amp; Camping</a></li>
+                <li><a href="/campervans.shtml">Campervan Hire</a></li>
+              </ul>
+            </div>
+          </li>
+            
+          <li><a href="/guides.shtml">Guides &amp; Holidays</a></li>
+		  
+		
+
+          <li><a href="/Forum/">Forum</a></li>
+          
+          <li><a href="#" class="clickit arr">Bagging<span>&#9660;</span></a>
+            <div class="dropnav">
+              <ul>
+                <li><a href="/island-bagging.php">Islands</a></li>
+                <li><a href="/munros/">Munros</a></li>
+                <li><a href="/corbetts/">Corbetts</a></li>
+                <li><a href="/grahams/">Grahams  </a></li>
+                <li><a href="/donalds/">Donalds  </a></li>
+                <li><a href="/sub2000/">Sub 2000ers  </a></li>
+                <li><a href="/wainwrights/">Wainwrights</a></li>
+                <li><a href="/hewitts/">Hewitts (England &amp; Wales)</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li><a href="/safety/">Safety</a></li>
+          
+          <li class='mobhide'><a href="/maps/">GPS</a></li>
+        </ul>
+      </nav>
+    </header><nav id='breadcrumb'>
+<ol><li><a href='/'>Home</a></li>
+<li><a href='/munros/'>The Munros</a></li>
+<li><a href='#'>Glas Tulaichean</a></li>
+</ol></nav>
+<div itemscope itemtype='http://schema.org/LocalBusiness' id='walk_info' class='pr' role='main'>
+<div style='width:450px; max-width:100%; float:left; overflow:none;'>
+<h1><span itemprop='name'>Glas Tulaichean</span></h1>
+<p><a href='/munros/glas-tulaichean.mp3' class='sm2_button'>Hear pronunciation</a> Press to hear pronunciation</p>
+<p><b>Glas Tulaichean is a big dome-shaped mountain usually climbed from the Spittal of Glenshee. A landrover track leads almost all the way to the summit, whilst the lower slopes were once accessed by a private railway.</b></p>
+<p><a href='//www.walkhighlands.co.uk/Forum/ucp.php?mode=login&url=//www.walkhighlands.co.uk/munros/glas-tulaichean.php'><img style='float:left;' alt='Unchecked box' src='/images/box.GIF' border=0></a><b>&nbsp;You have not climbed Glas Tulaichean.</b></p><p>Region: <a href ='/perthshire/'>Perthshire</a></p>
+<p>Altitude: 1051 metres</p>
+<p><div style='float:left; padding:0px'>Users' Rating:</div>
+<div class="ratingblock" style="padding-left: 95px; margin-top:-5px; padding-bottom:0px; height:40px; overflow:hidden;" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><div id="unit_long79"><ul id="unit_ul79" class="unit-rating" style="width:125px;"><li class="current-rating" style="width:72.75px;">Currently 2.91/5</li></ul></div>Rating: <strong itemprop="ratingValue">2.9</strong>/5 (<span itemprop="ratingCount">79</span> votes cast)</div><p style='clear:both'>You must be <A href='http://www.walkhighlands.co.uk/Forum/ucp.php?mode=login'>registered and signed-in</a> to vote</p></p>
+<h2>Detailed route description and map</h2>
+<p><b><a href='/perthshire/glas-tulaichean.shtml'>Glas Tulaichean and Carn an Righ from the Spittal of Glenshee</a></b></p>
+<h3>Other routes and challenges</h3><p>Glas Tulaichean lies in a close-knit group of Munros - not just <A href='carn-an-righ'>Carn an Righ</a>, but also <A href='beinn-iutharn-mhor'>Beinn Iutharn Mhor</a> and <a href='an-socach-braemar'>An Socach</a>, so a variety of combinations are possible, including much longer ones from Glen Dee and Glen Clunie. </p>
+<h3>Walker-friendly accommodation in the area</h3>
+<p><b><a href='/perthshire/hotels.shtml'>Perthshire Hotels</a></b></p><p><b><a href='/perthshire/bedandbreakfast.shtml'>Perthshire B&B</a></b></p><p><b><a href='/perthshire/cottages.shtml'>Perthshire Cottages</a></b></p><p><b><a href='/perthshire/hostels.shtml'>Perthshire Hostels</a></b></p><h3><a class='view'>Panoramic summit view (click to open)</a></h3>
+<br /></div>
+<script defer src='/js/pano.js' id='panorama' data-lat='56.8658215' data-lon='-3.558243' data-alt='1051' ></script>
+<div id='areamap' style='width:470px; max-width:470px;'><div style='border: solid 5px #ddd;'>
+<img height=308 width=460 itemprop="image" src='//d3teiib5p3f439.cloudfront.net/munros/glas-tulaichean-1.JPG' alt='Glas Tulaichean'><div id="map" style="border-top: solid 5px #ddd; height:323px; width:100%; max-width:460px"></div></div><br />
+<div style='max-width:336px !important; overflow:hidden; margin:auto;'>
+<script src='https://uk.bookshop.org/widgets.js' data-type='book' data-affiliate-id='2573' data-sku='9781907025273'></script>
+</div></div><Br clear=both />
+<div id='pano' style='width:99%; height:0px; overflow:hidden; padding:0px; margin:-20px 5px -20px 5px; background:#ffffff; clear:both;'></div>
+<br />
+<h2>Users' walk reports for Glas Tulaichean</h2>
+<p>There are <a onclick='showusers()'>4395 Walkhighlanders</a> who have climbed Glas Tulaichean. <script type='text/javascript'>
+function showusers()	{
+		$.get('whom.php?w=79', function(data) { $('<div class="popup" style="z-index:999999999 !important;"><div><div style="max-height:400px; overflow:auto; "><a href="#"><img src="/images/close.png" alt="close" /></a>' + data + '</div></div></div>').appendTo('body'); });
+		return false;
+	};
+</script>They have contributed 70 public walk reports including this summit. These are ordered below with the most popular ones first. The rightmost column shows how many summits were included in their report, which may help you to find the most relevant reports.</p><div style='height:488px; width:100%; overflow-y:scroll; overflow-x:hidden;'>
+<table class='table1' style='table-layout:fixed; width:100%'>
+<thead><tr><th width='50%'>Walk report</th>
+<th>Author</th><th width='55px'><A href='glas-tulaichean.php?s=1'>Date walked</a></th>
+<th class='mobhide' width=40px' ><a href='glas-tulaichean.php#'>Likes</a></th><th width=60px class='mobhide'>Hills</th>
+</tr>
+</thead><tbody><tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=25325'><span itemprop="name">The 8 Cairnwells-kissing a frog and what to do with a prince</span></a>&nbsp;</td>
+<td itemprop="author">Mountainlove</td>
+<td>8/9/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:21">&nbsp;21</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:27">M8</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=62682'><span itemprop="name">Loch nan Eun Circuit from Spittal of Glenshee</span></a>&nbsp;</td>
+<td itemprop="author">jamesb63</td>
+<td>14/5/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:14">&nbsp;14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:4">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=37504'><span itemprop="name">Aye Aye, 5 Munros in a good day from Glen Ey</span></a>&nbsp;</td>
+<td itemprop="author">scottishkennyg</td>
+<td>24/10/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:13">&nbsp;13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:14">M5</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=18660'><span itemprop="name">Glas Tulaichean and Carn an Righ</span></a>&nbsp;</td>
+<td itemprop="author">jester</td>
+<td>4/2/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:13">&nbsp;13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:12">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=25456'><span itemprop="name">13 days in Cairngorms</span></a>&nbsp;</td>
+<td itemprop="author">killy9999</td>
+<td>2/7/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:11">&nbsp;11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:19">M7C4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=78494'><span itemprop="name">Addicted to Recovery (121) A Wintry  Glas Tulaichean.</span></a>&nbsp;</td>
+<td itemprop="author">UrbanExplorer</td>
+<td>15/2/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:10">&nbsp;10</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:4">M1</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=52683'><span itemprop="name">Early morning long walk - test of fitness at Glenshee</span></a>&nbsp;</td>
+<td itemprop="author">Petr Dakota</td>
+<td>3/6/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:10">&nbsp;10</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:12">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=5177'><span itemprop="name">Glas Tulaichean and Carn an Righ</span></a>&nbsp;</td>
+<td itemprop="author">Stevie Foster</td>
+<td>1/6/10</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:10">&nbsp;10</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:6">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=78366'><span itemprop="name">Superb Snowy Southern Cairngorms</span></a>&nbsp;</td>
+<td itemprop="author">weaselmaster</td>
+<td>11/2/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:9">&nbsp;9</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:8">M3S2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=43665'><span itemprop="name">A day in the wilderness, 4 from Inverey</span></a>&nbsp;</td>
+<td itemprop="author">spiderwebb</td>
+<td>29/6/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:9">&nbsp;9</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:20">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=13218'><span itemprop="name">Glas Tulaichean &amp; friends</span></a>&nbsp;</td>
+<td itemprop="author">PeteR</td>
+<td>3/7/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:9">&nbsp;9</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:10">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=42817'><span itemprop="name">...and we almost turned back!!!</span></a>&nbsp;</td>
+<td itemprop="author">BlackPanther</td>
+<td>26/5/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:8">&nbsp;8</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:6">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=52010'><span itemprop="name">Five from Glen Ey</span></a>&nbsp;</td>
+<td itemprop="author">Mattymatt</td>
+<td>14/5/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:7">&nbsp;7</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:6">M5</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=51348'><span itemprop="name">Carn an Righ and the £2.50 cheat</span></a>&nbsp;</td>
+<td itemprop="author">old danensian</td>
+<td>21/4/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:7">&nbsp;7</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:3">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=63225'><span itemprop="name">A First &amp; Memorable Wild Camp @ Loch nan Eun</span></a>&nbsp;</td>
+<td itemprop="author">jupe1407</td>
+<td>28/5/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:6">&nbsp;6</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:16">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=33168'><span itemprop="name">Spittal of Glenshee 4</span></a>&nbsp;</td>
+<td itemprop="author">gman</td>
+<td>19/6/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:6">&nbsp;6</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:3">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=11650'><span itemprop="name">My first wild camp with a wander round Glen Ey &amp; Glenshee</span></a>&nbsp;</td>
+<td itemprop="author">rockhopper</td>
+<td>29/4/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:6">&nbsp;6</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:20">M14</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=42172'><span itemprop="name">Capercaillie, dotterel, ptarmigan &amp; kangaroo on Tulaichean</span></a>&nbsp;</td>
+<td itemprop="author">dogplodder</td>
+<td>14/5/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:5">&nbsp;5</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:9">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=64925'><span itemprop="name">Glas Tulaichan and a section completed</span></a>&nbsp;</td>
+<td itemprop="author">mrssanta</td>
+<td>19/7/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:4">&nbsp;4</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M1</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=44043'><span itemprop="name">Glas Tulaichean &amp; Carn an Righ with Beinn Lutharn Mhor Added</span></a>&nbsp;</td>
+<td itemprop="author">Gordie12</td>
+<td>12/7/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:4">&nbsp;4</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:15">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=16573'><span itemprop="name">Dooter Bang Bang Bang!!</span></a>&nbsp;</td>
+<td itemprop="author">dooterbang</td>
+<td>12/11/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:4">&nbsp;4</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:14">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=101949'><span itemprop="name">Arctic Scotland</span></a>&nbsp;</td>
+<td itemprop="author">wilkiemurray</td>
+<td>1/3/20</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:3">&nbsp;3</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=69548'><span itemprop="name">Dalmunzie 3. My 50% :)</span></a>&nbsp;</td>
+<td itemprop="author">JimboJim</td>
+<td>6/10/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:3">&nbsp;3</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=65744'><span itemprop="name">The Road to Hell? - Beinn Iutharn Mhor &amp; pals</span></a>&nbsp;</td>
+<td itemprop="author">bobble_hat_kenny</td>
+<td>13/8/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:3">&nbsp;3</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:3">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=59647'><span itemprop="name">Glenshee Three - 11 hours of snow wading pays off :)</span></a>&nbsp;</td>
+<td itemprop="author">tombombadilio</td>
+<td>9/2/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:3">&nbsp;3</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:4">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=54136'><span itemprop="name">Four walked the long way from Glen Ey</span></a>&nbsp;</td>
+<td itemprop="author">Driftwood</td>
+<td>15/6/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:3">&nbsp;3</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:3">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=19716'><span itemprop="name">5 @ Loch nan Eun</span></a>&nbsp;</td>
+<td itemprop="author">steven65</td>
+<td>26/3/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:3">&nbsp;3</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:3">M5</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=74511'><span itemprop="name">2 From the welcoming Dalmunzie Castle Hotel</span></a>&nbsp;</td>
+<td itemprop="author">Coop</td>
+<td>31/7/17</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=66586'><span itemprop="name">Bike Hiking from the Spittal of Glenshee</span></a>&nbsp;</td>
+<td itemprop="author">timmunro86</td>
+<td>10/9/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:7">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=65980'><span itemprop="name">Mountain Madness - 11 Munros Over 36 Hours</span></a>&nbsp;</td>
+<td itemprop="author">Renegade Scot</td>
+<td>14/8/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:3">M11</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=57860'><span itemprop="name">Glas Tulaichean, Carn an Righ, Beinn Iutharn Mhor</span></a>&nbsp;</td>
+<td itemprop="author">Silverhill</td>
+<td>29/5/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:7">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=26691'><span itemprop="name">off track on glas tulaichean</span></a>&nbsp;</td>
+<td itemprop="author">gordon l</td>
+<td>3/11/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:6">M1</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=25433'><span itemprop="name">Glas Tulaichean, Carn an Righ and Beinn Iutharn Mhor</span></a>&nbsp;</td>
+<td itemprop="author">jenniferc6</td>
+<td>8/9/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:14">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=20895'><span itemprop="name">Glas Tulaichean/Carn an Righ &amp; and snow sprinting!</span></a>&nbsp;</td>
+<td itemprop="author">Stug</td>
+<td>28/4/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=20448'><span itemprop="name">When 5 become 1</span></a>&nbsp;</td>
+<td itemprop="author">jonny616</td>
+<td>17/4/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:18">M1</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=19468'><span itemprop="name">3 Munros from Spittal of Glen Shee</span></a>&nbsp;</td>
+<td itemprop="author">Steve B</td>
+<td>18/3/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:5">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=19632'><span itemprop="name">Glas Tulaichean, Carn an Righ and Beinn Iutharn Mhor</span></a>&nbsp;</td>
+<td itemprop="author">Clach Liath</td>
+<td>17/3/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:12">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=18538'><span itemprop="name">Dawn Till Dusk</span></a>&nbsp;</td>
+<td itemprop="author">quoman</td>
+<td>13/2/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:28">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=58920'><span itemprop="name">Glen Ey munros and wild camping</span></a>&nbsp;</td>
+<td itemprop="author">HalfManHalfTitanium</td>
+<td>16/9/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=14454'><span itemprop="name">Three More on a A Rainy day...</span></a>&nbsp;</td>
+<td itemprop="author">andrewdoggett</td>
+<td>20/8/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:9">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=14279'><span itemprop="name">Glas Tulaichean, Carn an Righ, Beinn lutharn Mhor &amp; a swim</span></a>&nbsp;</td>
+<td itemprop="author">clivew</td>
+<td>14/8/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:11">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=14285'><span itemprop="name">Waist high water and torrential rain......loved it!</span></a>&nbsp;</td>
+<td itemprop="author">iainwatson</td>
+<td>13/8/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:2">&nbsp;2</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:11">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=83882'><span itemprop="name">Hitting 40 on Glas Tulaichean</span></a>&nbsp;</td>
+<td itemprop="author">KatTai</td>
+<td>29/8/18</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M1</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=69455'><span itemprop="name">Glas Tulaichean, Carn an Righ, Beinn Iutharn Mhor</span></a>&nbsp;</td>
+<td itemprop="author">Kenny Monaghan</td>
+<td>21/1/17</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=64418'><span itemprop="name">A Century and beyond!  - Glas Tulaichean and Carn an Righ</span></a>&nbsp;</td>
+<td itemprop="author">ScottishLeaf</td>
+<td>2/7/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=57725'><span itemprop="name">Dalmunzie dander</span></a>&nbsp;</td>
+<td itemprop="author">thand</td>
+<td>1/8/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M4</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=32504'><span itemprop="name">Hill of the King and 2 Jesters</span></a>&nbsp;</td>
+<td itemprop="author">dektasker</td>
+<td>26/5/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=25424'><span itemprop="name">Carn an Righ</span></a>&nbsp;</td>
+<td itemprop="author">RUGBYPLAYER</td>
+<td>15/9/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=20949'><span itemprop="name">3 from Glen Lochsie</span></a>&nbsp;</td>
+<td itemprop="author">Tomsie</td>
+<td>3/5/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:11">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=19873'><span itemprop="name">Spittal of Glenshee</span></a>&nbsp;</td>
+<td itemprop="author">fipriestley</td>
+<td>31/3/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=10562'><span itemprop="name">Glas Tulaichean</span></a>&nbsp;</td>
+<td itemprop="author">Bod and Valerie</td>
+<td>19/3/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:2">M1</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=2205'><span itemprop="name">Glas Tulaichean, Carn an Righ and Beinn Iutharn Mhor</span></a>&nbsp;</td>
+<td itemprop="author">John Burgess</td>
+<td>4/10/09</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:5">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=1063'><span itemprop="name">1st report</span></a>&nbsp;</td>
+<td itemprop="author">davetherave</td>
+<td>18/5/09</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:1">&nbsp;1</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:8">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=66184'><span itemprop="name">A perfect day out in the southern Cairngorms.</span></a>&nbsp;</td>
+<td itemprop="author">martin.h</td>
+<td>21/8/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:3">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=64215'><span itemprop="name">A nice wee three from the Spittal of Glenshee</span></a>&nbsp;</td>
+<td itemprop="author">scotdavid63</td>
+<td>26/6/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=63630'><span itemprop="name">The heat is on in Glen (Fr)Ey</span></a>&nbsp;</td>
+<td itemprop="author">mamoset</td>
+<td>6/6/16</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:13">M5</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=57460'><span itemprop="name">The Cairnwell Munros &amp; Co. - The Long Way Around</span></a>&nbsp;</td>
+<td itemprop="author">andygunn23</td>
+<td>19/10/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M7</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=53817'><span itemprop="name">too early</span></a>&nbsp;</td>
+<td itemprop="author">ancancha</td>
+<td>3/7/15</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:11">M1</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=43189'><span itemprop="name">Three from the Spittal of Glenshee</span></a>&nbsp;</td>
+<td itemprop="author">Beaner001</td>
+<td>16/6/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:4">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=43012'><span itemprop="name">The Wee on Glas &amp; Righ</span></a>&nbsp;</td>
+<td itemprop="author">mountainboy12</td>
+<td>8/6/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=42208'><span itemprop="name">Glas Tulaichean &amp; Carn an Righ</span></a>&nbsp;</td>
+<td itemprop="author">jupe1407</td>
+<td>18/5/14</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:10">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=37282'><span itemprop="name">Glas Tulaichean in the Mist</span></a>&nbsp;</td>
+<td itemprop="author">thomsok</td>
+<td>15/6/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:0">M1</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=30115'><span itemprop="name">Unlisted Lochsie Tops</span></a>&nbsp;</td>
+<td itemprop="author">weedavie</td>
+<td>14/3/13</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:3">M1</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=26210'><span itemprop="name">Glen Lochsie in October Sun</span></a>&nbsp;</td>
+<td itemprop="author">howzat</td>
+<td>6/10/12</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=11042'><span itemprop="name">Carn a' Gheoidh-Glas Tulaichean</span></a>&nbsp;</td>
+<td itemprop="author">csimbad</td>
+<td>11/4/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:8">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=11091'><span itemprop="name">Glas Tulaichean</span></a>&nbsp;</td>
+<td itemprop="author">Redrock</td>
+<td>29/3/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:7">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=10347'><span itemprop="name">Glas Tulaichean and Carn an Righ</span></a>&nbsp;</td>
+<td itemprop="author">Stretch</td>
+<td>6/3/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:13">M2</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=9014'><span itemprop="name">Beinn Iutharn Mhor, Carn an Righ and Glas Tulaichean</span></a>&nbsp;</td>
+<td itemprop="author">ketzster</td>
+<td>3/1/11</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:5">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg1'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=1314'><span itemprop="name">Glas Tulaichean, Carn an Righ &amp; Beinn Iutharn Mhor</span></a>&nbsp;</td>
+<td itemprop="author">Graeme D</td>
+<td>5/7/09</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:5">M3</td></tr>
+<tr itemprop="review" itemscope itemtype="http://schema.org/Review" class='bg2'><td><a itemprop="url" href='//www.walkhighlands.co.uk/Forum/viewtopic.php?f=9&amp;t=805'><span itemprop="name">Spring!</span></a>&nbsp;</td>
+<td itemprop="author">bootsandpaddles</td>
+<td>23/3/09</td>
+<td class='mobhide' itemprop="interactionCount" content="UserLikes:0">&nbsp;0</td>
+<td class='mobhide' itemprop="interactionCount" content="UserComments:1">M4</td></tr>
+</tbody></table></div><p><b><a href='//www.walkhighlands.co.uk/Forum/posting.php?mode=post&f=9'>Share your report</a> for the chance to <a href='/webtogs.shtml' rel='nofollow'>win gear</a> every month</b></p></div><br /><div class="notice social"><h2 style='margin:0px; float:left;'>Share on&nbsp;</h2><ul class="share-buttons">
+  <li><span title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;"><img width=32 height=32 alt="Share on Facebook" src="//d3teiib5p3f439.cloudfront.net/images/social_flat_rounded_rects_svg/Facebook.svg" /></span></li>
+  <li><span title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL) + '%20@walkhighlands'); return false;"><img alt="Tweet" width=32 height=32 src="//d3teiib5p3f439.cloudfront.net/images/social_flat_rounded_rects_svg/Twitter.svg" /></span></li>
+  <li><span title="Send email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img width=32 height=32 alt="Send email" src="//d3teiib5p3f439.cloudfront.net/images/social_flat_rounded_rects_svg/Email.svg" /></span></li>
+</ul>
+     <p style='clear:both'>Walking can be dangerous and is done entirely at your own risk. Information is provided free of charge; it is each walker's responsibility to check it and navigate 
+using a map and compass.</p>
+    </div>
+  </div><!-- #container -->
+  	<div id='shortlist' style='display:none'><A href='/shortlist.shtml'>View Shortlist</a></div><footer>
+    <nav>
+    	<ul>
+        <li><a href="/about.shtml">About</a></li>
+        <li><a href="/advertising.shtml">Advertising</a></li>
+        <li><a href="/Forum/ucp.php?mode=terms">Terms of Use</a></li>		
+        <li><a href="/cookies.shtml">Cookies &amp; Privacy</a></li>
+        <li><a href="#top">Top</a></li>
+      </ul>
+    </nav>
+    <p>&copy;2006-2021 walkhighlands.co.uk</p>
+  </footer>
+  <br /><br /><br />
+  <script defer src="//d3teiib5p3f439.cloudfront.net/js/foot-full.js?v=28"></script>
+   <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"Walkhighlands requires cookies to be able to fully function. Read our ","dismiss":"Got it!","learnMore":"Privacy Policy","link":"//www.walkhighlands.co.uk/cookies.shtml","theme":"dark-bottom","domain":"walkhighlands.co.uk"};
+	var sv = sv || '';
+</script>
+
+<script defer src="//d3teiib5p3f439.cloudfront.net/js/cookie.js"></script>
+<!-- End Cookie Consent plugin -->
+
+</body>
+</html>
+
+
