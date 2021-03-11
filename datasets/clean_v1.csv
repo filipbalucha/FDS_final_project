@@ -1,283 +1,283 @@
-name,altitude,ascent_count,rating,hotel_count,bb_count,cottage_count,hostel_count
-Ben Lomond,974,20532,3.8,12,8,14,7
-Ben Nevis,1345,17892,3.9,30+,30+,30+,18
-Ben Lawers,1214,16063,3.9,30+,30+,30+,5
-Schiehallion,1083,15926,3.6,30+,30+,30+,5
-Beinn Ghlas,1103,15646,3.4,30+,30+,30+,5
-Ben Vorlich (Loch Earn),985,14997,3.3,30+,30+,30+,5
-Ben Chonzie,931,13432,3.0,30+,30+,30+,5
-Beinn Narnain,926,12759,3.8,7,6,18,7
-Cairn Gorm,1245,12254,3.0,8,9,30+,9
-Beinn Ime,1011,11960,3.4,7,6,18,7
-Mayar,928,11952,3.3,24,24,24,1
-Driesh,947,11589,3.2,24,24,24,1
-The Cairnwell,933,11256,2.1,3,6,21,9
-Lochnagar,1155,11177,4.3,3,6,21,9
-Carn Aosda,917,11168,2.1,3,6,21,9
-Meall nan Tarmachan,1044,10839,4.1,30+,30+,30+,5
-Stuc a' Chroin,975,10813,3.8,30+,30+,30+,5
-Ben Vorlich (Loch Lomond),943,10686,3.4,7,6,18,7
-Ben Vane,915,10453,3.7,7,6,18,7
-Ben Macdui,1309,10446,3.8,29,30+,30+,9
-Carn a' Gheoidh,975,10242,2.8,3,6,21,9
-Glas Maol,1068,10099,2.8,3,6,21,9
-Mount Keen,939,9973,3.1,24,24,24,1
-Stob Dearg (Buachaille Etive Mor),1021,9876,4.6,10,17,30+,18
-Ben More,1174,9692,3.8,7,6,18,7
-Carn an Tuirc,1019,9442,2.8,3,6,21,9
-An Caisteal,995,9437,3.4,7,6,18,7
-Cairn of Claise,1064,9375,2.4,3,6,21,9
-Creag Leacach,987,9188,3.3,3,6,21,9
-Stob Dubh (Buachaille Etive Beag),956,9161,4.2,10,17,30+,18
-Stob Coire Raineach (Buachaille Etive Beag),925,8965,3.9,10,17,30+,18
-Stob Binnein,1165,8876,4.0,7,6,18,7
-Carn Gorm,1029,8767,3.0,30+,30+,30+,5
-Beinn a' Chroin,942,8749,3.4,7,6,18,7
-Meall Garbh (Carn Mairg),968,8556,2.6,30+,30+,30+,5
-Meall Corranaich,1069,8477,3.0,30+,30+,30+,5
-Meall Garbh (Ben Lawers),1118,8473,3.3,30+,30+,30+,5
-Carn Mairg,1042,8420,3.2,30+,30+,30+,5
-Beinn Dorain,1076,8235,3.9,8,2,14,6
-Broad Cairn,998,8230,3.1,3,6,21,9
-Creag Mhor (Meall na Aighean),981,8223,2.8,30+,30+,30+,5
-Ben Lui,1130,8112,4.2,8,2,14,6
-An Stuc,1118,8074,4.0,30+,30+,30+,5
-Meall Greigh,1001,7954,2.6,30+,30+,30+,5
-Stob na Broige  (Buachaille Etive Mor),956,7940,4.0,10,17,30+,18
-Bidean nam Bian,1150,7839,4.6,10,17,30+,18
-Meall a' Choire Leith,926,7763,2.6,30+,30+,30+,5
-Cruach Ardrain,1046,7744,3.6,7,6,18,7
-Carn Liath (Beinn a' Ghlo),975,7740,3.3,30+,30+,30+,5
-Carn an t-Sagairt Mor,1047,7699,2.6,3,6,21,9
-Cairn Bannoch,1012,7669,2.6,3,6,21,9
-Carn a' Choire Bhoidheach,1118,7615,2.4,3,6,21,9
-Beinn Tulaichean,946,7514,2.9,7,6,18,7
-Beinn an Dothaidh,1004,7494,3.2,8,2,14,6
-Beinn Chabhair,933,7481,3.1,7,6,18,7
-Geal-charn (Drumochter),917,7470,2.7,12,12,30+,9
-A' Mharconaich,975,7316,2.9,12,12,30+,9
-Tolmount,958,7275,2.5,3,6,21,9
-Tom Buidhe,957,7155,2.0,3,6,21,9
-Ben Cruachan,1126,7103,4.3,8,2,14,6
-Ben Wyvis,1046,7060,3.3,30+,30+,30+,11
-Braigh Coire Chruinn-bhalgain,1070,7014,3.5,30+,30+,30+,5
-Sgor Gaoith,1118,6850,4.0,12,12,30+,9
-Beinn a' Chleibh,916,6686,2.6,8,2,14,6
-Carn nan Gabhar,1121,6596,3.9,30+,30+,30+,5
-Carn Mor Dearg,1220,6573,4.1,30+,30+,30+,18
-Bynack More,1090,6559,3.6,8,9,30+,9
-Sgorr nam Fiannaidh (Aonach Eagach),967,6507,4.5,10,17,30+,7
-Stob Coire Sgreamhach,1072,6501,4.1,10,17,30+,18
-Meall Dearg (Aonach Eagach),953,6408,4.6,10,17,30+,18
-Am Bodach,1032,6333,3.9,10,17,30+,18
-Beinn Dubhchraig,978,6315,3.2,8,2,14,6
-Meall Buidhe (Glen Lyon),932,6298,3.0,30+,30+,30+,5
-Stuchd an Lochain,960,6223,3.6,30+,30+,30+,5
-Beinn Udlamain,1010,6221,2.8,12,12,30+,9
-Sgairneach Mhor,991,6160,3.0,12,12,30+,9
-Stob Coire a' Chairn,981,6150,3.3,30+,30+,30+,18
-Meall Ghaordaidh,1039,6146,2.9,30+,30+,30+,5
-Stob Daimh,998,6144,3.6,8,2,14,6
-An Gearanach,982,6091,4.1,30+,30+,30+,18
-Ben Oss,1029,6073,3.4,8,2,14,6
-Braeriach,1296,6033,4.2,29,30+,30+,9
-Ben Challum,1025,6013,3.0,8,2,14,6
-Sgurr a'Mhaim,1099,6001,4.1,10,17,30+,18
-Meall a'Bhuiridh,1108,5982,3.1,10,17,30+,18
-Meall Chuaich,951,5916,2.8,12,12,30+,9
-Sgorr Dhearg (Beinn a' Bheithir),1024,5843,4.4,10,17,30+,18
-Beinn a' Chochuill,980,5765,3.2,8,2,14,6
-Ben Hope,927,5753,3.8,30+,30+,30+,4
-Stob Ban (Mamores),999,5737,4.4,30+,30+,30+,18
-Tom na Gruagaich (Beinn Alligin),922,5718,4.4,11,9,30+,7
-A' Bhuidheanach Bheag,936,5708,2.3,12,12,30+,9
-Carn na Caim,941,5693,2.1,12,12,30+,9
-Beinn Eunaich,989,5683,3.2,8,2,14,6
-Sgorr Dhonuill (Beinn a' Bheithir),1001,5596,4.3,10,17,30+,18
-An Socach (Braemar),944,5569,3.0,3,6,21,9
-Sgurr Mor (Beinn Alligin),986,5454,4.6,11,9,30+,7
-Creise,1100,5419,3.9,10,17,30+,18
-Creag a'Mhaim,947,5284,3.1,3,3,30+,1
-Druim Shionnach,987,5282,3.5,3,3,30+,1
-Mullach nan Coirean,939,5261,3.4,30+,30+,30+,18
-Creag Meagaidh,1130,5250,4.0,5,10,19,18
-Maol chinn-dearg,981,5232,3.4,3,3,30+,1
-Aonach Air Chrith,1021,5215,3.9,3,3,30+,1
-Bla Bheinn,928,5213,4.6,28,30+,30+,11
-Derry Cairngorm,1155,5206,3.3,3,6,21,9
-Carn a'Mhaim,1037,5205,3.9,3,6,21,9
-Cairn Toul,1291,5120,4.0,29,30+,30+,9
-Carn Liath (Creag Meagaidh),1006,5101,2.8,5,10,19,18
-A' Chailleach (Monadhliath),930,5017,2.7,12,12,30+,9
-Stob a' Choire Odhair,945,5005,3.5,8,2,14,6
-Stob Poite Coire Ardair,1054,4998,2.9,5,10,19,18
-The Devil's Point,1004,4945,3.9,29,30+,30+,9
-Sgurr an Doire Leathain,1010,4932,3.8,3,3,30+,1
-Stob Ghabhar,1090,4925,4.3,8,2,14,6
-Sgurr an Lochain,1004,4868,3.9,3,3,30+,1
-Creag nan Damh,918,4846,3.2,3,3,30+,1
-Beinn Achaladair,1038,4833,3.7,8,2,14,6
-Sgor an Lochain Uaine,1258,4831,4.0,29,30+,30+,9
-Glas Tulaichean,1051,4808,2.9,30+,30+,30+,5
-Ben More (Mull),966,4791,4.0,3,10,30+,3
-Ruadh-stac Mor (Beinn Eighe),1010,4762,4.5,11,9,30+,7
-Spidean Coire nan Clach (Beinn Eighe),993,4760,4.5,11,9,30+,7
-Na Gruagaichean,1056,4742,3.8,10,17,30+,18
-Aonach Mor,1221,4704,3.3,30+,30+,30+,18
-Beinn a' Chreachain,1081,4630,3.4,8,2,14,6
-Ben Starav,1078,4627,4.2,10,17,30+,18
-Carn Sgulain,920,4622,1.9,12,12,30+,9
-Meall Glas,959,4611,2.6,7,6,18,7
-Sgiath Chuil,921,4587,2.7,7,6,18,7
-Beinn Bhuidhe,948,4566,3.3,8,2,14,6
-Mullach Clach a'Bhlair,1019,4566,2.6,12,12,30+,9
-Beinn Mheadhoin,1182,4462,4.3,29,30+,30+,9
-Carn Dearg (Monadhliath),945,4455,3.1,12,12,30+,9
-Geal Charn (Monadhliath),926,4423,2.6,12,12,30+,9
-Conival,987,4422,3.8,3,4,30+,5
-Binnein Mor,1130,4372,4.1,10,17,30+,18
-Carn a' Chlamain,963,4329,3.2,30+,30+,30+,5
-Spidean a' Choire Leith (Liathach),1055,4312,4.7,11,9,30+,7
-Ben More Assynt,998,4271,4.0,3,4,30+,5
-Bidein a' Ghlas Thuill (An Teallach),1062,4260,4.5,16,23,30+,5
-Mullach an Rathain (Liathach),1023,4225,4.7,11,9,30+,7
-Aonach Beag (Nevis Range),1234,4214,3.7,30+,30+,30+,18
-Sgurr na Ciste Duibhe,1027,4187,4.1,3,3,30+,1
-Sgurr Fhuaran,1067,4165,4.2,3,3,30+,1
-Bruach na Frithe,958,4126,4.1,28,30+,30+,11
-Sgurr Fiona (An Teallach),1060,4080,4.5,16,23,30+,5
-Fionn Bheinn,933,4072,2.9,1,4,18,7
-Sgurr na Carnach,1002,4065,3.8,3,3,30+,1
-Carn an Righ,1029,4032,2.7,30+,30+,30+,5
-Beinn Bhreac,931,4013,2.6,3,6,21,9
-Glas Bheinn Mhor,997,3965,3.5,10,17,30+,18
-Stob a' Choire Mheadhoin,1106,3965,3.5,5,10,19,18
-Chno Dearg,1046,3960,2.7,5,10,19,18
-Beinn a' Chaorainn (Glen Spean),1050,3954,2.9,5,10,19,18
-Stob Coire Sgriodain,979,3950,3.3,5,10,19,18
-Beinn Dearg (Blair Atholl),1008,3908,2.9,30+,30+,30+,5
-Stob Coire Easain,1115,3906,3.7,5,10,19,18
-Slioch,981,3898,4.4,11,9,30+,7
-The Saddle,1010,3897,4.5,3,3,30+,1
-Ben Klibreck,961,3857,3.3,30+,30+,30+,4
-Beinn a' Chaorainn (Cairngorms),1082,3828,2.8,3,6,21,9
-Beinn a'Bhuird,1197,3825,3.7,3,6,21,9
-Sgurr Eilde Mor,1010,3824,3.7,10,17,30+,18
-Sron a' Choire Ghairbh,937,3794,3.2,3,5,14,18
-Sgurr na Banachdich,965,3766,4.0,28,30+,30+,11
-Ben Avon,1171,3752,4.1,3,6,21,9
-Beinn Teallach,915,3745,2.5,5,10,19,18
-Carn Ghluasaid,957,3743,3.0,3,3,30+,1
-Saileag,956,3706,3.0,3,3,30+,1
-Beinn Mhanach,953,3688,3.0,8,2,14,6
-Meall na Teanga,918,3688,3.3,3,5,14,18
-Beinn Iutharn Mhor,1045,3643,3.0,3,6,21,9
-Sgurr a'Bhealaich Dheirg,1036,3637,4.0,3,3,30+,1
-Aonach Meadhoin,1001,3632,3.3,3,3,30+,1
-Carn Bhac,946,3625,2.5,3,6,21,9
-Binnein Beag,943,3619,3.5,10,17,30+,18
-Stob Choire Claurigh,1177,3611,3.5,5,10,19,18
-Beinn Dearg (Ullapool),1084,3601,4.0,16,23,30+,5
-Sgurr nan Conbhairean,1109,3596,3.9,3,3,30+,1
-Beinn na Lap,937,3563,3.1,30+,30+,30+,18
-Beinn Sgulaird,937,3557,3.7,21,30+,30+,6
-Meall a' Chrasgaidh,934,3542,2.5,16,23,30+,5
-Stob Coire an Laoigh,1116,3509,3.5,5,10,19,18
-Geal Charn,1049,3484,2.9,5,10,19,18
-Stob Ban (Grey Corries),977,3477,3.9,5,10,19,18
-Gleouraich,1035,3453,4.2,3,5,14,18
-Beinn Fhionnlaidh,959,3448,3.3,21,30+,30+,6
-Creag Pitridh,924,3447,3.0,5,10,19,18
-Sgurr Alasdair,992,3435,4.6,28,30+,30+,11
-Tom a' Choinich,1112,3427,3.4,2,4,20,11
-Inaccessible Pinnacle,986,3422,4.6,28,30+,30+,11
-Spidean Mialach,996,3393,3.7,3,5,14,18
-Sail Chaorainn,1002,3389,3.1,3,3,30+,1
-Sgurr nan Clach Geala,1093,3381,4.1,16,23,30+,5
-Sgurr na Sgine,945,3368,3.6,3,3,30+,1
-Meall nan Ceapraichean,977,3349,3.1,16,23,30+,5
-Beinn a' Chlachair,1087,3342,3.3,5,10,19,18
-Maol Chean-dearg,933,3342,3.7,1,4,18,7
-Sgor na h-Ulaidh,994,3341,3.6,10,17,30+,18
-Sgurr nan Gillean,964,3323,4.7,28,30+,30+,11
-Toll Creagach,1054,3321,2.7,2,4,20,11
-Stob Coir an Albannaich,1044,3289,3.7,10,17,30+,18
-Sgurr Breac,999,3282,3.4,16,23,30+,5
-Sgurr Choinnich Mor,1094,3274,3.8,30+,30+,30+,18
-A' Chailleach,997,3265,3.4,16,23,30+,5
-Sgurr nan Each,923,3250,3.8,16,23,30+,5
-Beinn Bhrotain,1157,3221,3.4,29,30+,30+,9
-Beinn nan Aighenan,960,3217,3.3,10,17,30+,18
-Creag Mhor (Glen Lochay),1047,3206,3.1,30+,30+,30+,5
-A' Chralaig,1120,3205,3.7,3,3,30+,1
-Eididh nan Clach Geala,927,3205,3.3,16,23,30+,5
-Monadh Mor,1113,3198,2.8,29,30+,30+,9
-Cona' Mheall,978,3187,3.8,16,23,30+,5
-Sgurr Mor,1110,3182,3.9,16,23,30+,5
-Carn Dearg (Corrour),941,3178,3.2,30+,30+,30+,18
-Beinn Liath Mhor Fannaich,954,3168,2.9,16,23,30+,5
-Beinn Heasgarnich,1078,3164,3.1,30+,30+,30+,5
-Meall nan Eun,928,3142,2.8,10,17,30+,18
-Ciste Dhubh,979,3140,4.1,3,3,30+,1
-Sgurr nan Eag,924,3107,4.2,28,30+,30+,11
-Ben Alder,1148,3080,4.2,12,12,30+,9
-Moruisg,928,3074,2.6,1,4,18,7
-Beinn Liath Mhor,926,3031,3.9,1,4,18,7
-Sgor Gaibhre,955,2971,3.4,30+,30+,30+,18
-Mullach Fraoch-choire,1102,2909,4.1,3,3,30+,1
-Sgurr a'Mhadaidh,918,2906,4.2,28,30+,30+,11
-Meall Gorm,949,2901,2.8,16,23,30+,5
-An Coileachan,923,2883,2.9,16,23,30+,5
-Beinn Sgritheall,974,2878,4.1,3,3,30+,1
-Am Basteir,934,2870,4.4,28,30+,30+,11
-Sgurr Thuilm,963,2869,3.7,7,2,21,18
-Sgorr Ruadh,962,2859,4.0,1,4,18,7
-Sgurr nan Coireachan (Glenfinnan),956,2847,3.8,7,2,21,18
-Sgurr a' Ghreadaidh,973,2798,4.4,28,30+,30+,11
-Geal-charn (Alder),1132,2787,3.3,12,12,30+,9
-An Sgarsoch,1006,2760,2.8,29,30+,30+,9
-Sgurr Mhic Choinnich,948,2756,4.7,28,30+,30+,11
-Aonach Beag (Alder),1116,2746,3.5,3,6,21,9
-Beinn Fhada,1032,2733,4.0,3,3,30+,1
-Beinn Bheoil,1019,2730,3.0,12,12,30+,9
-Carn an Fhidhleir (Carn Ealar),994,2707,2.5,29,30+,30+,9
-Sgurr Dubh Mor,944,2705,4.3,28,30+,30+,11
-Sgurr na Ruaidhe,993,2682,2.8,2,4,20,11
-Mam Sodhail,1181,2678,3.5,2,4,20,11
-Beinn Eibhinn,1102,2675,3.3,12,12,30+,9
-Carn nan Gobhar (Strathfarrar),992,2652,3.0,2,4,20,11
-Am Faochagach,954,2649,2.6,16,23,30+,5
-Carn Dearg (Loch Pattack),1034,2644,3.1,12,12,30+,9
-Sgurr a' Choire Ghlais,1083,2623,3.8,2,4,20,11
-Sgurr Fhuar-thuill,1049,2613,3.2,2,4,20,11
-Sgurr a'Mhaoraich,1027,2569,4.0,3,5,14,18
-Gairich,919,2568,3.8,3,5,14,18
-Carn Eige,1183,2549,3.7,2,4,20,11
-Ladhar Bheinn,1020,2518,4.5,3,5,14,18
-A' Ghlas-bheinn,918,2483,3.3,3,3,30+,1
-Carn nan Gobhar (Loch Mullardoch),992,2454,2.7,2,4,20,11
-Gulvain,987,2397,3.6,7,2,21,18
-Sgurr na Lapaich,1150,2381,4.0,2,4,20,11
-Luinne Bheinn,939,2275,3.9,3,5,14,18
-Meall Buidhe (Knoydart),946,2226,3.9,3,5,14,18
-Sgurr Ban,989,2199,3.2,16,23,30+,5
-Mullach Coire Mhic Fhearchair,1019,2194,3.8,16,23,30+,5
-Sgurr na Ciche,1040,2192,4.4,3,5,14,18
-Sgurr a' Chaorachain,1053,2180,3.5,1,4,18,7
-An Socach (Affric),921,2179,2.8,2,4,20,11
-Beinn Tarsuinn,937,2177,3.9,3,4,30+,5
-Sgurr Choinnich,999,2174,3.4,1,4,18,7
-A' Mhaighdean,967,2173,4.4,16,23,30+,5
-An Riabhachan,1129,2168,3.6,2,4,20,11
-Beinn Fhionnlaidh (Carn Eige),1005,2160,3.3,2,4,20,11
-Seana Bhraigh,926,2159,4.2,16,23,30+,5
-Sgurr nan Coireachan (Glen Dessary),953,2131,3.4,3,5,14,18
-Ruadh Stac Mor,918,2130,4.0,16,23,30+,5
-An Socach (Mullardoch),1069,2128,3.6,2,4,20,11
-Garbh Chioch Mhor,1013,2077,3.7,3,5,14,18
-Sgurr nan Ceathreamhnan,1151,2041,4.5,2,4,20,11
-Mullach na Dheiragain,982,1830,3.0,2,4,20,11
-Maoile Lunndaidh,1007,1703,3.1,1,4,18,7
-Sgurr Mor (Loch Quoich),1003,1692,3.5,3,5,14,18
-Bidein a' Choire Sheasgaich,945,1677,4.0,11,9,30+,7
-Lurg Mhor,986,1662,3.8,1,4,18,7
+name,altitude,ascent_count,rating,rating_count,bb_count,cottage_count,island,latitude,longitude,county,county_top,hill_bagging,hostel_count,hotel_count,t100,topo_section
+Ben Lomond,974,20536,3.8,317,8,14,,56.190293,-4.633009,Stirling,Stirlingshire (CoH),http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=32,7,12,1,N03:Ben Lomond to the Campsie Fells
+Ben Nevis,1345,17894,3.9,253,30+,30+,,56.796891,-5.003675,Highland,Highland (UA) Inverness-shire (CoH) Highland (CoA),http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=278,18,30+,1,I01:Ben Nevis to Loch Treig
+Ben Lawers,1214,16065,3.9,231,30+,30+,,56.544922,-4.22086,Perth and Kinross,Perth and Kinross (UA) Perthshire (CoH) Tayside (CoA),http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=141,5,30+,1,L05:Glen Lyon to Loch Tay
+Schiehallion,1083,15928,3.6,267,30+,30+,,56.666933,-4.100229,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=103,5,30+,1,L03:Rannoch Moor to Pitlochry
+Beinn Ghlas,1103,15648,3.4,193,30+,30+,,56.535996,-4.236992,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=144,5,30+,0,L05:Glen Lyon to Loch Tay
+Ben Vorlich (Loch Earn),985,15000,3.3,245,30+,30+,,56.34268,-4.219448,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=17,5,30+,0,N05:Strathyre to Strathallan
+Ben Chonzie,931,13433,3.0,281,30+,30+,,56.453851,-3.992057,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1,5,30+,0,N04:Lochearnhead to Strath Tay
+Beinn Narnain,926,12761,3.8,203,6,18,,56.220956,-4.789003,Argyll and Bute,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=74,7,7,0,M03:The Arrochar Alps to Glen Fyne
+Cairn Gorm,1245,12256,3.0,158,9,30+,,57.116714,-3.644477,Highland/Moray,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=525,9,8,0,J03:The Cairngorms to the Hills of Cromdale
+Beinn Ime,1011,11962,3.4,184,6,18,,56.236794,-4.817125,Argyll and Bute,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=68,7,7,0,M03:The Arrochar Alps to Glen Fyne
+Mayar,928,11954,3.3,159,24,24,,56.848936,-3.246299,Angus,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=486,1,24,0,K03:The East Mounth to Strathmore
+Driesh,947,11591,3.2,154,24,24,,56.847985,-3.196538,Angus,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=483,1,24,0,K03:The East Mounth to Strathmore
+The Cairnwell,933,11258,2.1,167,6,21,,56.87952,-3.421199,Aberdeenshire/Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=435,9,3,0,K02:River Dee to Strath Ardle and Glen Shee
+Lochnagar,1155,11179,4.3,186,6,21,,56.960272,-3.245261,Aberdeenshire,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=457,9,3,1,K03:The East Mounth to Strathmore
+Carn Aosda,917,11170,2.1,173,6,21,,56.895696,-3.423274,Aberdeenshire,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=438,9,3,0,K02:River Dee to Strath Ardle and Glen Shee
+Meall nan Tarmachan,1044,10841,4.1,190,30+,30+,,56.521655,-4.301343,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=149,5,30+,0,L05:Glen Lyon to Loch Tay
+Stuc a' Chroin,975,10814,3.8,180,30+,30+,,56.329315,-4.237533,Perth and Kinross/Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=18,5,30+,0,N05:Strathyre to Strathallan
+Ben Vorlich (Loch Lomond),943,10687,3.4,169,6,18,,56.274021,-4.755046,Argyll and Bute,Dunbartonshire (CoH),http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=71,7,7,0,M03:The Arrochar Alps to Glen Fyne
+Ben Vane,915,10455,3.7,195,6,18,,56.249786,-4.781655,Argyll and Bute,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=76,7,7,0,M03:The Arrochar Alps to Glen Fyne
+Ben Macdui,1309,10446,3.8,162,30+,30+,,57.070368,-3.669099,Aberdeenshire/Moray,Moray (UA) Aberdeenshire (UA) Banffshire (CoH) Aberdeenshire (CoH) Grampian (CoA),http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=518,9,29,1,J03:The Cairngorms to the Hills of Cromdale
+Carn a' Gheoidh,975,10243,2.8,153,6,21,,56.873065,-3.466616,Aberdeenshire/Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=428,9,3,0,K02:River Dee to Strath Ardle and Glen Shee
+Glas Maol,1068,10101,2.8,137,6,21,,56.873059,-3.368236,Angus,Angus (UA) Angus (CoH),http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=461,9,3,0,K03:The East Mounth to Strathmore
+Mount Keen,939,9975,3.1,169,24,24,,56.969751,-2.973622,Aberdeenshire/Angus,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=485,1,24,0,K04:Glen Esk to Aberdeen
+Stob Dearg (Buachaille Etive Mor),1021,9878,4.6,184,17,30+,,56.646229,-4.900329,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=196,18,10,1,I06:Port Appin to Glen Coe
+Ben More,1174,9694,3.8,154,6,18,,56.385952,-4.540087,Stirling,Stirling (UA) Central (CoA),http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=26,7,7,1,N01:Crianlarich Hills to Loch Arklet
+Carn an Tuirc,1019,9444,2.8,120,6,21,,56.908274,-3.357125,Aberdeenshire,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=467,9,3,0,K03:The East Mounth to Strathmore
+An Caisteal,995,9440,3.4,128,6,18,,56.3386,-4.624368,Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=31,7,7,0,N01:Crianlarich Hills to Loch Arklet
+Cairn of Claise,1064,9377,2.4,110,6,21,,56.89417,-3.338637,Aberdeenshire/Angus,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=463,9,3,0,K03:The East Mounth to Strathmore
+Creag Leacach,987,9190,3.3,135,6,21,,56.854631,-3.387751,Angus/Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=472,9,3,0,K03:The East Mounth to Strathmore
+Stob Dubh (Buachaille Etive Beag),956,9162,4.2,121,17,30+,,56.638159,-4.970747,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=202,18,10,0,I06:Port Appin to Glen Coe
+Stob Coire Raineach (Buachaille Etive Beag),925,8966,3.9,112,17,30+,,56.649895,-4.951601,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=209,18,10,0,I06:Port Appin to Glen Coe
+Stob Binnein,1165,8878,4.0,118,6,18,,56.370717,-4.535753,Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=27,7,7,0,N01:Crianlarich Hills to Loch Arklet
+Carn Gorm,1029,8769,3.0,132,30+,30+,,56.622537,-4.226021,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=109,5,30+,0,L03:Rannoch Moor to Pitlochry
+Beinn a' Chroin,942,8751,3.4,124,6,18,,56.331991,-4.609644,Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=2925,7,7,0,N01:Crianlarich Hills to Loch Arklet
+Meall Garbh (Carn Mairg),968,8557,2.6,120,30+,30+,,56.637381,-4.207472,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=118,5,30+,0,L03:Rannoch Moor to Pitlochry
+Meall Corranaich,1069,8479,3.0,110,30+,30+,,56.540946,-4.253469,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=146,5,30+,0,L05:Glen Lyon to Loch Tay
+Meall Garbh (Ben Lawers),1118,8475,3.3,112,30+,30+,,56.566122,-4.207714,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=143,5,30+,0,L05:Glen Lyon to Loch Tay
+Carn Mairg,1042,8421,3.2,124,30+,30+,,56.634635,-4.145608,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=107,5,30+,0,L03:Rannoch Moor to Pitlochry
+Beinn Dorain,1076,8236,3.9,122,2,14,,56.50287,-4.722157,Argyll and Bute,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=105,6,8,0,L03:Rannoch Moor to Pitlochry
+Broad Cairn,998,8231,3.1,103,6,21,,56.919148,-3.249082,Aberdeenshire/Angus,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=470,9,3,0,K03:The East Mounth to Strathmore
+Creag Mhor (Meall na Aighean),981,8224,2.8,121,30+,30+,,56.620627,-4.128741,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=115,5,30+,0,L03:Rannoch Moor to Pitlochry
+Ben Lui,1130,8114,4.2,158,2,14,,56.397004,-4.810509,Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=65,6,8,1,M02:Lochgilphead to Crianlarich
+An Stuc,1118,8075,4.0,145,30+,30+,,56.560092,-4.216265,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=142,5,30+,0,L05:Glen Lyon to Loch Tay
+Meall Greigh,1001,7956,2.6,109,30+,30+,,56.567426,-4.159559,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=154,5,30+,0,L05:Glen Lyon to Loch Tay
+Stob na Broige  (Buachaille Etive Mor),956,7941,4.0,120,17,30+,,56.629879,-4.951146,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=203,18,10,0,I06:Port Appin to Glen Coe
+Bidean nam Bian,1150,7840,4.6,144,17,30+,,56.642768,-5.029335,Highland,Argyllshire (CoH),http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=191,18,10,1,I06:Port Appin to Glen Coe
+Meall a' Choire Leith,926,7765,2.6,95,30+,30+,,56.566312,-4.259617,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=163,5,30+,0,L05:Glen Lyon to Loch Tay
+Cruach Ardrain,1046,7746,3.6,99,6,18,,56.356429,-4.576151,Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=30,7,7,0,N01:Crianlarich Hills to Loch Arklet
+Carn Liath (Beinn a' Ghlo),975,7741,3.3,109,30+,30+,,56.80777,-3.74409,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=429,5,30+,0,K01:Glen Tilt to Blairgowrie
+Carn an t-Sagairt Mor,1047,7700,2.6,101,6,21,,56.942973,-3.303227,Aberdeenshire,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=465,9,3,0,K03:The East Mounth to Strathmore
+Cairn Bannoch,1012,7670,2.6,95,6,21,,56.927728,-3.278403,Aberdeenshire/Angus,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=468,9,3,0,K03:The East Mounth to Strathmore
+Carn a' Choire Bhoidheach,1118,7616,2.4,105,6,21,,56.945773,-3.272707,Aberdeenshire,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=459,9,3,0,K03:The East Mounth to Strathmore
+Beinn Tulaichean,946,7516,2.9,94,6,18,,56.342216,-4.56333,Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=35,7,7,0,N01:Crianlarich Hills to Loch Arklet
+Beinn an Dothaidh,1004,7495,3.2,100,2,14,,56.53013,-4.713964,Argyll and Bute,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=112,6,8,0,L03:Rannoch Moor to Pitlochry
+Beinn Chabhair,933,7483,3.1,141,6,18,,56.325779,-4.641493,Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=38,7,7,0,N01:Crianlarich Hills to Loch Arklet
+Geal-charn (Drumochter),917,7472,2.7,101,12,30+,,56.874433,-4.304519,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=392,9,12,0,J01:Dalwhinnie to the River Tummel
+A' Mharconaich,975,7317,2.9,95,12,30+,,56.857002,-4.290668,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=386,9,12,0,J01:Dalwhinnie to the River Tummel
+Tolmount,958,7277,2.5,88,6,21,,56.904734,-3.29793,Aberdeenshire/Angus,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=479,9,3,0,K03:The East Mounth to Strathmore
+Tom Buidhe,957,7157,2.0,101,6,21,,56.893615,-3.292356,Angus,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=480,9,3,0,K03:The East Mounth to Strathmore
+Ben Cruachan,1126,7104,4.3,144,2,14,,56.42684,-5.131834,Argyll and Bute,Argyll and Bute (UA) Strathclyde (CoA),http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=232,6,8,1,L02:Ben Cruachan to Bridge of Orchy
+Ben Wyvis,1046,7062,3.3,144,30+,30+,,57.678914,-4.57925,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1088,11,30+,0,B04:Loch Vaich to Tarbat Ness
+Braigh Coire Chruinn-bhalgain,1070,7015,3.5,109,30+,30+,,56.831083,-3.729505,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=422,5,30+,0,K01:Glen Tilt to Blairgowrie
+Sgor Gaoith,1118,6850,4.0,129,12,30+,,57.068561,-3.810856,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=548,9,12,0,J03:The Cairngorms to the Hills of Cromdale
+Beinn a' Chleibh,916,6688,2.6,101,2,14,,56.39023,-4.83563,Argyll and Bute/Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=75,6,8,0,M02:Lochgilphead to Crianlarich
+Carn nan Gabhar,1121,6597,3.9,93,30+,30+,,56.839836,-3.688055,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=421,5,30+,0,K01:Glen Tilt to Blairgowrie
+Carn Mor Dearg,1220,6574,4.1,97,30+,30+,,56.805246,-4.986616,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=282,18,30+,0,I01:Ben Nevis to Loch Treig
+Bynack More,1090,6559,3.6,91,9,30+,,57.13822,-3.584716,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=557,9,8,0,J03:The Cairngorms to the Hills of Cromdale
+Sgorr nam Fiannaidh (Aonach Eagach),967,6508,4.5,98,17,30+,,56.679369,-5.037125,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=178,7,10,0,I05:Aonach Eagach to Rannoch Station
+Stob Coire Sgreamhach,1072,6502,4.1,85,17,30+,,56.638314,-5.010284,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=194,18,10,0,I06:Port Appin to Glen Coe
+Meall Dearg (Aonach Eagach),953,6409,4.6,104,17,30+,,56.680721,-5.003266,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=179,18,10,0,I05:Aonach Eagach to Rannoch Station
+Am Bodach,1032,6334,3.9,81,17,30+,,56.741729,-4.983387,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=303,18,10,0,I02:The Mamores
+Beinn Dubhchraig,978,6316,3.2,88,2,14,,56.391295,-4.743193,Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=69,6,8,0,M02:Lochgilphead to Crianlarich
+Meall Buidhe (Glen Lyon),932,6301,3.0,114,30+,30+,,56.617222,-4.44864,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=123,5,30+,0,L03:Rannoch Moor to Pitlochry
+Stuchd an Lochain,960,6226,3.6,97,30+,30+,,56.570907,-4.470602,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=120,5,30+,0,L03:Rannoch Moor to Pitlochry
+Beinn Udlamain,1010,6221,2.8,84,12,30+,,56.835444,-4.329976,Highland/Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=383,9,12,0,J01:Dalwhinnie to the River Tummel
+Sgairneach Mhor,991,6161,3.0,89,12,30+,,56.828447,-4.297792,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=384,9,12,0,J01:Dalwhinnie to the River Tummel
+Stob Coire a' Chairn,981,6151,3.3,67,30+,30+,,56.750756,-4.968985,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=313,18,30+,0,I02:The Mamores
+Meall Ghaordaidh,1039,6148,2.9,107,30+,30+,,56.525809,-4.416654,Perth and Kinross/Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=150,5,30+,0,L05:Glen Lyon to Loch Tay
+Stob Daimh,998,6145,3.6,82,2,14,,56.431327,-5.091319,Argyll and Bute,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=244,6,8,0,L02:Ben Cruachan to Bridge of Orchy
+An Gearanach,982,6092,4.1,78,30+,30+,,56.759172,-4.96623,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=312,18,30+,0,I02:The Mamores
+Ben Oss,1029,6075,3.4,89,2,14,,56.389272,-4.775488,Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=67,6,8,0,M02:Lochgilphead to Crianlarich
+Braeriach,1296,6033,4.2,94,30+,30+,,57.078307,-3.728373,Aberdeenshire/Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=519,9,29,1,J03:The Cairngorms to the Hills of Cromdale
+Ben Challum,1025,6014,3.0,102,2,14,,56.454573,-4.619184,Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=152,6,8,0,L04:Glen Orchy to Glen Lochay
+Sgurr a'Mhaim,1099,6002,4.1,75,17,30+,,56.75592,-5.00369,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=295,18,10,1,I02:The Mamores
+Meall a'Bhuiridh,1108,5982,3.1,85,17,30+,,56.612217,-4.852127,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=233,18,10,0,L01:Loch Etive to the Black Mount
+Meall Chuaich,951,5917,2.8,125,12,30+,,56.96385,-4.112568,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=388,9,12,0,J02:Glen Tromie and Pass of Drumochter to Glen Tilt
+Sgorr Dhearg (Beinn a' Bheithir),1024,5845,4.4,89,17,30+,,56.653921,-5.17151,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=195,18,10,0,I06:Port Appin to Glen Coe
+Beinn a' Chochuill,980,5766,3.2,77,2,14,,56.449781,-5.068536,Argyll and Bute,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=251,6,8,0,L02:Ben Cruachan to Bridge of Orchy
+Ben Hope,927,5754,3.8,99,30+,30+,,58.413113,-4.60786,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1123,4,30+,1,A02:Strathmore to Strath Naver
+Stob Ban (Mamores),999,5738,4.4,91,30+,30+,,56.743706,-5.030328,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=309,18,30+,0,I02:The Mamores
+Tom na Gruagaich (Beinn Alligin),922,5720,4.4,107,9,30+,,57.580519,-5.581912,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=968,7,11,0,C01:Loch Torridon to Loch Maree
+A' Bhuidheanach Bheag,936,5710,2.3,102,12,30+,,56.870342,-4.199001,Highland/Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=390,9,12,0,J02:Glen Tromie and Pass of Drumochter to Glen Tilt
+Carn na Caim,941,5695,2.1,82,12,30+,,56.911739,-4.174478,Highland/Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=389,9,12,0,J02:Glen Tromie and Pass of Drumochter to Glen Tilt
+Beinn Eunaich,989,5684,3.2,84,2,14,,56.450352,-5.026639,Argyll and Bute,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=249,6,8,0,L02:Ben Cruachan to Bridge of Orchy
+Sgorr Dhonuill (Beinn a' Bheithir),1001,5597,4.3,100,17,30+,,56.650499,-5.197757,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=198,18,10,0,I06:Port Appin to Glen Coe
+An Socach (Braemar),944,5570,3.0,81,6,21,,56.902295,-3.513165,Aberdeenshire,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=433,9,3,0,K02:River Dee to Strath Ardle and Glen Shee
+Sgurr Mor (Beinn Alligin),986,5456,4.6,103,9,30+,,57.59082,-5.572764,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=957,7,11,1,C01:Loch Torridon to Loch Maree
+Creise,1100,5419,3.9,75,17,30+,,56.614448,-4.871987,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=235,18,10,0,L01:Loch Etive to the Black Mount
+Creag a'Mhaim,947,5285,3.1,53,3,30+,,57.120971,-5.160048,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=700,1,3,0,E03:Loch Hourn to Glen Shiel
+Druim Shionnach,987,5283,3.5,50,3,30+,,57.126794,-5.182841,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=692,1,3,0,E03:Loch Hourn to Glen Shiel
+Mullach nan Coirean,939,5262,3.4,79,30+,30+,,56.749866,-5.072446,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=321,18,30+,0,I02:The Mamores
+Creag Meagaidh,1130,5252,4.0,91,10,19,,56.952023,-4.602117,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=658,18,5,0,H04:Glen Roy to Loch Laggan
+Maol chinn-dearg,981,5233,3.4,48,3,30+,,57.12756,-5.252651,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=693,1,3,0,E03:Loch Hourn to Glen Shiel
+Aonach Air Chrith,1021,5216,3.9,53,3,30+,,57.12464,-5.221291,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=685,1,3,0,E03:Loch Hourn to Glen Shiel
+Bla Bheinn,928,5214,4.6,115,30+,30+,Skye,57.219565,-6.09321,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1255,11,28,1,Y03:The Red Cuillin to the Sleat
+Derry Cairngorm,1155,5206,3.3,78,6,21,,57.062801,-3.622004,Aberdeenshire,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=539,9,3,0,J03:The Cairngorms to the Hills of Cromdale
+Carn a'Mhaim,1037,5205,3.9,81,6,21,,57.036871,-3.658384,Aberdeenshire,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=567,9,3,0,J03:The Cairngorms to the Hills of Cromdale
+Cairn Toul,1291,5120,4.0,83,30+,30+,,57.054406,-3.710774,Aberdeenshire,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=521,9,29,0,J03:The Cairngorms to the Hills of Cromdale
+Carn Liath (Creag Meagaidh),1006,5103,2.8,77,10,19,,56.978784,-4.515288,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=668,18,5,0,H04:Glen Roy to Loch Laggan
+A' Chailleach (Monadhliath),930,5019,2.7,93,12,30+,,57.109564,-4.179285,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=623,9,12,0,H05:The Eastern Monadh Liath to the Moray Firth
+Stob a' Choire Odhair,945,5007,3.5,79,2,14,,56.573308,-4.838302,Argyll and Bute/Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=255,6,8,0,L01:Loch Etive to the Black Mount
+Stob Poite Coire Ardair,1054,5000,2.9,77,10,19,,56.964037,-4.585762,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=662,18,5,0,H04:Glen Roy to Loch Laggan
+The Devil's Point,1004,4945,3.9,86,30+,30+,,57.03571,-3.688803,Aberdeenshire,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=575,9,29,1,J03:The Cairngorms to the Hills of Cromdale
+Sgurr an Doire Leathain,1010,4933,3.8,42,3,30+,,57.136879,-5.281532,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=687,1,3,0,E03:Loch Hourn to Glen Shiel
+Stob Ghabhar,1090,4926,4.3,101,2,14,,56.568103,-4.882099,Argyll and Bute/Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=237,6,8,0,L01:Loch Etive to the Black Mount
+Sgurr an Lochain,1004,4869,3.9,50,3,30+,,57.141296,-5.297483,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=690,1,3,0,E03:Loch Hourn to Glen Shiel
+Creag nan Damh,918,4847,3.2,46,3,30+,,57.147262,-5.33496,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=708,1,3,0,E03:Loch Hourn to Glen Shiel
+Beinn Achaladair,1038,4833,3.7,66,2,14,,56.551891,-4.69453,Argyll and Bute/Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=108,6,8,0,L03:Rannoch Moor to Pitlochry
+Sgor an Lochain Uaine,1258,4831,4.0,79,30+,30+,,57.058367,-3.725896,Aberdeenshire,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=523,9,29,0,J03:The Cairngorms to the Hills of Cromdale
+Glas Tulaichean,1051,4809,2.9,79,30+,30+,,56.865757,-3.558163,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=424,5,30+,0,K02:River Dee to Strath Ardle and Glen Shee
+Ben More (Mull),966,4792,4.0,94,10,30+,Mull,56.424829,-6.014015,Argyll and Bute,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1301,3,3,1,Y06:The Ross of Mull to Ardmeanach and Craignure
+Ruadh-stac Mor (Beinn Eighe),1010,4763,4.5,95,9,30+,,57.593735,-5.429454,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=955,7,11,1,C01:Loch Torridon to Loch Maree
+Spidean Coire nan Clach (Beinn Eighe),993,4762,4.5,84,9,30+,,57.582098,-5.403706,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=956,7,11,0,C01:Loch Torridon to Loch Maree
+Na Gruagaichean,1056,4742,3.8,67,17,30+,,56.743689,-4.939883,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=301,18,10,0,I02:The Mamores
+Aonach Mor,1221,4704,3.3,73,30+,30+,,56.812941,-4.961712,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=281,18,30+,0,I01:Ben Nevis to Loch Treig
+Beinn a' Chreachain,1081,4630,3.4,55,2,14,,56.560386,-4.647622,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=104,6,8,0,L03:Rannoch Moor to Pitlochry
+Ben Starav,1078,4628,4.2,89,17,30+,,56.538922,-5.049748,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=238,18,10,0,L01:Loch Etive to the Black Mount
+Carn Sgulain,920,4624,1.9,93,12,30+,,57.124371,-4.176986,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=626,9,12,0,H05:The Eastern Monadh Liath to the Moray Firth
+Meall Glas,959,4612,2.6,78,6,18,,56.455712,-4.546821,Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=158,7,7,0,L04:Glen Orchy to Glen Lochay
+Sgiath Chuil,921,4588,2.7,80,6,18,,56.453147,-4.495654,Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=165,7,7,0,L04:Glen Orchy to Glen Lochay
+Beinn Bhuidhe,948,4567,3.3,113,2,14,,56.326659,-4.906723,Argyll and Bute,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=70,6,8,0,M02:Lochgilphead to Crianlarich
+Mullach Clach a'Bhlair,1019,4566,2.6,97,12,30+,,57.011879,-3.841287,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=571,9,12,0,J03:The Cairngorms to the Hills of Cromdale
+Beinn Mheadhoin,1182,4462,4.3,82,30+,30+,,57.095849,-3.611464,Moray,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=531,9,29,0,J03:The Cairngorms to the Hills of Cromdale
+Carn Dearg (Monadhliath),945,4457,3.1,71,12,30+,,57.092261,-4.253246,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=621,9,12,0,H05:The Eastern Monadh Liath to the Moray Firth
+Geal Charn (Monadhliath),926,4424,2.6,81,12,30+,,57.057418,-4.373572,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=624,9,12,0,H05:The Eastern Monadh Liath to the Moray Firth
+Conival,987,4422,3.8,76,4,30+,,58.135689,-4.883497,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1184,5,3,0,A05:Scourie and the Point of Stoer to Lairg
+Binnein Mor,1130,4373,4.1,65,17,30+,,56.754376,-4.925796,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=287,18,10,0,I02:The Mamores
+Carn a' Chlamain,963,4330,3.2,81,30+,30+,,56.860965,-3.779634,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=409,5,30+,0,J02:Glen Tromie and Pass of Drumochter to Glen Tilt
+Spidean a' Choire Leith (Liathach),1055,4314,4.7,125,9,30+,,57.564188,-5.463608,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=953,7,11,1,C01:Loch Torridon to Loch Maree
+Ben More Assynt,998,4271,4.0,75,4,30+,,58.138164,-4.858208,Highland,Sutherland (CoH),http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1183,5,3,0,A05:Scourie and the Point of Stoer to Lairg
+Bidein a' Ghlas Thuill (An Teallach),1062,4262,4.5,86,23,30+,,57.807098,-5.251767,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1003,5,16,0,B05:Strath na Sealga to Loch Broom
+Mullach an Rathain (Liathach),1023,4226,4.7,98,9,30+,,57.560875,-5.492498,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=954,7,11,0,C01:Loch Torridon to Loch Maree
+Aonach Beag (Nevis Range),1234,4215,3.7,73,30+,30+,,56.799998,-4.954121,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=279,18,30+,0,I01:Ben Nevis to Loch Treig
+Sgurr na Ciste Duibhe,1027,4188,4.1,62,3,30+,,57.180924,-5.337134,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=825,1,3,0,E02:Shiel Bridge to Inverness
+Sgurr Fhuaran,1067,4166,4.2,61,3,30+,,57.19615,-5.34765,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=815,1,3,1,E02:Shiel Bridge to Inverness
+Bruach na Frithe,958,4127,4.1,69,30+,30+,Skye,57.246743,-6.210776,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1247,11,28,0,Y02:Duirinish to the Black Cuillin
+Sgurr Fiona (An Teallach),1060,4082,4.5,89,23,30+,,57.800726,-5.259443,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1004,5,16,1,B05:Strath na Sealga to Loch Broom
+Fionn Bheinn,933,4072,2.9,95,4,18,,57.611148,-5.102713,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1050,7,1,0,B08:The Fannaichs to Contin
+Sgurr na Carnach,1002,4066,3.8,56,3,30+,,57.189034,-5.349224,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=827,1,3,0,E02:Shiel Bridge to Inverness
+Carn an Righ,1029,4033,2.7,59,30+,30+,,56.876583,-3.595273,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=426,5,30+,0,K02:River Dee to Strath Ardle and Glen Shee
+Beinn Bhreac,931,4014,2.6,65,6,21,,57.055072,-3.553472,Aberdeenshire,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=587,9,3,0,J03:The Cairngorms to the Hills of Cromdale
+Stob a' Choire Mheadhoin,1106,3966,3.5,59,10,19,,56.823685,-4.760183,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=292,18,5,0,I01:Ben Nevis to Loch Treig
+Glas Bheinn Mhor,997,3965,3.5,59,17,30+,,56.542416,-5.005267,Argyll and Bute/Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=245,18,10,0,L01:Loch Etive to the Black Mount
+Chno Dearg,1046,3961,2.7,63,10,19,,56.830086,-4.660831,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=351,18,5,0,I03:Blackwater Reservoir to Glen Spean
+Beinn a' Chaorainn (Glen Spean),1050,3955,2.9,59,10,19,,56.928624,-4.653644,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=663,18,5,0,H04:Glen Roy to Loch Laggan
+Stob Coire Sgriodain,979,3951,3.3,52,10,19,,56.831745,-4.694918,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=356,18,5,0,I03:Blackwater Reservoir to Glen Spean
+Beinn Dearg (Blair Atholl),1008,3909,2.9,80,30+,30+,,56.877346,-3.883719,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=406,5,30+,0,J02:Glen Tromie and Pass of Drumochter to Glen Tilt
+Stob Coire Easain,1115,3907,3.7,59,10,19,,56.818199,-4.77371,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=290,18,5,0,I01:Ben Nevis to Loch Treig
+Slioch,981,3898,4.4,72,9,30+,,57.667176,-5.347047,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1010,7,11,1,B07:Slioch
+The Saddle,1010,3898,4.5,95,3,30+,,57.162395,-5.414721,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=688,1,3,1,E03:Loch Hourn to Glen Shiel
+Ben Klibreck,961,3857,3.3,65,30+,30+,,58.235202,-4.41113,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1165,4,30+,0,A04:Altnaharra to the Dornoch Firth
+Beinn a' Chaorainn (Cairngorms),1082,3829,2.8,58,6,21,,57.093272,-3.577434,Aberdeenshire/Moray,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=559,9,3,0,J03:The Cairngorms to the Hills of Cromdale
+Beinn a'Bhuird,1197,3826,3.7,67,6,21,,57.08759,-3.499366,Aberdeenshire/Moray,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=529,9,3,0,J03:The Cairngorms to the Hills of Cromdale
+Sgurr Eilde Mor,1010,3825,3.7,56,17,30+,,56.750015,-4.895436,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=305,18,10,0,I02:The Mamores
+Sron a' Choire Ghairbh,937,3794,3.2,58,5,14,,57.00784,-4.928747,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=758,18,3,0,E07:Loch Arkaig to Loch Garry
+Sgurr na Banachdich,965,3767,4.0,63,30+,30+,Skye,57.220972,-6.241638,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1245,11,28,0,Y02:Duirinish to the Black Cuillin
+Ben Avon,1171,3752,4.1,79,6,21,,57.099347,-3.434438,Aberdeenshire/Moray,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=536,9,3,0,J03:The Cairngorms to the Hills of Cromdale
+Beinn Teallach,915,3746,2.5,61,10,19,,56.935932,-4.694754,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=675,18,5,0,H04:Glen Roy to Loch Laggan
+Carn Ghluasaid,957,3744,3.0,62,3,30+,,57.165959,-5.068159,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=871,1,3,0,E02:Shiel Bridge to Inverness
+Saileag,956,3707,3.0,48,3,30+,,57.181264,-5.281331,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=839,1,3,0,E02:Shiel Bridge to Inverness
+Beinn Mhanach,953,3689,3.0,66,2,14,,56.534041,-4.646042,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=122,6,8,0,L03:Rannoch Moor to Pitlochry
+Meall na Teanga,918,3688,3.3,57,5,14,,56.989012,-4.930955,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=759,18,3,0,E07:Loch Arkaig to Loch Garry
+Beinn Iutharn Mhor,1045,3644,3.0,52,6,21,,56.894994,-3.568229,Aberdeenshire/Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=425,9,3,0,K02:River Dee to Strath Ardle and Glen Shee
+Sgurr a'Bhealaich Dheirg,1036,3638,4.0,53,3,30+,,57.177825,-5.252177,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=821,1,3,0,E02:Shiel Bridge to Inverness
+Aonach Meadhoin,1001,3633,3.3,47,3,30+,,57.173026,-5.229166,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=828,1,3,0,E02:Shiel Bridge to Inverness
+Carn Bhac,946,3625,2.5,59,6,21,,56.930541,-3.56088,Aberdeenshire,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=432,9,3,0,K02:River Dee to Strath Ardle and Glen Shee
+Binnein Beag,943,3620,3.5,51,17,30+,,56.766961,-4.911161,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=320,18,10,0,I02:The Mamores
+Stob Choire Claurigh,1177,3612,3.5,50,10,19,,56.823786,-4.849624,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=285,18,5,0,I01:Ben Nevis to Loch Treig
+Beinn Dearg (Ullapool),1084,3602,4.0,59,23,30+,,57.78635,-4.929557,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1062,5,16,0,B03:Loch Broom to Bonar Bridge
+Sgurr nan Conbhairean,1109,3597,3.9,54,3,30+,,57.177622,-5.095407,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=863,1,3,0,E02:Shiel Bridge to Inverness
+Beinn na Lap,937,3564,3.1,76,30+,30+,,56.78939,-4.659994,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=364,18,30+,0,I03:Blackwater Reservoir to Glen Spean
+Beinn Sgulaird,937,3558,3.7,80,30+,30+,,56.566232,-5.170365,Argyll and Bute,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=207,6,21,0,I07:Loch Creran to Loch Etive
+Meall a' Chrasgaidh,934,3543,2.5,51,23,30+,,57.712866,-5.048742,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1049,5,16,0,B08:The Fannaichs to Contin
+Stob Coire an Laoigh,1116,3510,3.5,47,10,19,,56.810877,-4.884891,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=289,18,5,0,I01:Ben Nevis to Loch Treig
+Geal Charn,1049,3486,2.9,47,10,19,,56.897763,-4.457236,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=350,18,5,0,I04:Rannoch Station to Balgowan
+Stob Ban (Grey Corries),977,3478,3.9,60,10,19,,56.810656,-4.840877,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=314,18,5,0,I01:Ben Nevis to Loch Treig
+Gleouraich,1035,3454,4.2,54,5,14,,57.097163,-5.238035,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=683,18,3,0,E04:Loch Quoich to Loch Ness
+Creag Pitridh,924,3449,3.0,43,10,19,,56.899713,-4.484955,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=367,18,5,0,I04:Rannoch Station to Balgowan
+Beinn Fhionnlaidh,959,3448,3.3,66,30+,30+,,56.600978,-5.104749,Argyll and Bute,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=201,6,21,0,I06:Port Appin to Glen Coe
+Sgurr Alasdair,992,3436,4.6,80,30+,30+,Skye,57.206588,-6.224176,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1239,11,28,1,Y02:Duirinish to the Black Cuillin
+Tom a' Choinich,1112,3427,3.4,57,4,20,,57.299518,-5.048959,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=810,11,2,0,E01:Dornie to Cannich
+Inaccessible Pinnacle,986,3423,4.6,68,30+,30+,Skye,57.213252,-6.234817,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1240,11,28,1,Y02:Duirinish to the Black Cuillin
+Spidean Mialach,996,3394,3.7,49,5,14,,57.088964,-5.193614,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=691,18,3,0,E04:Loch Quoich to Loch Ness
+Sail Chaorainn,1002,3390,3.1,54,3,30+,,57.191622,-5.091199,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=867,1,3,0,E02:Shiel Bridge to Inverness
+Sgurr nan Clach Geala,1093,3382,4.1,59,23,30+,,57.696278,-5.048237,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1041,5,16,0,B08:The Fannaichs to Contin
+Sgurr na Sgine,945,3369,3.6,62,3,30+,,57.147098,-5.396634,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=701,1,3,0,E03:Loch Hourn to Glen Shiel
+Meall nan Ceapraichean,977,3350,3.1,43,23,30+,,57.798514,-4.934012,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1064,5,16,0,B03:Loch Broom to Bonar Bridge
+Maol Chean-dearg,933,3343,3.7,64,4,18,,57.491697,-5.465549,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=982,7,1,0,B10:Loch Carron to Coulin Forest
+Beinn a' Chlachair,1087,3342,3.3,45,10,19,,56.869525,-4.509684,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=349,18,5,0,I04:Rannoch Station to Balgowan
+Sgor na h-Ulaidh,994,3342,3.6,53,17,30+,,56.619796,-5.08006,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=199,18,10,0,I06:Port Appin to Glen Coe
+Sgurr nan Gillean,964,3324,4.7,90,30+,30+,Skye,57.248215,-6.193159,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1246,11,28,1,Y02:Duirinish to the Black Cuillin
+Toll Creagach,1054,3321,2.7,52,4,20,,57.309227,-4.999953,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=818,11,2,0,E01:Dornie to Cannich
+Stob Coir an Albannaich,1044,3289,3.7,56,17,30+,,56.554903,-4.979809,Argyll and Bute/Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=241,18,10,0,L01:Loch Etive to the Black Mount
+Sgurr Breac,999,3283,3.4,54,23,30+,,57.691943,-5.09131,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1042,5,16,0,B08:The Fannaichs to Contin
+Sgurr Choinnich Mor,1094,3275,3.8,48,30+,30+,,56.80043,-4.90396,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=296,18,30+,0,I01:Ben Nevis to Loch Treig
+A' Chailleach,997,3266,3.4,59,23,30+,,57.693773,-5.128713,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1043,5,16,0,B08:The Fannaichs to Contin
+Sgurr nan Each,923,3251,3.8,49,23,30+,,57.681008,-5.04635,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1051,5,16,0,B08:The Fannaichs to Contin
+Beinn Bhrotain,1157,3221,3.4,65,30+,30+,,57.009868,-3.723797,Aberdeenshire,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=538,9,29,0,J03:The Cairngorms to the Hills of Cromdale
+Beinn nan Aighenan,960,3217,3.3,61,17,30+,,56.520221,-5.011249,Argyll and Bute,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=254,18,10,0,L01:Loch Etive to the Black Mount
+Creag Mhor (Glen Lochay),1047,3207,3.1,49,30+,30+,,56.489519,-4.614038,Perth and Kinross/Stirling,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=148,5,30+,0,L04:Glen Orchy to Glen Lochay
+A' Chralaig,1120,3206,3.7,50,3,30+,,57.184186,-5.154837,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=862,1,3,0,E02:Shiel Bridge to Inverness
+Eididh nan Clach Geala,927,3206,3.3,42,23,30+,,57.813501,-4.934202,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1068,5,16,0,B03:Loch Broom to Bonar Bridge
+Monadh Mor,1113,3198,2.8,55,30+,30+,,57.026791,-3.750086,Aberdeenshire/Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=549,9,29,0,J03:The Cairngorms to the Hills of Cromdale
+Cona' Mheall,978,3188,3.8,49,23,30+,,57.791077,-4.903418,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1063,5,16,0,B03:Loch Broom to Bonar Bridge
+Sgurr Mor,1110,3184,3.9,57,23,30+,,57.700133,-5.016765,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1040,5,16,0,B08:The Fannaichs to Contin
+Carn Dearg (Corrour),941,3179,3.2,54,30+,30+,,56.759931,-4.589888,Highland/Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=363,18,30+,0,I04:Rannoch Station to Balgowan
+Beinn Liath Mhor Fannaich,954,3170,2.9,51,23,30+,,57.706095,-4.989775,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1046,5,16,0,B08:The Fannaichs to Contin
+Beinn Heasgarnich,1078,3165,3.1,58,30+,30+,,56.510272,-4.579218,Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=145,5,30+,0,L04:Glen Orchy to Glen Lochay
+Meall nan Eun,928,3142,2.8,52,17,30+,,56.561176,-4.942926,Argyll and Bute,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=258,18,10,0,L01:Loch Etive to the Black Mount
+Ciste Dhubh,979,3141,4.1,58,3,30+,,57.199234,-5.209032,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=834,1,3,0,E02:Shiel Bridge to Inverness
+Sgurr nan Eag,924,3108,4.2,51,30+,30+,Skye,57.19581,-6.211264,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1258,11,28,0,Y02:Duirinish to the Black Cuillin
+Ben Alder,1148,3080,4.2,58,12,30+,,56.813796,-4.465089,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=345,9,12,1,I04:Rannoch Station to Balgowan
+Moruisg,928,3074,2.6,62,4,18,,57.499712,-5.17063,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=899,7,1,0,D01:Glen Carron to Loch Luichart
+Beinn Liath Mhor,926,3033,3.9,71,4,18,,57.512083,-5.400618,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=983,7,1,0,B10:Loch Carron to Coulin Forest
+Sgor Gaibhre,955,2971,3.4,53,30+,30+,,56.772553,-4.546498,Highland/Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=361,18,30+,0,I04:Rannoch Station to Balgowan
+Mullach Fraoch-choire,1102,2910,4.1,54,3,30+,,57.205379,-5.155652,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=864,1,3,0,E02:Shiel Bridge to Inverness
+Sgurr a'Mhadaidh,918,2907,4.2,43,30+,30+,Skye,57.230869,-6.231931,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1259,11,28,0,Y02:Duirinish to the Black Cuillin
+Meall Gorm,949,2902,2.8,40,23,30+,,57.680837,-4.983801,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1047,5,16,0,B08:The Fannaichs to Contin
+An Coileachan,923,2884,2.9,46,23,30+,,57.667625,-4.949498,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1052,5,16,0,B08:The Fannaichs to Contin
+Beinn Sgritheall,974,2879,4.1,70,3,30+,,57.153816,-5.579711,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=695,1,3,0,E03:Loch Hourn to Glen Shiel
+Am Basteir,934,2871,4.4,58,30+,30+,Skye,57.24794,-6.202966,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1254,11,28,0,Y02:Duirinish to the Black Cuillin
+Sgurr Thuilm,963,2870,3.7,43,2,21,,56.937056,-5.389207,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=774,18,7,0,F01:Arisaig to Strathan
+Sgorr Ruadh,962,2861,4.0,50,4,18,,57.498622,-5.407747,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=981,7,1,0,B10:Loch Carron to Coulin Forest
+Sgurr nan Coireachan (Glenfinnan),956,2848,3.8,45,2,21,,56.935728,-5.448551,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=776,18,7,0,F01:Arisaig to Strathan
+Sgurr a' Ghreadaidh,973,2799,4.4,47,30+,30+,Skye,57.227313,-6.234425,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1243,11,28,0,Y02:Duirinish to the Black Cuillin
+Geal-charn (Alder),1132,2787,3.3,39,12,30+,,56.837836,-4.509694,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=346,9,12,0,I04:Rannoch Station to Balgowan
+An Sgarsoch,1006,2760,2.8,47,30+,30+,,56.932109,-3.754294,Aberdeenshire/Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=407,9,29,0,J02:Glen Tromie and Pass of Drumochter to Glen Tilt
+Sgurr Mhic Choinnich,948,2757,4.7,51,30+,30+,Skye,57.208928,-6.224112,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1248,11,28,0,Y02:Duirinish to the Black Cuillin
+Aonach Beag (Alder),1116,2746,3.5,42,6,21,,56.833498,-4.529175,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=347,9,3,0,I04:Rannoch Station to Balgowan
+Beinn Fhada,1032,2734,4.0,44,3,30+,,57.221002,-5.283503,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=823,1,3,0,E01:Dornie to Cannich
+Beinn Bheoil,1019,2730,3.0,41,12,30+,,56.813276,-4.430662,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=354,9,12,0,I04:Rannoch Station to Balgowan
+Carn an Fhidhleir (Carn Ealar),994,2707,2.5,45,30+,30+,,56.93602,-3.801534,Aberdeenshire/Highland/Perth and Kinross,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=408,9,29,0,J02:Glen Tromie and Pass of Drumochter to Glen Tilt
+Sgurr Dubh Mor,944,2706,4.3,49,30+,30+,Skye,57.204894,-6.211421,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1250,11,28,0,Y02:Duirinish to the Black Cuillin
+Sgurr na Ruaidhe,993,2682,2.8,38,4,20,,57.441497,-4.852465,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=894,11,2,0,D02:Loch Alsh to the Black Isle
+Mam Sodhail,1181,2678,3.5,39,4,20,,57.279801,-5.120267,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=804,11,2,0,E01:Dornie to Cannich
+Beinn Eibhinn,1102,2675,3.3,42,12,30+,,56.825255,-4.542077,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=348,9,12,0,I04:Rannoch Station to Balgowan
+Carn nan Gobhar (Strathfarrar),992,2652,3.0,38,4,20,,57.452331,-4.879935,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=895,11,2,0,D02:Loch Alsh to the Black Isle
+Am Faochagach,954,2650,2.6,56,23,30+,,57.771801,-4.853899,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1066,5,16,0,B03:Loch Broom to Bonar Bridge
+Carn Dearg (Loch Pattack),1034,2644,3.1,41,12,30+,,56.855242,-4.454693,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=352,9,12,0,I04:Rannoch Station to Balgowan
+Sgurr a' Choire Ghlais,1083,2623,3.8,40,4,20,,57.444288,-4.903757,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=884,11,2,0,D02:Loch Alsh to the Black Isle
+Sgurr Fhuar-thuill,1049,2613,3.2,40,4,20,,57.44968,-4.94178,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=886,11,2,0,D02:Loch Alsh to the Black Isle
+Sgurr a'Mhaoraich,1027,2569,4.0,52,5,14,,57.105849,-5.330509,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=684,18,3,0,E03:Loch Hourn to Glen Shiel
+Gairich,919,2568,3.8,48,5,14,,57.044879,-5.255827,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=741,18,3,0,E06:North Morar to Kingie
+Carn Eige,1183,2549,3.7,44,4,20,,57.287701,-5.115159,Highland,Ross and Cromarty (CoH),http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=803,11,2,0,E01:Dornie to Cannich
+Ladhar Bheinn,1020,2519,4.5,64,5,14,,57.075263,-5.591745,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=731,18,3,1,E05:Knoydart to Barrisdale Forest
+A' Ghlas-bheinn,918,2484,3.3,53,3,30+,,57.255081,-5.303686,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=846,1,3,0,E01:Dornie to Cannich
+Carn nan Gobhar (Loch Mullardoch),992,2454,2.7,34,4,20,,57.363304,-5.024544,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=936,11,2,0,D03:Killilan to Strathglass
+Gulvain,987,2397,3.6,48,2,21,,56.936211,-5.284511,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=773,18,7,0,F02:Loch Eil to Loch Arkaig
+Sgurr na Lapaich,1150,2381,4.0,35,4,20,,57.369311,-5.059726,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=926,11,2,0,D03:Killilan to Strathglass
+Luinne Bheinn,939,2276,3.9,41,5,14,,57.048325,-5.513607,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=739,18,3,0,E05:Knoydart to Barrisdale Forest
+Meall Buidhe (Knoydart),946,2227,3.9,41,5,14,,57.031552,-5.546334,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=737,18,3,0,E05:Knoydart to Barrisdale Forest
+Sgurr Ban,989,2200,3.2,32,23,30+,,57.718538,-5.265903,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1009,5,16,0,B06:Loch Ewe to Fisherfield Forest
+Mullach Coire Mhic Fhearchair,1019,2195,3.8,37,23,30+,,57.709022,-5.271342,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1007,5,16,0,B06:Loch Ewe to Fisherfield Forest
+Sgurr na Ciche,1040,2193,4.4,49,5,14,,57.013468,-5.456905,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=730,18,3,1,E06:North Morar to Kingie
+An Socach (Affric),921,2180,2.8,37,4,20,,57.25755,-5.171311,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=845,11,2,0,E01:Dornie to Cannich
+Sgurr a' Chaorachain,1053,2180,3.5,40,4,18,,57.452501,-5.189301,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=885,7,1,0,D02:Loch Alsh to the Black Isle
+Beinn Tarsuinn,937,2178,3.9,39,4,30+,,57.702051,-5.291634,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1019,5,3,0,B06:Loch Ewe to Fisherfield Forest
+A' Mhaighdean,967,2174,4.4,45,23,30+,,57.719653,-5.346721,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1014,5,16,1,B06:Loch Ewe to Fisherfield Forest
+Sgurr Choinnich,999,2174,3.4,44,4,18,,57.451026,-5.207916,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=892,7,1,0,D02:Loch Alsh to the Black Isle
+An Riabhachan,1129,2168,3.6,28,4,20,,57.362438,-5.104728,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=927,11,2,0,D03:Killilan to Strathglass
+Beinn Fhionnlaidh (Carn Eige),1005,2160,3.3,36,4,20,,57.305977,-5.129909,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=826,11,2,0,E01:Dornie to Cannich
+Seana Bhraigh,926,2160,4.2,48,23,30+,,57.84733,-4.89662,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1069,5,16,0,B03:Loch Broom to Bonar Bridge
+Sgurr nan Coireachan (Glen Dessary),953,2133,3.4,29,5,14,,57.007158,-5.40544,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=736,18,3,0,E06:North Morar to Kingie
+Ruadh Stac Mor,918,2131,4.0,31,23,30+,,57.726781,-5.329288,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=1023,5,16,0,B06:Loch Ewe to Fisherfield Forest
+An Socach (Mullardoch),1069,2128,3.6,22,4,20,,57.350229,-5.158603,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=931,11,2,0,D03:Killilan to Strathglass
+Garbh Chioch Mhor,1013,2078,3.7,36,5,14,,57.008556,-5.444322,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=732,18,3,0,E06:North Morar to Kingie
+Sgurr nan Ceathreamhnan,1151,2042,4.5,50,4,20,,57.254911,-5.222732,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=805,11,2,0,E01:Dornie to Cannich
+Mullach na Dheiragain,982,1831,3.0,31,4,20,,57.283399,-5.18635,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=833,11,2,0,E01:Dornie to Cannich
+Maoile Lunndaidh,1007,1703,3.1,39,4,18,,57.464477,-5.111002,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=890,7,1,0,D02:Loch Alsh to the Black Isle
+Sgurr Mor (Loch Quoich),1003,1693,3.5,39,5,14,,57.028446,-5.354189,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=733,18,3,0,E06:North Morar to Kingie
+Bidein a' Choire Sheasgaich,945,1677,4.0,39,9,30+,,57.419718,-5.250473,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=898,7,11,0,D02:Loch Alsh to the Black Isle
+Lurg Mhor,986,1662,3.8,36,4,18,,57.413091,-5.223666,Highland,,http://www.hill-bagging.co.uk/mountaindetails.php?qu=S&rf=896,7,1,0,D02:Loch Alsh to the Black Isle
