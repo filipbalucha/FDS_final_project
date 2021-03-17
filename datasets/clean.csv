@@ -1,0 +1,283 @@
+name,altitude,ascent_count,rating,region,report_count,rating_count,bb_count,hotel_count,hostel_count,cottage_count,camping_count,island,county,latitude,longitude,neighbor_count_1,neighbor_count_2.5,neighbor_count_5,neighbor_count_10,neighbor_count_15,neighbor_count_20
+Ben Nevis,1345,17902,3.84,Fort William,316,253,72,41,18,147,147,,Highland,56.796891,-5.003675,0,1,5,16,20,29
+Ben Macdui,1309,10449,3.78,Cairngorms,215,162,37,29,9,182,182,,Aberdeenshire/Moray,57.070368,-3.669099,0,0,7,14,17,20
+Braeriach,1296,6035,3.95,Cairngorms,141,94,37,29,9,182,182,,Aberdeenshire/Highland,57.078307,-3.728373,0,1,3,12,16,20
+Cairn Toul,1291,5121,3.86,Cairngorms,136,83,37,29,9,182,182,,Aberdeenshire,57.054406,-3.710774,0,2,6,14,18,21
+Sgor an Lochain Uaine,1258,4832,3.83,Cairngorms,139,79,37,29,9,182,182,,Aberdeenshire,57.058367,-3.725896,0,2,6,13,18,20
+Cairn Gorm,1245,12258,3.19,Cairngorms,205,158,37,29,9,182,182,,Highland/Moray,57.116714,-3.644477,0,0,3,12,16,17
+Aonach Beag (Nevis Range),1234,4216,3.67,Fort William,81,73,72,41,18,147,147,,Highland,56.799998,-4.954121,0,2,7,17,21,30
+Aonach Mor,1221,4705,3.45,Fort William,86,73,72,41,18,147,147,,Highland,56.812941,-4.961712,0,2,5,17,20,30
+Carn Mor Dearg,1220,6575,3.92,Fort William,164,97,72,41,18,147,147,,Highland,56.805246,-4.986616,0,3,3,17,21,29
+Ben Lawers,1214,16070,3.81,Perthshire,255,231,58,71,5,96,96,,Perth and Kinross,56.544922,-4.22086,0,4,6,8,12,17
+Beinn a'Bhuird,1197,3828,3.68,Cairngorms,77,67,37,29,9,182,182,,Aberdeenshire/Moray,57.08759,-3.499366,0,0,3,7,13,18
+Carn Eige,1183,2550,3.63,Loch Ness,68,44,69,55,11,97,97,,Highland,57.287701,-5.115159,1,2,5,11,21,36
+Beinn Mheadhoin,1182,4463,4.02,Cairngorms,105,82,37,29,9,182,182,,Moray,57.095849,-3.611464,0,1,5,12,16,18
+Mam Sodhail,1181,2679,3.56,Loch Ness,69,39,69,55,11,97,97,,Highland,57.279801,-5.120267,1,1,5,11,22,36
+Stob Choire Claurigh,1177,3613,3.56,Fort William,83,50,72,41,18,147,147,,Highland,56.823786,-4.849624,0,1,4,13,21,32
+Ben More,1174,9700,3.72,Loch Lomond,160,154,33,35,7,54,54,,Stirling,56.385952,-4.540087,0,1,2,9,13,21
+Ben Avon,1171,3753,3.86,Cairngorms,89,79,37,29,9,182,182,,Aberdeenshire/Moray,57.099347,-3.434438,0,0,1,3,8,16
+Stob Binnein,1165,8883,3.87,Loch Lomond,156,118,33,35,7,54,54,,Stirling,56.370717,-4.535753,0,1,3,8,12,21
+Beinn Bhrotain,1157,3223,3.51,Cairngorms,83,65,37,29,9,182,182,,Aberdeenshire,57.009868,-3.723797,0,1,3,12,17,27
+Derry Cairngorm,1155,5207,3.42,Cairngorms,123,78,37,29,9,182,182,,Aberdeenshire,57.062801,-3.622004,0,0,5,14,17,22
+Lochnagar,1155,11183,4.16,Cairngorms,212,186,37,29,9,182,182,,Aberdeenshire,56.960272,-3.245261,0,1,4,8,14,19
+Sgurr nan Ceathreamhnan,1151,2043,4.02,Loch Ness,56,50,69,55,11,97,97,,Highland,57.254911,-5.222732,0,0,3,14,29,39
+Bidean nam Bian,1150,7845,4.32,Fort William,146,144,72,41,18,147,147,,Highland,56.642768,-5.029335,0,1,7,10,30,36
+Sgurr na Lapaich,1150,2383,3.75,Loch Ness,51,35,69,55,11,97,97,,Highland,57.369311,-5.059726,0,1,2,7,19,24
+Ben Alder,1148,3081,3.88,Cairngorms,73,58,37,29,9,182,182,,Highland,56.813796,-4.465089,0,1,5,11,17,25
+Geal-charn (Alder),1132,2789,3.49,Cairngorms,71,39,37,29,9,182,182,,Highland,56.837836,-4.509694,0,2,5,11,20,25
+Ben Lui,1130,8115,4.0,Argyll,125,158,58,67,6,101,101,,Stirling,56.397004,-4.810509,0,2,3,4,11,30
+Binnein Mor,1130,4374,3.85,Fort William,105,65,72,41,18,147,147,,Highland,56.754376,-4.925796,0,3,7,18,27,34
+Creag Meagaidh,1130,5252,3.87,Fort William,84,91,72,41,18,147,147,,Highland,56.952023,-4.602117,0,1,2,5,13,19
+An Riabhachan,1129,2170,3.6,Loch Ness,50,28,69,55,11,97,97,,Highland,57.362438,-5.104728,0,0,3,9,17,26
+Ben Cruachan,1126,7104,4.13,Argyll,123,144,58,67,6,101,101,,Argyll and Bute,56.42684,-5.131834,0,0,2,3,5,12
+Carn nan Gabhar,1121,6601,3.79,Perthshire,108,93,58,71,5,96,96,,Perth and Kinross,56.839836,-3.688055,0,0,2,6,12,17
+A' Chralaig,1120,3208,3.65,Kintail,74,50,3,3,1,41,41,,Highland,57.184186,-5.154837,0,1,5,17,30,35
+An Stuc,1118,8076,3.9,Perthshire,150,145,58,71,5,96,96,,Perth and Kinross,56.560092,-4.216265,1,2,6,11,13,16
+Carn a' Choire Bhoidheach,1118,7619,2.82,Cairngorms,165,105,37,29,9,182,182,,Aberdeenshire,56.945773,-3.272707,0,3,5,9,15,21
+Meall Garbh (Ben Lawers),1118,8475,3.4,Perthshire,139,112,58,71,5,96,96,,Perth and Kinross,56.566122,-4.207714,1,2,6,11,13,16
+Sgor Gaoith,1118,6853,3.87,Cairngorms,128,129,37,29,9,182,182,,Highland,57.068561,-3.810856,0,0,0,9,14,18
+Aonach Beag (Alder),1116,2747,3.56,Cairngorms,62,42,37,29,9,182,182,,Highland,56.833498,-4.529175,0,2,4,12,22,26
+Stob Coire an Laoigh,1116,3511,3.54,Fort William,79,47,72,41,18,147,147,,Highland,56.810877,-4.884891,0,1,5,17,22,30
+Stob Coire Easain,1115,3910,3.64,Fort William,64,59,72,41,18,147,147,,Highland,56.818199,-4.77371,0,1,3,8,24,35
+Monadh Mor,1113,3200,3.24,Cairngorms,80,55,37,29,9,182,182,,Aberdeenshire/Highland,57.026791,-3.750086,0,1,4,10,16,24
+Tom a' Choinich,1112,3428,3.5,Loch Ness,71,57,69,55,11,97,97,,Highland,57.299518,-5.048959,0,0,4,10,17,31
+Sgurr Mor,1110,3184,3.74,Ullapool,82,57,24,16,5,72,72,,Highland,57.700133,-5.016765,0,3,6,8,15,23
+Sgurr nan Conbhairean,1109,3598,3.72,Kintail,66,54,3,3,1,41,41,,Highland,57.177622,-5.095407,0,2,4,11,26,35
+Meall a'Bhuiridh,1108,5984,3.32,Fort William,94,85,72,41,18,147,147,,Highland,56.612217,-4.852127,0,1,3,8,21,33
+Stob a' Choire Mheadhoin,1106,3969,3.56,Fort William,66,59,72,41,18,147,147,,Highland,56.823685,-4.760183,0,1,2,8,22,34
+Beinn Ghlas,1103,15651,3.43,Perthshire,245,193,58,71,5,96,96,,Perth and Kinross,56.535996,-4.236992,0,2,6,8,13,17
+Beinn Eibhinn,1102,2676,3.48,Cairngorms,62,42,37,29,9,182,182,,Highland,56.825255,-4.542077,0,2,3,13,19,26
+Mullach Fraoch-choire,1102,2912,3.82,Kintail,68,54,3,3,1,41,41,,Highland,57.205379,-5.155652,0,1,4,17,30,38
+Creise,1100,5420,3.78,Fort William,92,75,72,41,18,147,147,,Highland,56.614448,-4.871987,0,1,2,10,22,35
+Sgurr a'Mhaim,1099,6004,3.87,Fort William,129,75,72,41,18,147,147,,Highland,56.75592,-5.00369,0,4,8,17,25,33
+Sgurr Choinnich Mor,1094,3276,3.67,Fort William,73,48,72,41,18,147,147,,Highland,56.80043,-4.90396,0,1,6,18,22,32
+Sgurr nan Clach Geala,1093,3383,3.87,Ullapool,74,59,24,16,5,72,72,,Highland,57.696278,-5.048237,0,3,7,8,17,23
+Bynack More,1090,6560,3.62,Cairngorms,121,91,37,29,9,182,182,,Highland,57.13822,-3.584716,0,0,2,7,13,16
+Stob Ghabhar,1090,4927,4.06,Argyll,107,101,58,67,6,101,101,,Argyll and Bute/Highland,56.568103,-4.882099,0,0,2,10,22,32
+Beinn a' Chlachair,1087,3343,3.47,Fort William,67,45,72,41,18,147,147,,Highland,56.869525,-4.509684,0,0,5,8,22,25
+Beinn Dearg (Ullapool),1084,3603,3.79,Ullapool,66,59,24,16,5,72,72,,Highland,57.78635,-4.929557,0,2,4,6,13,16
+Schiehallion,1083,15936,3.58,Perthshire,189,267,58,71,5,96,96,,Perth and Kinross,56.666933,-4.100229,0,0,1,4,8,11
+Sgurr a' Choire Ghlais,1083,2624,3.66,Loch Ness,52,40,69,55,11,97,97,,Highland,57.444288,-4.903757,0,2,3,3,6,14
+Beinn a' Chaorainn (Cairngorms),1082,3829,3.23,Cairngorms,92,58,37,29,9,182,182,,Aberdeenshire/Moray,57.093272,-3.577434,0,1,5,13,16,18
+Beinn a' Chreachain,1081,4632,3.51,Argyll,87,55,58,67,6,101,101,,Perth and Kinross,56.560386,-4.647622,0,0,2,6,15,19
+Beinn Heasgarnich,1078,3165,3.35,Perthshire,57,58,58,71,5,96,96,,Perth and Kinross,56.510272,-4.579218,0,0,2,10,13,24
+Ben Starav,1078,4630,3.99,Fort William,96,89,72,41,18,147,147,,Highland,56.538922,-5.049748,0,0,3,9,21,25
+Beinn Dorain,1076,8239,3.79,Argyll,132,122,58,67,6,101,101,,Argyll and Bute,56.50287,-4.722157,0,0,1,7,16,30
+Stob Coire Sgreamhach,1072,6505,3.87,Fort William,136,85,72,41,18,147,147,,Highland,56.638314,-5.010284,0,2,7,12,30,36
+Braigh Coire Chruinn-bhalgain,1070,7019,3.55,Perthshire,112,109,58,71,5,96,96,,Perth and Kinross,56.831083,-3.729505,0,0,3,4,9,15
+An Socach (Mullardoch),1069,2130,3.61,Loch Ness,48,22,69,55,11,97,97,,Highland,57.350229,-5.158603,0,0,1,10,17,27
+Meall Corranaich,1069,8480,3.19,Perthshire,124,110,58,71,5,96,96,,Perth and Kinross,56.540946,-4.253469,0,2,6,8,14,17
+Glas Maol,1068,10104,3.02,Cairngorms,153,137,37,29,9,182,182,,Angus,56.873059,-3.368236,0,1,5,14,20,21
+Sgurr Fhuaran,1067,4168,3.9,Kintail,81,61,3,3,1,41,41,,Highland,57.19615,-5.34765,1,2,4,15,25,36
+Cairn of Claise,1064,9379,2.82,Cairngorms,158,110,37,29,9,182,182,,Aberdeenshire/Angus,56.89417,-3.338637,0,1,4,14,19,20
+Bidein a' Ghlas Thuill (An Teallach),1062,4264,4.12,Ullapool,78,86,24,16,5,72,72,,Highland,57.807098,-5.251767,1,1,1,2,7,17
+Sgurr Fiona (An Teallach),1060,4083,4.16,Ullapool,74,89,24,16,5,72,72,,Highland,57.800726,-5.259443,1,1,1,3,7,17
+Na Gruagaichean,1056,4743,3.68,Fort William,103,67,72,41,18,147,147,,Highland,56.743689,-4.939883,0,3,7,18,28,38
+Spidean a' Choire Leith (Liathach),1055,4317,4.34,Torridon,81,125,9,10,6,89,89,,Highland,57.564188,-5.463608,0,1,3,8,9,15
+Stob Poite Coire Ardair,1054,5000,3.23,Fort William,83,77,72,41,18,147,147,,Highland,56.964037,-4.585762,0,1,2,5,10,20
+Toll Creagach,1054,3322,3.17,Loch Ness,67,52,69,55,11,97,97,,Highland,57.309227,-4.999953,0,0,1,7,13,27
+Sgurr a' Chaorachain,1053,2180,3.55,Torridon,55,40,9,10,6,89,89,,Highland,57.452501,-5.189301,0,1,3,5,12,23
+Glas Tulaichean,1051,4809,3.21,Perthshire,74,79,58,71,5,96,96,,Perth and Kinross,56.865757,-3.558163,0,0,3,8,16,27
+Beinn a' Chaorainn (Glen Spean),1050,3956,3.27,Fort William,65,59,72,41,18,147,147,,Highland,56.928624,-4.653644,0,0,2,3,15,25
+Geal Charn,1049,3486,3.3,Fort William,68,47,72,41,18,147,147,,Highland,56.897763,-4.457236,0,1,3,10,18,25
+Sgurr Fhuar-thuill,1049,2614,3.44,Loch Ness,52,40,69,55,11,97,97,,Highland,57.44968,-4.94178,0,1,2,3,9,16
+Carn an t-Sagairt Mor,1047,7703,2.95,Cairngorms,155,101,37,29,9,182,182,,Aberdeenshire,56.942973,-3.303227,0,2,5,10,16,23
+Creag Mhor (Glen Lochay),1047,3207,3.38,Perthshire,62,49,58,71,5,96,96,,Perth and Kinross/Stirling,56.489519,-4.614038,0,0,2,9,16,27
+Ben Wyvis,1046,7065,3.41,Loch Ness,105,144,69,55,11,97,97,,Highland,57.678914,-4.57925,0,0,0,0,0,1
+Chno Dearg,1046,3962,3.14,Fort William,69,63,72,41,18,147,147,,Highland,56.830086,-4.660831,0,1,2,9,21,30
+Cruach Ardrain,1046,7749,3.59,Loch Lomond,132,99,33,35,7,54,54,,Stirling,56.356429,-4.576151,0,1,5,6,13,21
+Beinn Iutharn Mhor,1045,3644,3.33,Cairngorms,81,52,37,29,9,182,182,,Aberdeenshire/Perth and Kinross,56.894994,-3.568229,0,0,4,8,17,31
+Meall nan Tarmachan,1044,10844,3.96,Perthshire,147,190,58,71,5,96,96,,Perth and Kinross,56.521655,-4.301343,0,0,2,7,13,18
+Stob Coir an Albannaich,1044,3290,3.65,Fort William,70,56,72,41,18,147,147,,Argyll and Bute/Highland,56.554903,-4.979809,0,2,4,12,21,28
+Carn Mairg,1042,8422,3.31,Perthshire,128,124,58,71,5,96,96,,Perth and Kinross,56.634635,-4.145608,0,1,3,7,11,13
+Sgurr na Ciche,1040,2195,3.97,Fort William,61,49,72,41,18,147,147,,Highland,57.013468,-5.456905,1,1,2,7,11,22
+Meall Ghaordaidh,1039,6150,3.13,Perthshire,100,107,58,71,5,96,96,,Perth and Kinross/Stirling,56.525809,-4.416654,0,0,0,3,16,24
+Beinn Achaladair,1038,4834,3.66,Argyll,82,66,58,67,6,101,101,,Argyll and Bute/Perth and Kinross,56.551891,-4.69453,0,0,3,7,13,28
+Carn a'Mhaim,1037,5207,3.75,Cairngorms,117,81,37,29,9,182,182,,Aberdeenshire,57.036871,-3.658384,0,1,6,13,19,24
+Sgurr a'Bhealaich Dheirg,1036,3639,3.77,Kintail,74,53,3,3,1,41,41,,Highland,57.177825,-5.252177,0,2,5,24,31,36
+Gleouraich,1035,3455,3.89,Fort William,58,54,72,41,18,147,147,,Highland,57.097163,-5.238035,0,0,4,13,27,34
+Carn Dearg (Loch Pattack),1034,2645,3.38,Cairngorms,69,41,37,29,9,182,182,,Highland,56.855242,-4.454693,0,0,5,12,21,26
+Am Bodach,1032,6336,3.79,Fort William,123,81,72,41,18,147,147,,Highland,56.741729,-4.983387,0,3,6,17,26,33
+Beinn Fhada,1032,2735,3.76,Kintail,62,44,3,3,1,41,41,,Highland,57.221002,-5.283503,0,0,3,16,30,37
+Ben Oss,1029,6076,3.47,Argyll,101,89,58,67,6,101,101,,Stirling,56.389272,-4.775488,0,2,3,3,15,27
+Carn an Righ,1029,4033,3.16,Perthshire,69,59,58,71,5,96,96,,Perth and Kinross,56.876583,-3.595273,0,0,2,7,16,25
+Carn Gorm,1029,8770,3.2,Perthshire,137,132,58,71,5,96,96,,Perth and Kinross,56.622537,-4.226021,0,1,1,11,13,15
+Sgurr a'Mhaoraich,1027,2570,3.77,Fort William,51,52,72,41,18,147,147,,Highland,57.105849,-5.330509,0,0,3,17,26,38
+Sgurr na Ciste Duibhe,1027,4190,3.84,Kintail,82,62,3,3,1,41,41,,Highland,57.180924,-5.337134,0,2,4,16,28,38
+Ben Challum,1025,6017,3.24,Argyll,106,102,58,67,6,101,101,,Stirling,56.454573,-4.619184,0,0,2,7,20,23
+Sgorr Dhearg (Beinn a' Bheithir),1024,5846,4.08,Fort William,101,89,72,41,18,147,147,,Highland,56.653921,-5.17151,0,1,1,6,14,28
+Mullach an Rathain (Liathach),1023,4229,4.28,Torridon,84,98,9,10,6,89,89,,Highland,57.560875,-5.492498,0,1,1,8,9,11
+Aonach Air Chrith,1021,5218,3.74,Kintail,99,53,3,3,1,41,41,,Highland,57.12464,-5.221291,0,2,7,18,27,36
+Stob Dearg (Buachaille Etive Mor),1021,9880,4.33,Fort William,203,184,72,41,18,147,147,,Highland,56.646229,-4.900329,0,0,5,12,25,44
+Ladhar Bheinn,1020,2522,4.05,Fort William,51,64,72,41,18,147,147,,Highland,57.075263,-5.591745,0,0,0,3,8,18
+Beinn Bheoil,1019,2730,3.36,Cairngorms,66,41,37,29,9,182,182,,Highland,56.813276,-4.430662,0,1,2,11,16,23
+Carn an Tuirc,1019,9446,3.09,Cairngorms,160,120,37,29,9,182,182,,Aberdeenshire,56.908274,-3.357125,0,1,5,15,20,20
+Mullach Clach a'Bhlair,1019,4570,2.96,Cairngorms,93,97,37,29,9,182,182,,Highland,57.011879,-3.841287,0,0,0,7,12,20
+Mullach Coire Mhic Fhearchair,1019,2196,3.66,Ullapool,78,37,24,16,5,72,72,,Highland,57.709022,-5.271342,0,2,4,6,13,20
+Garbh Chioch Mhor,1013,2080,3.64,Fort William,56,36,72,41,18,147,147,,Highland,57.008556,-5.444322,1,2,2,7,11,21
+Cairn Bannoch,1012,7674,2.96,Cairngorms,159,95,37,29,9,182,182,,Aberdeenshire/Angus,56.927728,-3.278403,0,3,6,11,16,20
+Beinn Ime,1011,11967,3.42,Loch Lomond,229,184,33,35,7,54,54,,Argyll and Bute,56.236794,-4.817125,0,1,2,3,6,14
+Beinn Udlamain,1010,6225,3.14,Cairngorms,103,84,37,29,9,182,182,,Highland/Perth and Kinross,56.835444,-4.329976,0,1,3,7,15,18
+Ruadh-stac Mor (Beinn Eighe),1010,4765,4.14,Torridon,90,95,9,10,6,89,89,,Highland,57.593735,-5.429454,0,1,2,7,11,16
+Sgurr an Doire Leathain,1010,4935,3.67,Kintail,94,42,3,3,1,41,41,,Highland,57.136879,-5.281532,0,2,7,20,29,39
+Sgurr Eilde Mor,1010,3826,3.65,Fort William,84,56,72,41,18,147,147,,Highland,56.750015,-4.895436,0,2,5,16,28,36
+The Saddle,1010,3900,4.15,Kintail,84,95,3,3,1,41,41,,Highland,57.162395,-5.414721,0,1,2,11,21,36
+Beinn Dearg (Blair Atholl),1008,3911,3.21,Perthshire,89,80,58,71,5,96,96,,Perth and Kinross,56.877346,-3.883719,0,0,0,3,6,15
+Maoile Lunndaidh,1007,1703,3.4,Torridon,47,39,9,10,6,89,89,,Highland,57.464477,-5.111002,0,0,1,5,12,20
+An Sgarsoch,1006,2762,3.25,Cairngorms,66,47,37,29,9,182,182,,Aberdeenshire/Perth and Kinross,56.932109,-3.754294,0,0,1,4,17,24
+Carn Liath (Creag Meagaidh),1006,5103,3.13,Fort William,85,77,72,41,18,147,147,,Highland,56.978784,-4.515288,0,0,1,4,9,19
+Beinn Fhionnlaidh (Carn Eige),1005,2161,3.47,Loch Ness,63,36,69,55,11,97,97,,Highland,57.305977,-5.129909,0,1,4,11,20,31
+Beinn an Dothaidh,1004,7497,3.36,Argyll,130,100,58,67,6,101,101,,Argyll and Bute,56.53013,-4.713964,0,0,3,7,13,29
+Sgurr an Lochain,1004,4871,3.74,Kintail,95,50,3,3,1,41,41,,Highland,57.141296,-5.297483,0,2,7,20,29,39
+The Devil's Point,1004,4946,3.75,Cairngorms,130,86,37,29,9,182,182,,Aberdeenshire,57.03571,-3.688803,0,2,6,14,19,23
+Sgurr Mor (Loch Quoich),1003,1695,3.56,Fort William,50,39,72,41,18,147,147,,Highland,57.028446,-5.354189,0,0,1,6,18,29
+Sail Chaorainn,1002,3391,3.34,Kintail,60,54,3,3,1,41,41,,Highland,57.191622,-5.091199,0,1,4,11,27,38
+Sgurr na Carnach,1002,4068,3.67,Kintail,81,56,3,3,1,41,41,,Highland,57.189034,-5.349224,1,2,5,15,26,36
+Aonach Meadhoin,1001,3635,3.46,Kintail,72,47,3,3,1,41,41,,Highland,57.173026,-5.229166,0,1,4,23,31,34
+Meall Greigh,1001,7956,2.96,Perthshire,138,109,58,71,5,96,96,,Perth and Kinross,56.567426,-4.159559,0,0,3,10,12,16
+Sgorr Dhonuill (Beinn a' Bheithir),1001,5599,4.06,Fort William,100,100,72,41,18,147,147,,Highland,56.650499,-5.197757,0,1,1,4,11,24
+Sgurr Breac,999,3284,3.52,Ullapool,69,54,24,16,5,72,72,,Highland,57.691943,-5.09131,0,1,5,9,14,22
+Sgurr Choinnich,999,2174,3.52,Torridon,54,44,9,10,6,89,89,,Highland,57.451026,-5.207916,0,1,3,5,11,23
+Stob Ban (Mamores),999,5739,4.06,Fort William,110,91,72,41,18,147,147,,Highland,56.743706,-5.030328,0,1,5,16,28,33
+Ben More Assynt,998,4272,3.82,Ullapool,71,75,24,16,5,72,72,,Highland,58.138164,-4.858208,0,1,1,1,1,1
+Broad Cairn,998,8234,3.27,Cairngorms,164,103,37,29,9,182,182,,Aberdeenshire/Angus,56.919148,-3.249082,0,1,6,11,15,20
+Stob Daimh,998,6145,3.63,Argyll,116,82,58,67,6,101,101,,Argyll and Bute,56.431327,-5.091319,0,1,3,3,6,15
+A' Chailleach,997,3267,3.52,Ullapool,69,59,24,16,5,72,72,,Highland,57.693773,-5.128713,0,1,2,11,17,22
+Glas Bheinn Mhor,997,3966,3.57,Fort William,86,59,72,41,18,147,147,,Argyll and Bute/Highland,56.542416,-5.005267,0,2,4,7,20,29
+Spidean Mialach,996,3395,3.64,Fort William,57,49,72,41,18,147,147,,Highland,57.088964,-5.193614,0,0,4,10,23,36
+An Caisteal,995,9445,3.48,Loch Lomond,154,128,33,35,7,54,54,,Stirling,56.3386,-4.624368,0,2,4,7,15,22
+Carn an Fhidhleir (Carn Ealar),994,2709,3.12,Cairngorms,68,45,37,29,9,182,182,,Aberdeenshire/Highland/Perth and Kinross,56.93602,-3.801534,0,0,1,5,17,23
+Sgor na h-Ulaidh,994,3344,3.59,Fort William,54,53,72,41,18,147,147,,Highland,56.619796,-5.08006,0,0,3,14,23,33
+Sgurr na Ruaidhe,993,2683,3.29,Loch Ness,53,38,69,55,11,97,97,,Highland,57.441497,-4.852465,0,1,2,3,5,9
+Spidean Coire nan Clach (Beinn Eighe),993,4764,4.12,Torridon,100,84,9,10,6,89,89,,Highland,57.582098,-5.403706,0,1,2,5,10,18
+Carn nan Gobhar (Loch Mullardoch),992,2456,3.29,Loch Ness,49,34,69,55,11,97,97,,Highland,57.363304,-5.024544,0,1,2,6,19,23
+Carn nan Gobhar (Strathfarrar),992,2653,3.36,Loch Ness,55,38,69,55,11,97,97,,Highland,57.452331,-4.879935,0,2,3,3,6,12
+Sgurr Alasdair,992,3437,4.16,Isle of Skye,73,80,50,28,11,188,188,Skye,Highland,57.206588,-6.224176,3,6,10,11,11,11
+Sgairneach Mhor,991,6165,3.22,Cairngorms,101,89,37,29,9,182,182,,Perth and Kinross,56.828447,-4.297792,0,1,2,6,14,17
+Beinn Eunaich,989,5686,3.39,Argyll,93,84,58,67,6,101,101,,Argyll and Bute,56.450352,-5.026639,0,0,2,5,10,19
+Sgurr Ban,989,2201,3.47,Ullapool,80,32,24,16,5,72,72,,Highland,57.718538,-5.265903,0,2,4,8,13,19
+Conival,987,4424,3.68,Ullapool,76,76,24,16,5,72,72,,Highland,58.135689,-4.883497,0,1,1,1,1,1
+Creag Leacach,987,9192,3.42,Cairngorms,138,135,37,29,9,182,182,,Angus/Perth and Kinross,56.854631,-3.387751,0,1,2,10,20,21
+Druim Shionnach,987,5285,3.55,Kintail,101,50,3,3,1,41,41,,Highland,57.126794,-5.182841,0,2,5,18,27,33
+Gulvain,987,2399,3.61,Fort William,46,48,72,41,18,147,147,,Highland,56.936211,-5.284511,0,0,0,2,7,12
+Inaccessible Pinnacle,986,3424,4.15,Isle of Skye,82,68,50,28,11,188,188,Skye,Highland,57.213252,-6.234817,3,7,10,11,11,11
+Lurg Mhor,986,1662,3.66,Torridon,44,36,9,10,6,89,89,,Highland,57.413091,-5.223666,0,1,3,6,12,23
+Sgurr Mor (Beinn Alligin),986,5459,4.2,Torridon,103,103,9,10,6,89,89,,Highland,57.59082,-5.572764,0,1,1,4,8,10
+Ben Vorlich (Loch Earn),985,15007,3.39,Perthshire,221,245,58,71,5,96,96,,Perth and Kinross,56.34268,-4.219448,0,1,1,1,1,3
+An Gearanach,982,6094,3.86,Fort William,129,78,72,41,18,147,147,,Highland,56.759172,-4.96623,1,4,10,18,27,35
+Mullach na Dheiragain,982,1831,3.41,Loch Ness,52,31,69,55,11,97,97,,Highland,57.283399,-5.18635,0,0,5,11,26,38
+Creag Mhor (Meall na Aighean),981,8225,3.08,Perthshire,131,121,58,71,5,96,96,,Perth and Kinross,56.620627,-4.128741,0,1,1,7,11,13
+Maol chinn-dearg,981,5235,3.5,Kintail,106,48,3,3,1,41,41,,Highland,57.12756,-5.252651,0,2,5,19,28,37
+Slioch,981,3899,4.04,Torridon,69,72,9,10,6,89,89,,Highland,57.667176,-5.347047,0,0,0,6,10,22
+Stob Coire a' Chairn,981,6153,3.43,Fort William,127,67,72,41,18,147,147,,Highland,56.750756,-4.968985,1,4,8,17,26,35
+Beinn a' Chochuill,980,5767,3.38,Argyll,96,77,58,67,6,101,101,,Argyll and Bute,56.449781,-5.068536,0,1,3,5,9,17
+Ciste Dhubh,979,3143,3.84,Kintail,67,58,3,3,1,41,41,,Highland,57.199234,-5.209032,0,0,5,23,32,36
+Stob Coire Sgriodain,979,3952,3.45,Fort William,68,52,72,41,18,147,147,,Highland,56.831745,-4.694918,0,1,2,7,20,34
+Beinn Dubhchraig,978,6317,3.37,Argyll,107,88,58,67,6,101,101,,Stirling,56.391295,-4.743193,0,1,2,5,16,26
+Cona' Mheall,978,3190,3.68,Ullapool,65,49,24,16,5,72,72,,Highland,57.791077,-4.903418,0,2,4,5,12,14
+Meall nan Ceapraichean,977,3351,3.39,Ullapool,62,43,24,16,5,72,72,,Highland,57.798514,-4.934012,0,3,3,5,12,16
+Stob Ban (Grey Corries),977,3479,3.75,Fort William,76,60,72,41,18,147,147,,Highland,56.810656,-4.840877,0,1,4,14,21,32
+A' Mharconaich,975,7321,3.19,Cairngorms,116,95,37,29,9,182,182,,Highland,56.857002,-4.290668,0,1,3,7,13,17
+Carn a' Gheoidh,975,10250,3.04,Cairngorms,146,153,37,29,9,182,182,,Aberdeenshire/Perth and Kinross,56.873065,-3.466616,0,0,3,11,19,25
+Carn Liath (Beinn a' Ghlo),975,7744,3.41,Perthshire,116,109,58,71,5,96,96,,Perth and Kinross,56.80777,-3.74409,0,0,2,3,9,12
+Stuc a' Chroin,975,10818,3.76,Perthshire,183,180,58,71,5,96,96,,Perth and Kinross/Stirling,56.329315,-4.237533,0,1,1,1,1,3
+Beinn Sgritheall,974,2880,3.87,Kintail,60,70,3,3,1,41,41,,Highland,57.153816,-5.579711,0,0,0,2,9,20
+Ben Lomond,974,20546,3.78,Loch Lomond,314,317,33,35,7,54,54,,Stirling,56.190293,-4.633009,0,0,0,0,4,9
+Sgurr a' Ghreadaidh,973,2800,3.97,Isle of Skye,62,47,50,28,11,188,188,Skye,Highland,57.227313,-6.234425,2,5,10,11,11,11
+Meall Garbh (Carn Mairg),968,8558,2.9,Perthshire,133,120,58,71,5,96,96,,Perth and Kinross,56.637381,-4.207472,0,1,2,8,13,15
+A' Mhaighdean,967,2175,3.96,Ullapool,80,45,24,16,5,72,72,,Highland,57.719653,-5.346721,0,1,4,5,9,19
+Sgorr nam Fiannaidh (Aonach Eagach),967,6509,4.13,Fort William,120,98,72,41,18,147,147,,Highland,56.679369,-5.037125,0,1,3,17,29,39
+Ben More (Mull),966,4792,3.86,Isle of Mull,61,94,9,3,3,41,41,Mull,Argyll and Bute,56.424829,-6.014015,0,0,0,0,0,0
+Sgurr na Banachdich,965,3769,3.83,Isle of Skye,71,63,50,28,11,188,188,Skye,Highland,57.220972,-6.241638,2,5,10,11,11,11
+Sgurr nan Gillean,964,3325,4.27,Isle of Skye,70,90,50,28,11,188,188,Skye,Highland,57.248215,-6.193159,1,2,9,11,11,11
+Carn a' Chlamain,963,4331,3.38,Perthshire,98,81,58,71,5,96,96,,Perth and Kinross,56.860965,-3.779634,0,0,1,6,9,15
+Sgurr Thuilm,963,2872,3.65,Fort William,52,43,72,41,18,147,147,,Highland,56.937056,-5.389207,0,0,1,5,9,11
+Sgorr Ruadh,962,2862,3.77,Torridon,70,50,9,10,6,89,89,,Highland,57.498622,-5.407747,0,1,2,5,13,15
+Ben Klibreck,961,3859,3.44,Sutherland,67,65,33,33,4,49,49,,Highland,58.235202,-4.41113,0,0,0,0,0,0
+Beinn nan Aighenan,960,3218,3.47,Fort William,65,61,72,41,18,147,147,,Argyll and Bute,56.520221,-5.011249,0,1,3,7,20,30
+Stuchd an Lochain,960,6229,3.62,Perthshire,101,97,58,71,5,96,96,,Perth and Kinross,56.570907,-4.470602,0,0,0,3,13,22
+Beinn Fhionnlaidh,959,3450,3.45,Argyll,56,66,58,67,6,101,101,,Argyll and Bute,56.600978,-5.104749,0,0,1,12,19,32
+Meall Glas,959,4615,3.05,Loch Lomond,72,78,33,35,7,54,54,,Stirling,56.455712,-4.546821,0,0,2,6,18,24
+Bruach na Frithe,958,4129,3.88,Isle of Skye,99,69,50,28,11,188,188,Skye,Highland,57.246743,-6.210776,1,3,9,11,11,11
+Tolmount,958,7279,2.96,Cairngorms,138,88,37,29,9,182,182,,Aberdeenshire/Angus,56.904734,-3.29793,0,1,7,14,16,20
+Carn Ghluasaid,957,3745,3.27,Kintail,68,62,3,3,1,41,41,,Highland,57.165959,-5.068159,0,1,2,8,23,34
+Tom Buidhe,957,7158,2.62,Cairngorms,132,101,37,29,9,182,182,,Angus,56.893615,-3.292356,0,1,5,14,16,20
+Saileag,956,3708,3.35,Kintail,73,48,3,3,1,41,41,,Highland,57.181264,-5.281331,0,1,10,22,29,35
+Sgurr nan Coireachan (Glenfinnan),956,2850,3.69,Fort William,51,45,72,41,18,147,147,,Highland,56.935728,-5.448551,0,0,1,5,8,10
+Stob Dubh (Buachaille Etive Beag),956,9167,4.03,Fort William,172,121,72,41,18,147,147,,Highland,56.638159,-4.970747,0,3,5,14,31,39
+Stob na Broige  (Buachaille Etive Mor),956,7944,3.87,Fort William,165,120,72,41,18,147,147,,Highland,56.629879,-4.951146,0,2,5,15,27,38
+Sgor Gaibhre,955,2972,3.5,Fort William,74,53,72,41,18,147,147,,Highland/Perth and Kinross,56.772553,-4.546498,0,0,1,8,16,23
+Am Faochagach,954,2652,3.09,Ullapool,52,56,24,16,5,72,72,,Highland,57.771801,-4.853899,0,0,2,5,11,15
+Beinn Liath Mhor Fannaich,954,3170,3.27,Ullapool,77,51,24,16,5,72,72,,Highland,57.706095,-4.989775,0,1,6,9,14,20
+Beinn Mhanach,953,3690,3.28,Argyll,82,66,58,67,6,101,101,,Perth and Kinross,56.534041,-4.646042,0,0,4,7,13,24
+Meall Dearg (Aonach Eagach),953,6410,4.25,Fort William,119,104,72,41,18,147,147,,Highland,56.680721,-5.003266,0,1,4,16,31,39
+Sgurr nan Coireachan (Glen Dessary),953,2135,3.53,Fort William,52,29,72,41,18,147,147,,Highland,57.007158,-5.40544,0,1,3,8,12,24
+Meall Chuaich,951,5921,3.05,Cairngorms,94,125,37,29,9,182,182,,Highland,56.96385,-4.112568,0,0,0,1,2,13
+Meall Gorm,949,2902,3.29,Ullapool,75,40,24,16,5,72,72,,Highland,57.680837,-4.983801,0,0,5,8,13,18
+Beinn Bhuidhe,948,4567,3.42,Argyll,96,113,58,67,6,101,101,,Argyll and Bute,56.326659,-4.906723,0,0,0,2,8,15
+Sgurr Mhic Choinnich,948,2757,4.09,Isle of Skye,66,51,50,28,11,188,188,Skye,Highland,57.208928,-6.224112,3,7,10,11,11,11
+Creag a'Mhaim,947,5288,3.37,Kintail,99,53,3,3,1,41,41,,Highland,57.120971,-5.160048,0,1,3,16,24,34
+Driesh,947,11594,3.34,Angus,167,154,24,24,1,24,24,,Angus,56.847985,-3.196538,0,0,1,4,14,16
+Beinn Tulaichean,946,7518,3.17,Loch Lomond,122,94,33,35,7,54,54,,Stirling,56.342216,-4.56333,0,1,4,6,12,20
+Carn Bhac,946,3626,3.06,Cairngorms,79,59,37,29,9,182,182,,Aberdeenshire,56.930541,-3.56088,0,0,2,6,18,38
+Meall Buidhe (Knoydart),946,2229,3.72,Fort William,51,41,72,41,18,147,147,,Highland,57.031552,-5.546334,0,0,1,5,9,17
+Bidein a' Choire Sheasgaich,945,1677,3.76,Torridon,43,39,9,10,6,89,89,,Highland,57.419718,-5.250473,0,1,2,5,12,22
+Carn Dearg (Monadhliath),945,4457,3.31,Cairngorms,73,71,37,29,9,182,182,,Highland,57.092261,-4.253246,0,0,1,3,3,4
+Sgurr na Sgine,945,3371,3.62,Kintail,81,62,3,3,1,41,41,,Highland,57.147098,-5.396634,0,1,2,11,25,37
+Stob a' Choire Odhair,945,5008,3.52,Argyll,105,79,58,67,6,101,101,,Argyll and Bute/Highland,56.573308,-4.838302,0,0,2,9,19,31
+An Socach (Braemar),944,5573,3.24,Cairngorms,87,81,37,29,9,182,182,,Aberdeenshire,56.902295,-3.513165,0,0,4,10,16,31
+Sgurr Dubh Mor,944,2707,3.91,Isle of Skye,54,49,50,28,11,188,188,Skye,Highland,57.204894,-6.211421,2,4,10,11,11,11
+Ben Vorlich (Loch Lomond),943,10694,3.48,Loch Lomond,160,169,33,35,7,54,54,,Argyll and Bute,56.274021,-4.755046,0,0,1,4,14,16
+Binnein Beag,943,3621,3.57,Fort William,86,51,72,41,18,147,147,,Highland,56.766961,-4.911161,0,2,7,16,24,34
+Beinn a' Chroin,942,8754,3.44,Loch Lomond,146,124,33,35,7,54,54,,Stirling,56.331991,-4.609644,0,2,4,6,13,21
+Carn Dearg (Corrour),941,3180,3.41,Fort William,76,54,72,41,18,147,147,,Highland/Perth and Kinross,56.759931,-4.589888,0,0,1,7,13,25
+Carn na Caim,941,5698,2.76,Cairngorms,85,82,37,29,9,182,182,,Highland/Perth and Kinross,56.911739,-4.174478,0,0,1,4,6,11
+Luinne Bheinn,939,2278,3.72,Fort William,53,41,72,41,18,147,147,,Highland,57.048325,-5.513607,0,0,1,6,12,24
+Mount Keen,939,9982,3.24,Angus,160,169,24,24,1,24,24,,Aberdeenshire/Angus,56.969751,-2.973622,0,0,0,0,0,5
+Mullach nan Coirean,939,5263,3.47,Fort William,102,79,72,41,18,147,147,,Highland,56.749866,-5.072446,0,0,2,13,24,31
+Beinn na Lap,937,3565,3.3,Fort William,87,76,72,41,18,147,147,,Highland,56.78939,-4.659994,0,0,1,8,18,32
+Beinn Sgulaird,937,3559,3.65,Argyll,60,80,58,67,6,101,101,,Argyll and Bute,56.566232,-5.170365,0,0,0,5,14,23
+Beinn Tarsuinn,937,2179,3.73,Ullapool,74,39,24,16,5,72,72,,Highland,57.702051,-5.291634,0,2,4,6,14,20
+Sron a' Choire Ghairbh,937,3796,3.39,Fort William,71,58,72,41,18,147,147,,Highland,57.00784,-4.928747,0,1,1,1,1,6
+A' Bhuidheanach Bheag,936,5714,2.8,Cairngorms,78,102,37,29,9,182,182,,Highland/Perth and Kinross,56.870342,-4.199001,0,0,1,5,6,14
+Am Basteir,934,2872,3.98,Isle of Skye,70,58,50,28,11,188,188,Skye,Highland,57.24794,-6.202966,2,2,9,11,11,11
+Meall a' Chrasgaidh,934,3544,3.07,Ullapool,79,51,24,16,5,72,72,,Highland,57.712866,-5.048742,0,2,5,8,17,23
+Beinn Chabhair,933,7486,3.28,Loch Lomond,127,141,33,35,7,54,54,,Stirling,56.325779,-4.641493,0,2,2,8,15,20
+Fionn Bheinn,933,4077,3.16,Torridon,64,95,9,10,6,89,89,,Highland,57.611148,-5.102713,0,0,0,3,11,21
+Maol Chean-dearg,933,3344,3.65,Torridon,65,64,9,10,6,89,89,,Highland,57.491697,-5.465549,0,0,2,4,8,13
+The Cairnwell,933,11267,2.46,Cairngorms,145,167,37,29,9,182,182,,Aberdeenshire/Perth and Kinross,56.87952,-3.421199,0,1,4,11,20,22
+Meall Buidhe (Glen Lyon),932,6306,3.18,Perthshire,98,114,58,71,5,96,96,,Perth and Kinross,56.617222,-4.44864,0,0,0,1,9,24
+Beinn Bhreac,931,4014,3.08,Cairngorms,85,65,37,29,9,182,182,,Aberdeenshire,57.055072,-3.553472,0,0,3,11,16,23
+Ben Chonzie,931,13445,3.11,Perthshire,199,281,58,71,5,96,96,,Perth and Kinross,56.453851,-3.992057,0,0,0,0,0,7
+A' Chailleach (Monadhliath),930,5021,3.03,Cairngorms,77,93,37,29,9,182,182,,Highland,57.109564,-4.179285,0,1,2,2,3,4
+Bla Bheinn,928,5217,4.28,Isle of Skye,97,115,50,28,11,188,188,Skye,Highland,57.219565,-6.09321,0,0,0,11,11,11
+Mayar,928,11957,3.38,Angus,177,159,24,24,1,24,24,,Angus,56.848936,-3.246299,0,0,1,9,15,17
+Meall nan Eun,928,3143,3.24,Fort William,65,52,72,41,18,147,147,,Argyll and Bute,56.561176,-4.942926,0,1,3,13,22,31
+Moruisg,928,3075,3.08,Torridon,43,62,9,10,6,89,89,,Highland,57.499712,-5.17063,0,0,0,3,9,19
+Ben Hope,927,5759,3.71,Sutherland,85,99,33,33,4,49,49,,Highland,58.413113,-4.60786,0,0,0,0,0,0
+Eididh nan Clach Geala,927,3207,3.47,Ullapool,68,42,24,16,5,72,72,,Highland,57.813501,-4.934202,0,1,4,5,9,16
+Beinn Liath Mhor,926,3033,3.74,Torridon,75,71,9,10,6,89,89,,Highland,57.512083,-5.400618,0,1,2,6,12,15
+Beinn Narnain,926,12766,3.77,Loch Lomond,248,203,33,35,7,54,54,,Argyll and Bute,56.220956,-4.789003,0,1,2,3,6,14
+Geal Charn (Monadhliath),926,4428,3.04,Cairngorms,64,81,37,29,9,182,182,,Highland,57.057418,-4.373572,0,0,0,1,4,9
+Meall a' Choire Leith,926,7766,2.99,Perthshire,115,95,58,71,5,96,96,,Perth and Kinross,56.566312,-4.259617,0,0,5,9,15,16
+Seana Bhraigh,926,2160,3.85,Ullapool,53,48,24,16,5,72,72,,Highland,57.84733,-4.89662,0,0,1,5,5,10
+Stob Coire Raineach (Buachaille Etive Beag),925,8972,3.81,Fort William,169,112,72,41,18,147,147,,Highland,56.649895,-4.951601,0,2,6,11,29,40
+Creag Pitridh,924,3449,3.34,Fort William,69,43,72,41,18,147,147,,Highland,56.899713,-4.484955,0,1,2,10,20,27
+Sgurr nan Eag,924,3109,3.86,Isle of Skye,63,51,50,28,11,188,188,Skye,Highland,57.19581,-6.211264,0,4,7,11,11,11
+An Coileachan,923,2884,3.31,Ullapool,70,46,24,16,5,72,72,,Highland,57.667625,-4.949498,0,0,2,7,13,16
+Sgurr nan Each,923,3252,3.7,Ullapool,73,49,24,16,5,72,72,,Highland,57.681008,-5.04635,0,1,6,9,15,22
+Tom na Gruagaich (Beinn Alligin),922,5723,4.11,Torridon,112,107,9,10,6,89,89,,Highland,57.580519,-5.581912,0,1,1,4,8,9
+An Socach (Affric),921,2181,3.3,Loch Ness,52,37,69,55,11,97,97,,Highland,57.25755,-5.171311,0,0,4,13,28,39
+Sgiath Chuil,921,4593,3.07,Loch Lomond,71,80,33,35,7,54,54,,Stirling,56.453147,-4.495654,0,0,1,7,14,26
+Carn Sgulain,920,4625,2.57,Cairngorms,75,93,37,29,9,182,182,,Highland,57.124371,-4.176986,0,1,1,2,3,4
+Gairich,919,2570,3.67,Fort William,54,48,72,41,18,147,147,,Highland,57.044879,-5.255827,0,0,0,7,19,34
+A' Ghlas-bheinn,918,2486,3.46,Kintail,51,53,3,3,1,41,41,,Highland,57.255081,-5.303686,0,0,2,10,24,38
+Creag nan Damh,918,4848,3.44,Kintail,97,46,3,3,1,41,41,,Highland,57.147262,-5.33496,0,1,7,17,27,38
+Meall na Teanga,918,3690,3.44,Fort William,70,57,72,41,18,147,147,,Highland,56.989012,-4.930955,0,1,1,1,1,6
+Ruadh Stac Mor,918,2132,3.75,Ullapool,70,31,24,16,5,72,72,,Highland,57.726781,-5.329288,0,1,4,6,9,17
+Sgurr a'Mhadaidh,918,2908,3.86,Isle of Skye,69,43,50,28,11,188,188,Skye,Highland,57.230869,-6.231931,1,5,10,11,11,11
+Carn Aosda,917,11179,2.47,Cairngorms,151,173,37,29,9,182,182,,Aberdeenshire,56.895696,-3.423274,0,1,4,14,20,23
+Geal-charn (Drumochter),917,7474,3.0,Cairngorms,110,101,37,29,9,182,182,,Highland,56.874433,-4.304519,0,1,2,7,13,18
+Beinn a' Chleibh,916,6689,2.98,Argyll,112,101,58,67,6,101,101,,Argyll and Bute/Stirling,56.39023,-4.83563,0,1,2,4,9,29
+Beinn Teallach,915,3747,3.07,Fort William,53,61,72,41,18,147,147,,Highland,56.935932,-4.694754,0,0,1,3,10,23
+Ben Vane,915,10463,3.68,Loch Lomond,184,195,33,35,7,54,54,,Argyll and Bute,56.249786,-4.781655,0,0,3,3,8,14
