@@ -57,6 +57,7 @@
 
 \section{Overview}
 % 250 words maximum
+Description of problem, work carried out, and results
 
 \section{Introduction}
 % Suggested 400 words
@@ -85,11 +86,84 @@ What questions are you setting out to answer?
 obtained it (e.g., file or web scraping), and do the T\&Cs allow you
 to use obtain the data for the project?
 
+\medskip
+We used three datasets: 
+\begin{itemize}
+    \item WalkHighlands (WH), from which we extracted data on the popularity, rating and accessibility of Munros. This data relies on contributions from registered users - they can select Munros they have climbed and rate them. We retrieved the data using web scraping for the main Munro tables and subpages; additionally, we manually copied the accommodation counts from the relevant subpages. These methods were chosen after a careful assessment of the T\&Cs.
+    \item The Database of British and Irish Hills (DoBIH), from which we extracted geographical data on the Munros. The origins of this data can be traced in a 'series of articles in Marhofn and Relative Matters magazine', according to the website. The current editorial team consists of Graham Jackson, Chris Crocker, John Barnard, Simon Edwardes, George Gradwell, Jim Bloomer, and Dave Marshall. The T\&Cs of this dataset are quite liberal, as they impose 'no restrictions on use of the data by third parties', so long as the terms of the Creative Commons license are respected. Retrieving the data was easy, as it only involved downloading a readily available CSV file.
+    \item Simplemaps Cities Database (SCD), from which we extracted data on British cities' location and population. The data comes from the US National Geospatial-Intelligence Agency, and is freely available to use under an MIT license. Again, retrieving the data only involved downloading a CSV file.
+\end{itemize}
+
 \paragraph{Data description} Description of the data, e.g. variables
 in each table, number of records.
+    
+\medskip
+After processing the data and joining the resulting tables (the details of these operations are presented in the 'Data processing' section), we reached the following variables (as seen in Table 1):
+
+
+\begin{table}
+    \centering
+     \begin{tabular}{||c c c||} 
+     \hline
+     Variable & Type & Description  \\ 
+     \hline\hline
+     name & string & the name of the Munro \\ 
+     \hline
+     altitude & integer & the altitude of the Munro in metres \\
+     \hline
+     ascent\_count & integer & the number of times the Munro was ascended by WH \\
+     \hline
+     rating & float[0,5] & munro rating from WH users normalised using Bayesian average \\
+     \hline
+     region & string & the region in which the Munro is located \\
+     \hline 
+     rating\_count & integer & the number of ratings for the Munro \\
+     \hline 
+     report\_count & integer & number of reports (i.e. mini blog posts) from WH users for the Munro \\
+     \hline 
+     hotel\_count & integer & number of hotels in the region \\
+     \hline 
+     bb\_count & integer & number of B\&Bs in the region \\
+     \hline 
+     cottage\_count & integer & number of cottages in the region \\
+     \hline
+     hostel\_count & integer & number of hostels in the region \\
+     \hline
+     camping\_count & integer & number of camping and glamping sites in the region \\
+     \hline
+     neighbor\_count\_<radius> & integer & number of neighboring Munros within a given radius \\
+     \hline 
+     nearest\_city\_dist & float (2 d.p.) & haversine distance to the city closest to the Munro \\
+     \hline
+     nearest\_city\_population & integer & population of the city closest to the Munro \\
+     \hline 
+     nearest\_large\_city\_dist & float (2 d.p.) & haversine distance to a large city (i.e. above 50K) closest to the Munro \\
+     \hline 
+     population\_<radius> & integer & the sum of populations of all cities within a given radius \\
+     \hline
+    \end{tabular}
+    \caption{Variables}
+    \label{table:1}
+\end{table}
 
 \paragraph{Data processing} How you have processed the dataset, e.g.,
 cleaning, removing missing values, joining tables.
+
+\medskip 
+
+After scraping the WH data, we normalised the ratings since the rating count presented wild variations (taking values between 22 and 317). We computed the Bayesian average, which pulls ratings that are based on few votes closer to the mean rating. It uses two fields: m, the prior mean, i.e. the mean rating for all Munros, and C, the number of ratings required for a decent estimate of the sample mean. In other words, C is the number of observations necessary to “get away” from m. These values were eyeballed from a joint distribution plot of “rating” and “rating\_count” to be m := 3.6 and C := 60.
+
+\smallskip
+For the DoBIH data, we first filtered out irrelevant columns, then chose only Munros using the boolean tag 'M'. Additionally, we changed the column naming to snake\_case for consistency.
+
+\smallskip
+For the SCD data, we first filtered out cities not in the UK and cities with a population of less than 100. Then, for each Munro, we computed the distance to and population of the nearest city, as well as the distance to the nearest large city and the total population within a certain radius from the Munro. We treated the islands of Mull and Skye separately, since neither Portree nor Tobermory, their corresponding largest settlements, are in the database. Considering that Skye is connected to the mainland via a road bridge, we considered the proximity of mainland cities on the popularity of Skye Munros. However, since Mull is isolated from the mainland, we simply replaced all city-related values with NaN.
+
+\medskip 
+Merging the WH and DoBIH datasets was quite a challenging process. First of all, we created a unique key for each Munro in both tables. The key of choice was a stringified tuple consisting of name and altitude, since only these two fields are available in both datasets. Sadly, they did not always match exactly - some particular cases were so bad that they needed to be handled manually (e.g. the name “Carn Dearg” appears in DoBIH three times). For the remaining data, we performed fuzzy matching on the keys i.e. we matched a key from WH to the closest key in DoBIH based on edit-distance.  We used `difflib` for this purpose. We then merged the data and removed unnecessary fields such as the aforementioned keys.
+
+After merging, we calculated the number of neighbours for each Munro; that is, the number of Munros located within a radius of 1, 2.5, 5, 10, 15, and 20 km (using the haversine distance). We only considered Munros located on the same land mass, since we assume that a climber who is to climb multiple Munros in a restricted area will not want to drive to another island to do so (e.g. Skye).
+
 
 \section{Exploration and  analysis}
 % Suggested 500 words for individual report; proportionately longer
