@@ -18,8 +18,8 @@
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
-\title{My datascience project title}
-\author{Irma Student and Soham Eye}
+\title{Popularity of Munros}
+\author{Filip Balucha, Advaith Sai Maddipatla, Tudor Finaru}
 %\usepackage{natbib}
 
 \begin{document}
@@ -79,6 +79,13 @@ final exams \cite{Space2021}.
 
 What questions are you setting out to answer?
 
+\medskip
+We are setting out to answer the following questions:
+
+\begin{itemize}
+    \item Is there a statistically significant relationship between Munro height and frequency of climb?
+\end{itemize}
+
 \section{Data}
 % Suggested 300 words
 
@@ -94,11 +101,22 @@ We used three datasets:
     \item Simplemaps Cities Database (SCD), from which we extracted data on British cities' location and population. The data comes from the US National Geospatial-Intelligence Agency, and is freely available to use under an MIT license. Again, retrieving the data only involved downloading a CSV file.
 \end{itemize}
 
+\bigskip 
+
+All web scraping was performed in accordance with James Densmore's rules for ethical web scraping \cite{EiWS}:
+\begin{itemize}
+    \item We only scraped data when necessary - i.e. if no file or API was accessible.
+    \item We always provided a “User Agent” string to make our intentions clear to the site owner, as well as to provide a way to contact the team member responsible for data processing.
+    \item We requested data at a reasonable rate of at most 1 request per 10 seconds.
+    \item We only saved the data we absolutely needed.
+    \item We respected all data we obtained, and we did not pass it off as our own.
+\end{itemize}
+
 \paragraph{Data description} Description of the data, e.g. variables
 in each table, number of records.
     
 \medskip
-After processing the data and joining the resulting tables (the details of these operations are presented in the 'Data processing' section), we reached the following variables (as seen in Table 1):
+After processing the data and joining the resulting tables (the details of these operations are presented in the 'Data processing' section), we reached the following variables (as seen in Table~\ref{table:1}):
 
 
 \begin{table}
@@ -157,17 +175,18 @@ After scraping the WH data, we normalised the ratings since the rating count pre
 For the DoBIH data, we first filtered out irrelevant columns, then chose only Munros using the boolean tag 'M'. Additionally, we changed the column naming to snake\_case for consistency.
 
 \smallskip
-For the SCD data, we first filtered out cities not in the UK and cities with a population of less than 100. Then, for each Munro, we computed the distance to and population of the nearest city, as well as the distance to the nearest large city and the total population within a certain radius from the Munro. We treated the islands of Mull and Skye separately, since neither Portree nor Tobermory, their corresponding largest settlements, are in the database. Considering that Skye is connected to the mainland via a road bridge, we considered the proximity of mainland cities on the popularity of Skye Munros. However, since Mull is isolated from the mainland, we simply replaced all city-related values with NaN.
+For the SCD data, we first filtered out cities not in the UK and cities with a population of less than 100. Then, for each Munro, we computed the distance to and population of the nearest city, as well as the distance to the nearest large city and the total population within a certain radius from the Munro. We treated the islands of Mull and Skye separately, since neither Portree nor Tobermory, their corresponding largest settlements, are in the database. Considering that Skye is connected to the mainland via a road bridge, we considered the impact of mainland cities on the popularity of Skye Munros. However, since Mull is isolated from the mainland, we simply replaced all city-related values with NaN.
 
 \medskip 
-Merging the WH and DoBIH datasets was quite a challenging process. First of all, we created a unique key for each Munro in both tables. The key of choice was a stringified tuple consisting of name and altitude, since only these two fields are available in both datasets. Sadly, they did not always match exactly - some particular cases were so bad that they needed to be handled manually (e.g. the name “Carn Dearg” appears in DoBIH three times). For the remaining data, we performed fuzzy matching on the keys i.e. we matched a key from WH to the closest key in DoBIH based on edit-distance.  We used `difflib` for this purpose. We then merged the data and removed unnecessary fields such as the aforementioned keys.
+Merging the WH and DoBIH datasets was a challenging - yet very rewarding - process. First of all, we created a unique key for each Munro in both tables. The key of choice was a stringified tuple consisting of name and altitude, since only these two fields are available in both datasets. Sadly, they did not always match exactly - some particular cases were so bad that they needed to be handled manually (e.g. the name “Carn Dearg” appears in DoBIH three times). For the remaining data, we performed fuzzy matching on the keys i.e. we matched a key from WH to the closest key in DoBIH based on edit-distance.  We used `difflib` for this purpose. We then merged the data and removed unnecessary fields such as the aforementioned keys.
 
-After merging, we calculated the number of neighbours for each Munro; that is, the number of Munros located within a radius of 1, 2.5, 5, 10, 15, and 20 km (using the haversine distance). We only considered Munros located on the same land mass, since we assume that a climber who is to climb multiple Munros in a restricted area will not want to drive to another island to do so (e.g. Skye).
-
+After merging, we computed the number of neighbours for each Munro; that is, the number of Munros located within a radius of 1, 2.5, 5, 10, 15, and 20 km (using the haversine distance). We only considered Munros located on the same land mass, since we assume that a climber who is to climb multiple Munros in a restricted area will not want to drive to another island to do so (e.g. Skye).
 
 \section{Exploration and  analysis}
 % Suggested 500 words for individual report; proportionately longer
 % for group projects).
+
+To address the first question, we started by visualising the distribution of Munros and frequency of them being climbed.
 
 % 't' means "try to position at the top of the page"
 \begin{figure}[t]
