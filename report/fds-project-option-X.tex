@@ -169,10 +169,7 @@ After processing the data and joining the resulting tables (the details of these
 \end{table}
 
 \paragraph{Data processing} How you have processed the dataset, e.g.,
-cleaning, removing missing values, joining tables.
-
-\medskip 
-
+cleaning, removing missing values, joining tables.\\ \\
 After scraping the WH data, we normalised the ratings since the rating count presented wild variations (taking values between 22 and 317). We computed the Bayesian average, which pulls ratings that are based on few votes closer to the mean rating. It uses two fields: m, the prior mean, i.e. the mean rating for all Munros, and C, the number of ratings required for a decent estimate of the sample mean. In other words, C is the number of observations necessary to “get away” from m. These values were eyeballed from a joint distribution plot of “rating” and “rating\_count” to be m := 3.6 and C := 60.
 
 \smallskip
