@@ -209,7 +209,7 @@ strong multicollinearity or other numerical problems'. Since we are only using a
 Applying linear regression on the processed data yields the prediction seen in Figure \ref{fds-project-template:fig:q1_prediction}.
 \begin{figure} [h!]
   \centering
-  \includegraphics{report/q1_prediction.pdf}
+S  \includegraphics{report/q1_prediction.pdf}
   \caption{Prediction over centered data}
   \label{fds-project-template:fig:q1_prediction}
 \end{figure} \\ \\
@@ -222,13 +222,7 @@ This can perhaps be explained by looking at the residuals distribution as seen i
   \caption{Distribution of Residuals}
   \label{fds-project-template:fig:residuals_dist}
 \end{figure} \\ \\ 
-A good Linear regression fit requires the residuals to be normally distributed. This is not exactly a normal distribution, and is fairly skewed; this is not what we are looking for. We now plot residuals against altitude to check for a potential relationship – the results are seen in Figure \ref{fds-project-template:fig:residuals_plot}.
-\begin{figure} [h!]
-  \centering
-  \includegraphics{report/residuals_plot.pdf}
-  \caption{Residuals and Altitude Plot}
-  \label{fds-project-template:fig:residuals_plot}
-\end{figure} \\ \\
+A good Linear regression fit requires the residuals to be normally distributed. This is not exactly a normal distribution, and is fairly skewed; this is not what we are looking for. We now plot residuals against altitude to check for a potential relationship – the results are seen in Figure. \\ \\
 The plot is not heteroskedastic. Additionally, there is no discernible pattern – the independent variable and variance do not exhibit a relationship. This tells us that the linear model we used earlier was a reasonable choice for the given task. \\ \\
 Moving on to our second question, we need to perform some feature selection on our data. The technique we will be using only expects continuous data, so we ignore the columns with categorical or boolean values. In addition, we ignore rating\_count, since it is not an inherent property of a Munro, and learning about its importance would not provide useful insight. Lastly, we also ignore ascent\_count as it is the dependent variable of the statistical problem at hand. \\ \\
 Now that we have our subset data with all relevant features, we standardise the dataset to make sure that it can effectively undergo statistical analysis. This helps with numerical stability because some features have a vastly different range of values (e.g. population can be in the thousands, whereas hotel\_count is in the tens). To this end, we use Scikit Learn's StandardScaler class. \\ \\
@@ -250,7 +244,13 @@ Since the regressors are standardised and the target is log-transformed, we tran
 (j)
  =0 (∀j≠i). Then we have
 
-
+Figure \ref{fds-project-template:fig:multi_residuals_dist}.
+\begin{figure} [h!]
+  \centering
+  \includegraphics{report/multi_residuals_dist.pdf}
+  \caption{Distribution of Residuals}
+  \label{fds-project-template:fig:multi_residuals_dist}
+\end{figure} \\ \\ 
 Our conclusions should mostly be trustworthy; however, the nature of the data might affect their accuracy somewhat. Perhaps the most important thing to note is that we are working with the number of ascents by separate individuals as opposed to the frequency of climbs. Additionally, the data on the number of ascents has only been gathered from a single source – and WalkHighlands requires users to register before allowing them to contribute. This means that the group of people who contributed to the data we are using might not be fully representative of all hikers. The contributors can be expected to be active internet users with a real passion for hiking – which is not necessarily the case for every Munro climber.
 
 % 't' means "try to position at the top of the page"
