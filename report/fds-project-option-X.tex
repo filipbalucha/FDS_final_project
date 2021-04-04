@@ -215,12 +215,12 @@ S  \includegraphics{report/q1_prediction.pdf}
 \end{figure} \\ \\
 Again, we note some important results from statsmodels. The $p$-value tells us that there is a 2\% probability that the relationship between altitude and ascent count may be due to chance. Since $0.021 < 0.05$, it allows us to reject the null hypothesis that the coefficient of altitude in the model equals 0 at the 5\% level. Furthermore, the t score is fairly high too, which further asserts our claim. Thus, there is a statistically significant relationship between altitude and ascent count. However,we observe that the R\textsuperscript{2} value is quite low at 0.019. This tells us that the model does not fit the data too well. This motivates the use of further predictors to aid our analysis. \\ \\
 Since we standardised the independent variable (i.e. it has mean 0), the intercept tells us the expected ascent count for a Munro of mean altitude – which is 5233.8. We now compute the root mean squared error to assess how far off our predictions are from the target values in absolute terms on average. The RMSE indicates how far our predictions of ascent count deviate from actual observed values, in absolute terms – and in our case, they deviate by about 3000. Given that the mean ascent count is approximately 5200, this is a a relatively large number. \\ \\
-This can perhaps be explained by looking at the residuals distribution as seen in Figure \ref{fds-project-template:fig:residuals_dist}.
+This can perhaps be explained by looking at the residuals distribution as seen in Figure \ref{fds-project-template:fig:uni_residuals}.
 \begin{figure} [h!]
   \centering
-  \includegraphics{report/residuals_dist.pdf}
+  \includegraphics{report/uni_residuals.pdf}
   \caption{Distribution of Residuals}
-  \label{fds-project-template:fig:residuals_dist}
+  \label{fds-project-template:fig:uni_residuals}
 \end{figure} \\ \\ 
 A good Linear regression fit requires the residuals to be normally distributed. This is not exactly a normal distribution, and is fairly skewed; this is not what we are looking for. We now plot residuals against altitude to check for a potential relationship – the results are seen in Figure. \\ \\
 The plot is not heteroskedastic. Additionally, there is no discernible pattern – the independent variable and variance do not exhibit a relationship. This tells us that the linear model we used earlier was a reasonable choice for the given task. \\ \\
