@@ -228,7 +228,13 @@ Moving on to our second question, we need to perform some feature selection on o
 Now that we have our subset data with all relevant features, we standardise the dataset to make sure that it can effectively undergo statistical analysis. This helps with numerical stability because some features have a vastly different range of values (e.g. population can be in the thousands, whereas hotel\_count is in the tens). To this end, we use Scikit Learn's StandardScaler class. \\ \\
 We use scikit-learn's SelectKBest class to select features. We score the features using the scoring function f\_regression, which is equivalent to running a univariate linear regression test for each independent variable. According to the official documentation \cite{scikit-learn}, f\_regression first computes the Pearson correlation coefficient between the regressor and the target. It outputs a p-value, which corresponds to the null hypothesis that there is no linear interaction between between the regressor and the target. We pick the regressors whose p-value falls below a certain threshold. As in the previous section, we choose the threshold to be 0.05, such that the null hypothesis can be rejected at the 5\% level. That is, we pick only those regressors for which there is a 5\% probability that the linear interaction with the target is due to chance. \\ \\
 Before we start using ordinary least squares on the data, we ensure that there is no significant multicollinearity between our features since that could potentially reduce numerical stability, and hence affect the quality of our prediction. To determine multicollinear features, we inspect the correlation matrix for the selected independent features. We notice that all correlations are below 0.8, so we do not need to remove anything. \\ 
-
+Figure \ref{fds-project-template:fig:scree_plot}.
+\begin{figure} [h!]
+  \centering
+  \includegraphics{report/scree_plot.pdf}
+  \caption{Distribution of Residuals}
+  \label{fds-project-template:fig:scree_plot}
+\end{figure} \\ \\ 
 TODO add ascent count figure + log transformed \\  \\
 We now apply ordinary least squares regression to the dataset. We will use each of the standardised features as regressors and the log-transformed Ascent Count as the target. The variables population\_25\_50 and hostel\_count both have quite high p-values of over 0.2 – perhaps due to multicollinearity with other features – and hence we drop them. \\  \\
 After reapplying OLS, we obtain a good fit with an adjusted R\textsuperscript{2} of 0.525 and an F-statistic of 45.39. In addition, we notice that all the features in model have a p-value within 0.01 of t. This indicates the obtained coefficients are reliable. \\  \\
