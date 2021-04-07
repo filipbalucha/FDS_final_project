@@ -100,7 +100,7 @@ All web scraping was performed in accordance with James Densmore's rules for eth
 
 \paragraph{Data description} 
 
-After processing the data and joining the resulting tables (see \textquote{Data processing} for details), we obtained a data set with 282 records and variables as outlined Table~\ref{table:1}.
+After processing the data and joining the resulting tables (see \textquote{Data processing} for details), we obtained a data set with 282 records and variables as outlined in Table~\ref{table:1}.
 % TODO: reference the section?
 
 \begin{table}
@@ -160,6 +160,9 @@ After merging, we computed the number of \textquote{neighbours} for each Munro, 
 % TEMP dash: –
 
 \section{Exploration and  analysis}
+
+This section provides a summary of our data analysis process. It includes key visualisations which helped us reach our conclusions, as well as interpretations of the results on each step of the process. We split it into 3 parts – each of them corresponds to one of the questions that we seek to answer in our paper.
+
 % Suggested 500 words for individual report; proportionately longer
 % for group projects).
 
@@ -210,7 +213,7 @@ We use hypothesis testing. The null and alternate hypotheses are as follows:
 % DECIDED explain why log transform
 % TODO: fix transition here
 
-Before applying Ordinary Least Squares (OLS) linear regression we need to make sure that our dependent variable is not highly skewed. In order to see if that is the case, we plot the distribution of Ascent Count and notice that it is right-skewed. In order to fix this skew, we log-transform Ascent Count. This yields a distribution which is less skewed and which looks approximately normal (Figure~\ref{fds-project-template:fig:ascent_count_distribution}).
+Before applying Ordinary Least Squares (OLS) linear regression we need to make sure that our dependent variable is not highly skewed. In order to see if that is the case, we plot the distribution of Ascent Count and notice that it is right-skewed. In order to fix this skew, we log-transform Ascent Count. This yields a distribution which is less skewed and which looks approximately normal (Figure~\ref{fds-project-template:fig:dist_log_ascent_count}).
 % DECIDED: Split into figure a and b
 % TODO: need left hand side plot? since already in fig 1a
     % TODO: right hand side: more space around the curve, better x-axis numbering
@@ -218,18 +221,8 @@ Before applying Ordinary Least Squares (OLS) linear regression we need to make s
 \begin{figure} [h!]
   \centering
   \includegraphics{report/ascent_count_distribution.pdf}
-  \begin{minipage}[t]{.5\linewidth}
-        \centering
-        \subcaption{The distribution of number of ascents.}
-        \label{fds-project-template:fig:box_dist_ascents}
-    \end{minipage}%
-    \begin{minipage}[t]{.5\linewidth}
-        \centering
-        \subcaption{}
-        \label{fds-project-template:fig:box_dist_altitude}
-    \end{minipage}
   \caption{The distribution of number of ascents upon log-transformation.}
-  \label{fds-project-template:fig:ascent_count_distribution}
+  \label{fds-project-template:fig:dist_log_ascent_count}
 \end{figure}
 
 To aid numerical stability, we normalise the independent variable – i.e. centering it around 0. Applying linear regression on the processed data yields the prediction seen in Figure~\ref{fds-project-template:fig:q1_prediction}.
@@ -246,14 +239,23 @@ Again, we note some important results from statsmodels. The $p$-value tells us t
 
 Since we normalised the independent variable, it has mean 0. Thus for the mean Munro, $\ln$(Ascent count) is equal to the intercept. This tells us the expected ascent count for a Munro of mean altitude is $e^{\beta_0}=e^{8.4286}\approx 4576$ ascents. To understand the meaning of the slope $\beta_1$, we note that the linear regression is of the form $\beta_0 + \beta_1x = \ln(y)$ so that $\beta_0 + \beta_1x = \ln(y_1)$ and $\beta_0 + \beta_1x = \ln(y_2)$ for two observations. Then $\beta_1(x_2 - x_1) = \ln(y_2) - \ln(y_1) = \ln(y_2 / y_1)$. Now for a unit increase in the dependent variable we have $x_2 - x_1 = 1$, and finally $e^{\beta_1} = y_2 / y_1$, which can be rewritten as $e^{\beta_1} - 1 = (y_2 - y_1) / y_1$. Thus, a unit increase in altitude leads the ascent count to increase by $100(e^{0.0008} - 1)\% \approx 0.08\%$. The confidence interval tells us that in $95\%$ of all samples that could be drawn, $[5.57 \times 10^{-5}, 0.001]$ will include the true value of the coefficient for altitude, i.e. that the increase in ascent count will be within $[0.00570, 0.100]\%$.
 
-An assumption of linear regression is that the residuals are normally distributed. This appears to be the case, as seen in Figure~\ref{fds-project-template:fig:uni_residuals}. Furthermore, there is no obvious pattern observed – the independent variable and variance do not exhibit a relationship. 
-% DECIDED refer to right hand plot in Figure 5
-Thus, the plot is not heteroskedastic. Therefore, the linear model that we used earlier was a reasonable choice for the given task.
-% DECIDED: captions for a and b, fix discussion accordingly
+An assumption of linear regression is that the residuals are normally distributed. This appears to be the case (Figure~\ref{fds-project-template:fig:uni_residuals_dist}). Furthermore, there is no obvious pattern observed – the independent variable and variance do not exhibit a relationship. (Figure~\ref{fds-project-template:fig:uni_residuals_yhat}). Thus, the plot is not heteroskedastic. Therefore, the linear model that we used earlier was a reasonable choice for the given task.
 \begin{figure} [h!]
   \centering
   \includegraphics{report/uni_residuals.pdf}
-  \caption{Residuals}
+  \begin{minipage}[t]{.5\linewidth}
+        \centering
+        % TODO: Centre caption
+        \subcaption{A scatterplot of residuals against predictions.}
+        \label{fds-project-template:fig:uni_residuals_yhat}
+    \end{minipage}%
+    \begin{minipage}[t]{.5\linewidth}
+        \centering
+        \subcaption{The distribution of the residuals.}
+        \label{fds-project-template:fig:uni_residuals_dist}
+    \end{minipage}
+%   TODO: fix this caption
+  \caption{Residuals.}
   \label{fds-project-template:fig:uni_residuals}
 \end{figure}
 % DECIDED: what is the question?, remove reference to question
@@ -304,9 +306,7 @@ pop\_75\_100 & $\phantom{-}3.53 \times 10^{-5}$ & $\phantom{-}2.81\times 10^{-5}
 
 The intercept gives the expected value of Ascent Count on a log scale when all regressors are 0. The intercept is 8.4286 which implies the expected number of ascents is then $e^{8.4286} \approx 4576$ ascents. The most dominant feature is neighbor\_count\_5\_20. Every extra neighbouring Munro within 5-20km reduces the Ascent Count by $ \approx 1.3\%$. The other dominant features are the number of hotels, wherein each extra hotel reduces Ascent Count by $\approx 0.71\%$, and the distance to the nearest city, such that each extra kilometer distance leads to a $\approx 0.5\%$ decrease in Ascent Count. As implied by the first section, altitude also has an impact on ascent count, albeit smaller. Namely, each meter of altitude increases Ascent Count by $\approx 0.87\%$. There is also a slight positive impact on Ascent Count associated with population within 0-25km and 50-100km.
 
-We now plot the residuals of our fit against the predictions, as well as the distribution of our errors. As can be seen in Figure~\ref{fds-project-template:fig:multi_residuals_dist}, our errors are normally distributed, which is an assumption of linear regression, and there is no heteroskedasticity exhibited either.
-% TODO: missing final sentence -> what this means: linear model is a good choice!
-% DECIDED: distplot -> histplot (David's advice!)
+We now plot the residuals of our fit against the predictions, as well as the distribution of our errors. As can be seen in Figure~\ref{fds-project-template:fig:multi_residuals_dist}, our errors are normally distributed, which is an assumption of linear regression, and there is no heteroskedasticity exhibited either. This means that using the linear model was a good choice.
 \begin{figure} [h!]
   \centering
   \includegraphics{report/multi_residuals_dist.pdf}
@@ -330,73 +330,25 @@ Before performing K-Means Clustering, we need to reduce the number of independen
   \includegraphics{report/k_screeplot.pdf}
   \caption{K Scree plot}
   \label{fds-project-template:fig:k_screeplot}
-\end{figure} \\ \\
+\end{figure}
 % TODO: explain why elbow?
 In order to determine the appropriate number of clusters, we inspect the inertia (i.e. the sum of squared errors) of our K-Means model with increasing number of clusters, as can be seen in Figure~\ref{fds-project-template:fig:k_screeplot}. There is a clear elbow at $k = 4$. Thus, the optimal number of clusters is 4. We now perform K-Means. Since we cluster in 3 dimensions, we plot the predictions on a 3D plot and indicate the clusters' centroids (see Figure~\ref{fds-project-template:fig:3d_clusters}). We now use the information about clusters to inspect the features that contribute to each cluster. To obtain a summary measure for each feature, we take the mean of each feature for each cluster.
+
 % TODO: better caption (in fact, we should make sure all captions are perfect just in case)
-% TODO: make smaller?
 \begin{figure} [h!]
   \centering
   \includegraphics{report/3d_clusters.pdf}
   \caption{Clusters}
   \label{fds-project-template:fig:3d_clusters}
 \end{figure} \\
-% TODO: settle for either ~ or \approx and use consistently throughout
-% TODO: fix hyphen: –
-The average Munro in Cluster 1 has $\approx 2000$ inhabitants within 25km, while the nearest city has $\approx 10,000$ inhabitants and is $\approx 35$km away. This cluster has the largest population 25-100km away out of all clusters. At about 60, it also has the largest number of hotels. It also has a fair amount of bed and breakfast accomodations (about 50). It also has the lowest the number of neighbouring Munros: slightly above 2. Since there are very few neighbouring Munros and there are a lot of (presumably relatively high-end) hotels near these Munros, we expect this cluster to comprise of fairly \textquote{exclusive} Munros which are suitable for visitors from a larger city (which makes them quite popular, too). Two examples of Munros that fall into this category are Ben Lomond and Ben Lawers.
+The average Munro in Cluster 1 has \textasciitilde 2000 inhabitants within 25km, while the nearest city has \textasciitilde 10,000 inhabitants and is \textasciitilde 35km away. This cluster has the largest population 25-100km away out of all clusters. At about 60, it also has the largest number of hotels. It also has a fair amount of bed and breakfast accomodations (about 50). It also has the lowest the number of neighbouring Munros: slightly above 2. Since there are very few neighbouring Munros and there are a lot of (presumably relatively high-end) hotels near these Munros, we expect this cluster to comprise of fairly \textquote{exclusive} Munros which are suitable for visitors from a larger city (which makes them quite popular, too). Two examples of Munros that fall into this category are Ben Lomond and Ben Lawers.
 
 The average Munro in Cluster 2 does not have a large city within 100km. The nearest city is about \textasciitilde 45km away with a population slightly higher than \textasciitilde 7,500. The dominant accommodation type for this cluster are cottages and camping sites, and there are relatively few B&Bs, hotels and hostels. It has about 25 neighboring Munros within 20km. We are therefore dealing with a region with a fairly high number of Munros, with relatively few accommodation facilities and also quite far away from any major cities. Munros that belong to this cluster are fairly isolated and slightly less popular - two examples would be Mount Keen and Ben Hope.
 
-For the average Munro in Cluster 3, the closest city is more than 50km away, but has \textasciitilde 20,000 people – the most across all clusters. It has the largest number of cottages and campings out of all clusters, with relatively fewer B&Bs, hotels and hostels. At more than 4, it also has the largest number of neighboring Munros within 5km. Visitors to Munros included in this cluster might wish to hike several neighboring peaks during their trip and stay at a cottage or camping site. At \textasciitilde 6000 ascents, these Munros are fairly popular – perhaps some inhabitants of the nearby large city are regular visitors, or the high concentration of nearby Munros makes the entire area a popular hiking destination. The latter point is supported by the inclusion of peaks such as Cairn Gorm and The Cairnwell in this cluster; both of these are located in the Cairngorms Natural Park, one of Scotland's prime areas for hiking.
+For the average Munro in Cluster 3, the closest city is more than 50km away, but has \textasciitilde 20,000 people – the most across all clusters. It has the largest number of cottages and campings out of all clusters, with relatively fewer B&Bs, hotels and hostels. At more than 4, it also has the largest number of neighboring Munros within 5km. Visitors to Munros included in this cluster might wish to hike several neighboring peaks during their trip and stay at a cottage or camping site. At \textasciitilde 6,000 ascents, these Munros are fairly popular – perhaps some inhabitants of the nearby large city are regular visitors, or the high concentration of nearby Munros makes the entire area a popular hiking destination. The latter point is supported by the inclusion of peaks such as Cairn Gorm and The Cairnwell in this cluster; both of these are located in the Cairngorms Natural Park, one of Scotland's prime areas for hiking.
 
 The average Munro in Cluster 4 has the largest number of people within 25km across all clusters, but relatively few people beyond that. The nearest city is \textasciitilde 25km away and has a population of about 10,000. Other larger settlements lie beyond 75km away. The dominant accommodation types are B&Bs and hostels. At almost 25, it has the largest number of neighboring Munros within 5-20km. Two examples of peaks that belong to this cluster are Ben Nevis and Stob Dearg; these are both located near Fort William and Glencoe in North-West Scotland, an area famous for its high concentration of dramatic Munros – which certainly ensures a large number of neighboring peaks. Apart from a few minor nearby towns that also present a number of accommodation facilities, Munros in this cluster seem to be quite isolated compared to others – and this definitely applies to the two aforementioned examples.
-% 't' means "try to position at the top of the page"
-%\begin{figure}[t]
-%  \centering
-%  \includegraphics{example1}
-%  \caption{Demonstration figure. This caption explains more about the
-%    figure. Note that the font size of the labels in the plot is 9pt,
-%    which is obtained by the settings as shown in the Jupyter
-%    notebook.}
-%  \label{fds-project-template:fig:example1}
-%\end{figure}
-% 'b' means "try to position at the bottom of the page"
-%\begin{table}[b]
-%  \caption{Exerpt from Scottish Index of Multiple Deprivation, 2016 edition.
-%    \url{https://simd.scot}. You may put more information in the caption.}
-%  \label{tab:example1}
-%\begin{tabular}{lrrrrrrr}
-%\hline\hline
-%5\textbf{Location}&\textbf{Employ-}&\textbf{Illness}&\t%extbf{Attain-}&\textbf{Drive}  &\textbf{Drive}    5&\textbf{Crime}&\dots\\
-%                 &\textbf{ment}   &                &\textbf{ment}   &\textbf{Primary}&\textbf{Secondary}&              &\\
-%\hline
-%\textbf{Macduff}&$10$&$ 95$&$5.3$&$1.5$&$6.6$&$249$&\dots\tabularnewline
-%\textbf{Kemnay}&$ 3$&$ 40$&$5.3$&$2.4$&$2.4$&$168$&\dots\tabularnewline
-%\textbf{Hilton}&$ 0$&$ 10$&$6.3$&$2.2$&$3.0$&$144$&\dots\tabularnewline
-%\textbf{Ruchill}&$ 8$&$130$&$4.9$&$1.7$&$5.6$&$318$&\dots\tabularnewline
-%\textbf{Belmont}&$ 2$&$ 50$&$6.1$&$3.1$&$3.2$&$129$&\dots\tabularnewline
-%\dots&\dots&\dots&\dots&\dots&\dots&\dots&\dots\tabularnewline
-%\hline
-%\end{tabular}
-%\end{table}
-%A data science analysis of the paper, including: 
-%\begin{itemize}
-%\item Visualisations (for example
-%  Figure~\ref{fds-project-template:fig:example1}) and tables (for
-%  example Table~\ref{tab:example1}). Please make sure that all figures
-%  and tables are referred to in the text, as demonstrated in this
-%  bullet point.
-%\item Interpretation of the results 
-%\item Description of how you have applied one ore more of the
-%  statistical and ML methods learned in the FDS to the data
-%\item Interpretation of the findings 
-%\end{itemize}
-%You can use equations like this:
-%\begin{equation}
-%  \label{fds-project-template:eq:1}
-%  \overline{x} = \sum_{i=1}^n x_i
-%\end{equation}
-%or maths inline: $E=mc^2$. However, you do not need to reexplain %techniques that you have learned in the course -- assume the reader %undertands linear regression, logicstic regression K-nerest neighbours %etc.  Remember to explain any symbols use, e.g.~``$n$ is the number of %data points and $x_i$ is the value of the $i$th data point.''.
+
 \section{Discussion and conclusions}
 % Suggested 400 words.
 
