@@ -160,7 +160,7 @@ After processing the data and joining the resulting tables (see \textquote{Data 
 % TODO: use actual vaulues instead of r_1 and r_2? ('neighbor_count_0_5', 'neighbor_count_5_20', 'population_0_25', 'population_25_50', 'population_50_75', 'population_75_100')
 % TODO: add? 'beginner_friendly', 'national_park', or 'nearest_large_city_distance'
 \paragraph{Data processing} How you have processed the dataset, e.g.,
-cleaning, removing missing values, joining tables.\\ \\
+cleaning, removing missing values, joining tables.
 % DECIDED clarify bayesian average
 % After scraping the WH data, we normalised the ratings since the rating count presented wild variations (taking values between 22 and 317). We computed the Bayesian average, which pulls ratings that are based on few votes closer to the mean rating. It uses two fields: $m$, the prior mean, i.e. the mean rating for all Munros, and $C$, the number of ratings required for a decent estimate of the sample mean. In other words, $C$ is the number of observations necessary to “get away” from $m$. These values were determined using a joint distribution plot of “rating” and “rating\_count” to be $m = 3.6$ and $C = 60$. \\ \\
 % TODO: variable format
