@@ -191,6 +191,7 @@ To get an initial view of the data, we start by visualising the distributions of
     \includegraphics{report/box_dist.pdf}
     \begin{minipage}[t]{.5\linewidth}
         \centering
+        % TODO: Centre caption
         \subcaption{The distribution of number of ascents.}
         \label{fds-project-template:fig:box_dist_ascents}
     \end{minipage}%
@@ -201,8 +202,8 @@ To get an initial view of the data, we start by visualising the distributions of
     \end{minipage}
     \caption{The distributions for number of ascents and altitude.}
       \label{fds-project-template:fig:box_dist}
-\end{figure}
-In order to better understand and identify some key outliers, it is worth having a look at a scatterplot of ascent count and altitude (Figure~\ref{fds-project-template:fig:scatterplot}). It comes as little surprise that the two most popular Munros are Ben Lomond and Ben Nevis. In fact, Ben Lomond takes the top spot despite being less than 1000 metres high. This could likely be explained by its extraordinary popularity with the people of Glasgow, Scotland's most populous city. It is within easy reach of said city, and is well-known as an accessible spot of natural beauty for Glaswegians. On the other hand, Ben Nevis' significant popularity was expected given its status as the tallest mountain in Britain. Its relatively isolated location in the North-West of Scotland does little to deter plenty of people from all over the UK from attempting the comparatively strenuous hike. \\ \\
+\end{figure}\\ \\
+In order to better understand and identify some key outliers, it is worth having a look at a scatterplot of ascent count and altitude (Figure~\ref{fds-project-template:fig:scatterplot}). It comes as little surprise that the two most popular Munros are Ben Lomond and Ben Nevis. In fact, Ben Lomond takes the top spot despite being less than 1000 metres high. This could likely be explained by its extraordinary popularity with the people of Glasgow, Scotland's most populous city. It is within easy reach of said city, and is well-known as an accessible spot of natural beauty for Glaswegians. On the other hand, Ben Nevis' significant popularity was expected given its status as the tallest mountain in Britain. Its relatively isolated location in the North-West of Scotland does little to deter plenty of people from all over the UK from attempting the comparatively strenuous hike.
 % TODO: comment on the different scale in x and y-axis
 % TODO: y-axis from 0
 \begin{figure} [h!]
@@ -210,8 +211,7 @@ In order to better understand and identify some key outliers, it is worth having
   \includegraphics{report/scatterplot.pdf}
   \caption{Scatterplot of ascent count and altitude with key outliers highlighted.}
   \label{fds-project-template:fig:scatterplot}
-\end{figure}
-
+\end{figure}\\ \\
 We are now in a better position to answer our initial question. Judging by Figure~\ref{fds-project-template:fig:scatterplot}, there appears to be no clear relationship between Munro altitude and ascent count. However, the outliers (e.g. Ben Nevis) should exert a leverage and thus we can still expect to see a positive relationship between number of ascents and altitude. Nevertheless, our conclusions will unfortunately be marred by the large variance in the left-hand side of the scatterplot. \\ \\
 We use hypothesis testing. The null and alternate hypotheses are as follows:
 % DECIDED: change null hypothesis to: hypothesis that 
@@ -351,7 +351,6 @@ In order to determine the appropriate number of clusters, we inspect the inertia
 The average Munro in Cluster 1 has $\approx 2000$ inhabitants within 25km, while the nearest city has $\approx 10,000$ inhabitants and is $\approx 35$km away. This cluster has the largest population 25-100km away out of all clusters. At about 60, it also has the largest number of hotels. It also has a fair amount of bed and breakfast accomodations (about 50). It also has the lowest the number of neighbouring Munros: slightly above 2. Since there are very few neighbouring Munros and there are a lot of (presumably relatively high-end) hotels near these Munros, we expect this cluster to comprise of fairly \textquote{exclusive} Munros which are suitable for visitors from a larger city (which makes them quite popular, too). Two examples of Munros that fall into this category are Ben Lomond and Ben Lawers.\\ \\
 The average Munro in Cluster 2 does not have a large city within 100km. The nearest city is about \textasciitilde 45km away with a population slightly higher than \textasciitilde 7,500. The dominant accommodation type for this cluster are cottages and camping sites, and there are relatively few B&Bs, hotels and hostels. It has about 25 neighboring Munros within 20km. We are therefore dealing with a region with a fairly high number of Munros, with relatively few accommodation facilities and also quite far away from any major cities. Munros that belong to this cluster are fairly isolated and slightly less popular - two examples would be Mount Keen and Ben Hope. \\ \\ For the average Munro in Cluster 3, the closest city is more than 50km away, but has \textasciitilde 20,000 people – the most across all clusters. It has the largest number of cottages and campings out of all clusters, with relatively fewer B&Bs, hotels and hostels. At more than 4, it also has the largest number of neighboring Munros within 5km. Visitors to Munros included in this cluster might wish to hike several neighboring peaks during their trip and stay at a cottage or camping site. At \textasciitilde 6000 ascents, these Munros are fairly popular – perhaps some inhabitants of the nearby large city are regular visitors, or the high concentration of nearby Munros makes the entire area a popular hiking destination. The latter point is supported by the inclusion of peaks such as Cairn Gorm and The Cairnwell in this cluster; both of these are located in the Cairngorms Natural Park, one of Scotland's prime areas for hiking.\\ \\
 The average Munro in Cluster 4 has the largest number of people within 25km across all clusters, but relatively few people beyond that. The nearest city is \textasciitilde 25km away and has a population of about 10,000. Other larger settlements lie beyond 75km away. The dominant accommodation types are B&Bs and hostels. At almost 25, it has the largest number of neighboring Munros within 5-20km. Two examples of peaks that belong to this cluster are Ben Nevis and Stob Dearg; these are both located near Fort William and Glencoe in North-West Scotland, an area famous for its high concentration of dramatic Munros – which certainly ensures a large number of neighboring peaks. Apart from a few minor nearby towns that also present a number of accommodation facilities, Munros in this cluster seem to be quite isolated compared to others – and this definitely applies to the two aforementioned examples. \\ \\
-Our conclusions should mostly be trustworthy; however, the nature of the data might affect their accuracy somewhat. Perhaps the most important thing to note is that we are working with the number of ascents by separate individuals as opposed to the frequency of climbs. Additionally, the data on the number of ascents has only been gathered from a single source – and WalkHighlands requires users to register before allowing them to contribute. This means that the group of people who contributed to the data we are using might not be fully representative of all hikers. The contributors can be expected to be active internet users with a real passion for hiking – which is not necessarily the case for every Munro climber.
 % 't' means "try to position at the top of the page"
 %\begin{figure}[t]
 %  \centering
@@ -364,24 +363,24 @@ Our conclusions should mostly be trustworthy; however, the nature of the data mi
 %\end{figure}
 
 % 'b' means "try to position at the bottom of the page"
-\begin{table}[b]
-  \caption{Exerpt from Scottish Index of Multiple Deprivation, 2016 edition.
-    \url{https://simd.scot}. You may put more information in the caption.}
-  \label{tab:example1}
-\begin{tabular}{lrrrrrrr}
-\hline\hline
-\textbf{Location}&\textbf{Employ-}&\textbf{Illness}&\textbf{Attain-}&\textbf{Drive}  &\textbf{Drive}    &\textbf{Crime}&\dots\\
-                 &\textbf{ment}   &                &\textbf{ment}   &\textbf{Primary}&\textbf{Secondary}&              &\\
-\hline
-\textbf{Macduff}&$10$&$ 95$&$5.3$&$1.5$&$6.6$&$249$&\dots\tabularnewline
-\textbf{Kemnay}&$ 3$&$ 40$&$5.3$&$2.4$&$2.4$&$168$&\dots\tabularnewline
-\textbf{Hilton}&$ 0$&$ 10$&$6.3$&$2.2$&$3.0$&$144$&\dots\tabularnewline
-\textbf{Ruchill}&$ 8$&$130$&$4.9$&$1.7$&$5.6$&$318$&\dots\tabularnewline
-\textbf{Belmont}&$ 2$&$ 50$&$6.1$&$3.1$&$3.2$&$129$&\dots\tabularnewline
-\dots&\dots&\dots&\dots&\dots&\dots&\dots&\dots\tabularnewline
-\hline
-\end{tabular}
-\end{table}
+%\begin{table}[b]
+%  \caption{Exerpt from Scottish Index of Multiple Deprivation, 2016 edition.
+%    \url{https://simd.scot}. You may put more information in the caption.}
+%  \label{tab:example1}
+%\begin{tabular}{lrrrrrrr}
+%\hline\hline
+%5\textbf{Location}&\textbf{Employ-}&\textbf{Illness}&\t%extbf{Attain-}&\textbf{Drive}  &\textbf{Drive}    5&\textbf{Crime}&\dots\\
+%                 &\textbf{ment}   &                &\textbf{ment}   &\textbf{Primary}&\textbf{Secondary}&              &\\
+%\hline
+%\textbf{Macduff}&$10$&$ 95$&$5.3$&$1.5$&$6.6$&$249$&\dots\tabularnewline
+%\textbf{Kemnay}&$ 3$&$ 40$&$5.3$&$2.4$&$2.4$&$168$&\dots\tabularnewline
+%\textbf{Hilton}&$ 0$&$ 10$&$6.3$&$2.2$&$3.0$&$144$&\dots\tabularnewline
+%\textbf{Ruchill}&$ 8$&$130$&$4.9$&$1.7$&$5.6$&$318$&\dots\tabularnewline
+%\textbf{Belmont}&$ 2$&$ 50$&$6.1$&$3.1$&$3.2$&$129$&\dots\tabularnewline
+%\dots&\dots&\dots&\dots&\dots&\dots&\dots&\dots\tabularnewline
+%\hline
+%\end{tabular}
+%\end{table}
 
 %A data science analysis of the paper, including: 
 %\begin{itemize}
@@ -407,15 +406,14 @@ Our conclusions should mostly be trustworthy; however, the nature of the data mi
 % Suggested 400 words.
 
 \paragraph{Summary of findings}
-First of all, we have proven that there exists a statistically significant relationship between Munro altitude and number of ascents – generally, taller Munros can be expected to exhibit higher ascent counts. We have also explored the influence of other factors on the number of ascents. Some of our results were perhaps surprising – for instance a higher number of neighboring Munros seems to negatively affect ascent count – however most of them were intuitive e.g. Munros located near densely populated areas can be expected to have a higher ascent count. Finally, we have clustered the peaks into four different categories which have
+First of all, we have proven that there exists a statistically significant relationship between Munro altitude and number of ascents – taller Munros can generally be expected to exhibit higher ascent counts. We have also explored the influence of other factors on the number of ascents. Some of our results were perhaps surprising – for instance a higher number of neighboring Munros seems to negatively affect ascent count – however most of them were intuitive e.g. Munros located near densely populated areas can be expected to have a higher ascent count. Finally, we have clustered the peaks into four different categories according to their features. We expanded on this by emphasising the correspondence between specific clusters and various moutaineous regions of Scotland.
 \paragraph{Evaluation of own work: strengths and limitations}
-
+Our models should be quite reliable – owing to the fact that we only use techniques that fit the given context well. We also aim to be rigorous in our working, providing mathematical justifications to further clarify certain transformations we applied to the data, as well as our plotting choices. \\ \\
+As a result of this, our conclusions should mostly be trustworthy; however, the nature of the data might affect their accuracy somewhat. Perhaps the most important thing to note is that our Munro climbing data is limited to the number of ascents by separate individuals – and we are using this as a proxy for Munro popularity when dealing with Question 2. Additionally, it is worth noting that WalkHighlands requires users to register before allowing them to contribute. This means that the group of people who contributed to the data we are using might not be fully representative of all hikers. The contributors can be expected to be active internet users with a remarkable passion for hiking – which is not necessarily the case for every Munro climber.
 \paragraph{Comparison with any other related work}
-E.g. ``Anscombe has also demonstrated that many patterns of data can
-have the same correlation coefficient'' \cite{Ansc73Grap}.
-
+Scarpa and Thiene have also explored the patterns of human behaviour and preferences surrounding hiking in a certain area – namely the Italian Dolomites \cite{HitA}. Their analysis went slightly deeper than ours, and mostly focused on the manner in which specific mountaineous sites can be substituted for others, provided that some similar features exist between them. There has been no similar study regarding Scottish Munros, and hence our work still stands as a relevant paper, albeit minimal in its scope – and it is certainly worth considering extending it.
 \paragraph{Improvements and extensions}
-
+First of all, we could improve our work by considering more factors that lead to Munro popularity; however, this might be limited by the amount of data that is freely available online. Additionally, we could take a similar approach to Scarpa and Thiene, and look for substitution patterns between different Munros – our clustering might prove extremely useful for this \cite{HitA}. Finally, we were considering implementing a Munro recommendation system, through which users would receive Munro climbing suggestions based on their recorded preferences.
 \bibliographystyle{unsrt}
 \bibliography{fds-project}
 \end{document}
