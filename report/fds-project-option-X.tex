@@ -180,11 +180,11 @@ After merging, we computed the number of \textquote{neighbours} for each Munro, 
 
 % DECIDED: add caption for (a), (b) (https://tex.stackexchange.com/questions/211748/multiple-captions-under-a-single-figure)
 \subsection{Assessment of the statistical significance of the relationship between Munro height and the number of ascents}
-To get an initial view of the data, we start by visualising the distributions of Munro ascent counts and heights (Figure~\ref{fds-project-template:fig:box_dist}). We observe that most Munros have been ascended 2500 to 3000-times. The associated box plot tells us that an ascent count greater than 11,000 is an outlier (Figure~\ref{fds-project-template:fig:box_dist_ascents}). . We also notice that most Munros have an altitude just below 1000m, with any Munro higher than $1,230m$ being an outlier (Figure~\ref{fds-project-template:fig:box_dist_altitude}).
+To get an initial view of the data, we start by visualising the distributions of Munro ascent counts and heights (Figure~\ref{fds-project-template:fig:box_dist}). We observe that most Munros have been ascended 2500 to 3000-times. The associated box plot tells us that an ascent count greater than 11,000 is an outlier (Figure~\ref{fds-project-template:fig:box_dist_ascents}). . We also notice that most Munros have an altitude just below 1000m, with any Munro higher than $1,230$m being an outlier (Figure~\ref{fds-project-template:fig:box_dist_altitude}).
 % TODO finish comment on outliers: There exist a number of apparent outliers in the data – as was also visible in the boxplots attached to Figure~\ref{fds-project-template:fig:box_dist}.
 
-% DECIDED Fix x-axis, it absolutely must include 900 and 1000 (b); 2500-3000 (a) !!! -> divide both by 1000
-% DECIDED Fix y-axis: better ticks! need to have a cap
+% TODO: bin sizes! values are still hard to read off!
+% TODO: 2.5 really won't fit in figure 1
 \begin{figure} [h!]
   \centering
   \includegraphics{report/box_dist.pdf}
@@ -202,10 +202,6 @@ To get an initial view of the data, we start by visualising the distributions of
   \label{fds-project-template:fig:box_dist}
 \end{figure} \\
 
-
-% TODO: shorten? if not enough space
-% TODO Fix legend: all dot sizes should be the same! -> see how it looks
-% DECIDED Fix y-axis and x-axis: use thousands
 \begin{figure} [h!]
   \centering
   \includegraphics{report/scatterplot.pdf}
@@ -215,23 +211,23 @@ To get an initial view of the data, we start by visualising the distributions of
 In order to better understand and identify some key outliers, it is worth having a look at a scatterplot of ascent count and altitude (Figure~\ref{fds-project-template:fig:scatterplot}). It comes as little surprise that the two most popular Munros are Ben Lomond and Ben Nevis. In fact, Ben Lomond takes the top spot despite being less than 1000 metres high. This could likely be explained by its extraordinary popularity with the people of Glasgow, Scotland's most populous city. It is within easy reach of said city, and is well-known as an accessible spot of natural beauty for Glaswegians. On the other hand, Ben Nevis' significant popularity was expected given its status as the tallest mountain in Britain. Its relatively isolated location in the North-West of Scotland does little to deter plenty of people from all over the UK from attempting the comparatively strenuous hike. \\ \\
 We are now in a better position to answer our initial question. Judging by Figure~\ref{fds-project-template:fig:scatterplot}, there appears to be no clear relationship between Munro altitude and ascent count. However, the outliers (e.g. Ben Nevis) should exert a leverage and thus we can still expect to see a positive relationship between number of ascents and altitude. Nevertheless, our conclusions will unfortunately be marred by the large variance in the left-hand side of the scatterplot. \\ \\
 We use hypothesis testing. The null and alternate hypotheses are as follows:
-% DECIDED: change null hypothesis to: hypothesis that the coefficient of altitude in the model equals 0
+% DECIDED: change null hypothesis to: hypothesis that 
 %  this matches what's used by statsmodels, so could be less confusing
 \begin{align*}
     H_0 &= \text{There is not a statistically significant relationship between altitude and number of ascents.}\\
     H_\text{a} &= \text{There is a statistically significant relationship between altitude and number of ascents.}
 \end{align*}
 % DECIDED explain why log transform
-Before applying Ordinary Least Squares (OLS) linear regression we need to make sure that our dependent variable is not highly skewed. In order to see if that is the case, we plot the distribution of Ascent Count and notice that it is right-skewed. In order to fix this skew, we log-transform Ascent Count. This yields a distribution which is less skewed and which looks approximately normal, as seen in Figure~\ref{fds-project-template:fig:ascent_count_distribution}. \\ \\
+% TODO: fix transition here
+Before applying Ordinary Least Squares (OLS) linear regression we need to make sure that our dependent variable is not highly skewed. In order to see if that is the case, we plot the distribution of Ascent Count and notice that it is right-skewed. In order to fix this skew, we log-transform Ascent Count. This yields a distribution which is less skewed and which looks approximately normal (Figure~\ref{fds-project-template:fig:ascent_count_distribution}).
 % DECIDED: Split into figure a and b
-% DECIDED: make smaller? -> experiment
-% DECIDED: Use histogram instead of distplot (as per David's advice!)
+% TODO: should use shared y-axis? x-axis may be a bit misleading, b is actually much more "normal"
 \begin{figure} [h!]
   \centering
   \includegraphics{report/ascent_count_distribution.pdf}
-  \caption{Joint distribution of Munro heights and ascent counts.}
+  \caption{The distribution of Ascent Count before and after log-transformation.}
   \label{fds-project-template:fig:ascent_count_distribution}
-\end{figure} \\ \\
+\end{figure}
 % DECIDED: remove error message: reword in human language
 We now apply OLS and observe the results of statsmodels, which produces the following error message: \textquote{The condition number is large, 1.25e+04. This might indicate that there are strong multicollinearity or other numerical problems.} Since we are only using a single predictor, multicollinearity is out of the question – which means we need to deal with the numerical instability. We remedy the instability by normalising the independent variable – i.e. centering it around 0. \\ \\
 Applying OLS on the processed data yields the prediction seen in Figure~\ref{fds-project-template:fig:q1_prediction}.
