@@ -160,7 +160,7 @@ After processing the data and joining the resulting tables (see \textquote{Data 
 % TODO: use actual vaulues instead of r_1 and r_2? ('neighbor_count_0_5', 'neighbor_count_5_20', 'population_0_25', 'population_25_50', 'population_50_75', 'population_75_100')
 % TODO: add? 'beginner_friendly', 'national_park', or 'nearest_large_city_distance'
 \paragraph{Data processing} How you have processed the dataset, e.g.,
-cleaning, removing missing values, joining tables.\\ \\
+cleaning, removing missing values, joining tables.
 % DECIDED clarify bayesian average
 % After scraping the WH data, we normalised the ratings since the rating count presented wild variations (taking values between 22 and 317). We computed the Bayesian average, which pulls ratings that are based on few votes closer to the mean rating. It uses two fields: $m$, the prior mean, i.e. the mean rating for all Munros, and $C$, the number of ratings required for a decent estimate of the sample mean. In other words, $C$ is the number of observations necessary to “get away” from $m$. These values were determined using a joint distribution plot of “rating” and “rating\_count” to be $m = 3.6$ and $C = 60$. \\ \\
 % TODO: variable format
@@ -186,29 +186,31 @@ To get an initial view of the data, we start by visualising the distributions of
 % TODO: bin sizes! values are still hard to read off!
 % TODO: 2.5 really won't fit in figure 1
 \begin{figure} [h!]
-  \centering
-  \includegraphics{report/box_dist.pdf}
-  
+    \centering
+    \includegraphics{report/box_dist.pdf}
     \begin{minipage}[t]{.5\linewidth}
         \centering
-        \subcaption{The distribution of number of ascents.}\label{fds-project-template:fig:box_dist_ascents}
+        \subcaption{The distribution of number of ascents.}
+        \label{fds-project-template:fig:box_dist_ascents}
     \end{minipage}%
     \begin{minipage}[t]{.5\linewidth}
         \centering
-        \subcaption{The distribution of Munro altitude.}\label{fds-project-template:fig:box_dist_altitude}
+        \subcaption{The distribution of Munro altitude.}
+        \label{fds-project-template:fig:box_dist_altitude}
     \end{minipage}
-  
-  \caption{The distributions for number of ascents and altitude.}
-  \label{fds-project-template:fig:box_dist}
-\end{figure} \\
-
+    \caption{The distributions for number of ascents and altitude.}
+      \label{fds-project-template:fig:box_dist}
+\end{figure}
+In order to better understand and identify some key outliers, it is worth having a look at a scatterplot of ascent count and altitude (Figure~\ref{fds-project-template:fig:scatterplot}). It comes as little surprise that the two most popular Munros are Ben Lomond and Ben Nevis. In fact, Ben Lomond takes the top spot despite being less than 1000 metres high. This could likely be explained by its extraordinary popularity with the people of Glasgow, Scotland's most populous city. It is within easy reach of said city, and is well-known as an accessible spot of natural beauty for Glaswegians. On the other hand, Ben Nevis' significant popularity was expected given its status as the tallest mountain in Britain. Its relatively isolated location in the North-West of Scotland does little to deter plenty of people from all over the UK from attempting the comparatively strenuous hike. \\ \\
+% TODO: comment on the different scale in x and y-axis
+% TODO: y-axis from 0
 \begin{figure} [h!]
   \centering
   \includegraphics{report/scatterplot.pdf}
   \caption{Scatterplot of ascent count and altitude with key outliers highlighted.}
   \label{fds-project-template:fig:scatterplot}
-\end{figure} \\ \\
-In order to better understand and identify some key outliers, it is worth having a look at a scatterplot of ascent count and altitude (Figure~\ref{fds-project-template:fig:scatterplot}). It comes as little surprise that the two most popular Munros are Ben Lomond and Ben Nevis. In fact, Ben Lomond takes the top spot despite being less than 1000 metres high. This could likely be explained by its extraordinary popularity with the people of Glasgow, Scotland's most populous city. It is within easy reach of said city, and is well-known as an accessible spot of natural beauty for Glaswegians. On the other hand, Ben Nevis' significant popularity was expected given its status as the tallest mountain in Britain. Its relatively isolated location in the North-West of Scotland does little to deter plenty of people from all over the UK from attempting the comparatively strenuous hike. \\ \\
+\end{figure}
+
 We are now in a better position to answer our initial question. Judging by Figure~\ref{fds-project-template:fig:scatterplot}, there appears to be no clear relationship between Munro altitude and ascent count. However, the outliers (e.g. Ben Nevis) should exert a leverage and thus we can still expect to see a positive relationship between number of ascents and altitude. Nevertheless, our conclusions will unfortunately be marred by the large variance in the left-hand side of the scatterplot. \\ \\
 We use hypothesis testing. The null and alternate hypotheses are as follows:
 % DECIDED: change null hypothesis to: hypothesis that 
@@ -221,16 +223,28 @@ We use hypothesis testing. The null and alternate hypotheses are as follows:
 % TODO: fix transition here
 Before applying Ordinary Least Squares (OLS) linear regression we need to make sure that our dependent variable is not highly skewed. In order to see if that is the case, we plot the distribution of Ascent Count and notice that it is right-skewed. In order to fix this skew, we log-transform Ascent Count. This yields a distribution which is less skewed and which looks approximately normal (Figure~\ref{fds-project-template:fig:ascent_count_distribution}).
 % DECIDED: Split into figure a and b
+% TODO: need left hand side plot? since already in fig 1a...
+% TODO: right hand side: more space aaround, better x-axis numbering
 % TODO: should use shared y-axis? x-axis may be a bit misleading, b is actually much more "normal"
 \begin{figure} [h!]
   \centering
   \includegraphics{report/ascent_count_distribution.pdf}
+  \begin{minipage}[t]{.5\linewidth}
+        \centering
+        \subcaption{The distribution of number of ascents.}
+        \label{fds-project-template:fig:box_dist_ascents}
+    \end{minipage}%
+    \begin{minipage}[t]{.5\linewidth}
+        \centering
+        \subcaption{The distribution of log-transformed number of ascents.}
+        \label{fds-project-template:fig:box_dist_altitude}
+    \end{minipage}
   \caption{The distribution of Ascent Count before and after log-transformation.}
   \label{fds-project-template:fig:ascent_count_distribution}
 \end{figure}
 % DECIDED: remove error message: reword in human language
-We now apply OLS and observe the results of statsmodels, which produces the following error message: \textquote{The condition number is large, 1.25e+04. This might indicate that there are strong multicollinearity or other numerical problems.} Since we are only using a single predictor, multicollinearity is out of the question – which means we need to deal with the numerical instability. We remedy the instability by normalising the independent variable – i.e. centering it around 0. \\ \\
-Applying OLS on the processed data yields the prediction seen in Figure~\ref{fds-project-template:fig:q1_prediction}.
+% TODO: not sure if OLS can be used to denote linear regression - OLS has different, well-defined meaning, after all
+Upon applying OLS, statsmodels alerts us about numerical instability. We remedy it by normalising the independent variable – i.e. centering it around 0. Applying OLS on the processed data yields the prediction seen in Figure~\ref{fds-project-template:fig:q1_prediction}.
 \begin{figure} [h!]
   \centering
   \includegraphics{report/q1_prediction.pdf}
@@ -238,8 +252,9 @@ Applying OLS on the processed data yields the prediction seen in Figure~\ref{fds
   \label{fds-project-template:fig:q1_prediction}
 \end{figure} \\ \\
 % DECIDED explain why 5%
-Again, we note some important results from statsmodels. The $p$-value tells us that there is a $\approx 3.4\%$ probability that the relationship between altitude and ascent count may be due to chance. Since $0.034 < 0.05$, it allows us to reject the null hypothesis that the coefficient of altitude in the model equals 0 at the $5\%$ level. Furthermore, the t score is fairly high too, which further asserts our claim. Thus, there is a statistically significant relationship between altitude and ascent count. However, we observe that the $R^{2}$ value is quite low at $0.016$. This tells us that the model does not fit the data too well. This motivates the use of further predictors to aid our analysis. \\ \\
-Since we normalised the independent variable (i.e. it has mean 0), the intercept is $8.4286$. This tells us the expected ascent count for a Munro of mean altitude is $e^{8.4286}\approx 4576$. To understand the meaning of the slope $\beta_1$, upon log-transforming the dependent variable, we note that the linear regression is of the form $\beta_0 + \beta_1x = \ln(y)$ so that $\beta_0 + \beta_1x = \ln(y_1)$ and $\beta_0 + \beta_1x = \ln(y_2)$ for two observations. Then $\beta_1(x_2 - x_1) = \ln(y_2) - \ln(y_1) = \ln(y_2 / y_1)$. Now for a unit increase in the dependent variable we have $x_2 - x_1 = 1$, and finally $e^{\beta_1} = y_2 / y_1$, which can be rewritten as $e^{\beta_1} - 1 = (y_2 - y_1) / y_1$. Thus, a unit increase in altitude leads the ascent count to increase by $100(e^{0.0008} - 1)\% \approx 0.08\%$. The confidence interval tells us that in $95\%$ of all samples that could be drawn, $[5.57 \times 10^{-5}, 0.001]$ will include the true value of the coefficient for altitude, i.e. that the increase in ascent count will be within $[0.00570, 0.100]\%$.\\ \\
+Again, we note some important results from statsmodels. The $p$-value tells us that there is a $\approx 3.4\%$ probability that the relationship between altitude and ascent count may be due to chance. Since $0.034 < 0.05$, it allows us to reject the null hypothesis that the coefficient of altitude in the model equals 0 at the $5\%$ level. Furthermore, the t score is fairly high too, which further asserts our claim. Thus, there is a statistically significant relationship between altitude and ascent count. However, we observe that the $R^{2}$ value is quite low at $0.016$. This tells us that the model does not explain the variance in the data too well. This motivates the use of further predictors to aid our analysis.
+
+Since we normalised the independent variable, it has mean 0. Thus for the mean Munro, $\ln$(Ascent count) is equal to the intercept. This tells us the expected ascent count for a Munro of mean altitude is $e^{\beta_0}=e^{8.4286}\approx 4576$ ascents. To understand the meaning of the slope $\beta_1$, we note that the linear regression is of the form $\beta_0 + \beta_1x = \ln(y)$ so that $\beta_0 + \beta_1x = \ln(y_1)$ and $\beta_0 + \beta_1x = \ln(y_2)$ for two observations. Then $\beta_1(x_2 - x_1) = \ln(y_2) - \ln(y_1) = \ln(y_2 / y_1)$. Now for a unit increase in the dependent variable we have $x_2 - x_1 = 1$, and finally $e^{\beta_1} = y_2 / y_1$, which can be rewritten as $e^{\beta_1} - 1 = (y_2 - y_1) / y_1$. Thus, a unit increase in altitude leads the ascent count to increase by $100(e^{0.0008} - 1)\% \approx 0.08\%$. The confidence interval tells us that in $95\%$ of all samples that could be drawn, $[5.57 \times 10^{-5}, 0.001]$ will include the true value of the coefficient for altitude, i.e. that the increase in ascent count will be within $[0.00570, 0.100]\%$.\\ \\
 An assumption of linear regression is that the residuals are normally distributed. This appears to be the case, as seen in Figure~\ref{fds-project-template:fig:uni_residuals}. Furthermore, there is no obvious pattern observed – the independent variable and variance do not exhibit a relationship. 
 % DECIDED refer to right hand plot in Figure 5
 Thus, the plot is not heteroskedastic. Therefore, the linear model that we used earlier was a reasonable choice for the given task.\\ \\
