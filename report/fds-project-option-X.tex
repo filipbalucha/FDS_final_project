@@ -144,7 +144,9 @@ After processing the data and joining the resulting tables (see \textquote{Data 
 % TODO: add? 'beginner_friendly', 'national_park', or 'nearest_large_city_distance'
 \paragraph{Data processing}
 % DECIDED clarify bayesian average
-% After scraping the WH data, we normalised the ratings since the rating count presented wild variations (taking values between 22 and 317). We computed the Bayesian average, which pulls ratings that are based on few votes closer to the mean rating. It uses two fields: $m$, the prior mean, i.e. the mean rating for all Munros, and $C$, the number of ratings required for a decent estimate of the sample mean. In other words, $C$ is the number of observations necessary to “get away” from $m$. These values were determined using a joint distribution plot of “rating” and “rating\_count” to be $m = 3.6$ and $C = 60$.
+After scraping WH data, we noticed that the rating count varied from values as low as 22 to as high as 317. Results for Munros with fewer ratings can be considered less reliable – for instance, if all the ratings were too positive, this c
+
+normalised the ratings since  We computed the Bayesian average, which pulls ratings that are based on few votes closer to the mean rating. It uses two fields: $m$, the prior mean, i.e. the mean rating for all Munros, and $C$, the number of ratings required for a decent estimate of the sample mean. In other words, $C$ is the number of observations necessary to “get away” from $m$. These values were determined using a joint distribution plot of “rating” and “rating\_count” to be $m = 3.6$ and $C = 60$.
 % TODO: variable format
 
 For the DoBIH data, we only chose the Munros. We kept only the relevant columns, which were name, altitude, island, county, and its latitude and longitude.
