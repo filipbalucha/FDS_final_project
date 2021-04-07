@@ -89,12 +89,11 @@ We are setting out to answer the following questions:
 \section{Data}
 % Suggested 300 words
 \paragraph{Data provenance}
-We used three datasets: 
-% DECIDED reference T&Cs
+We used three datasets:
 \begin{itemize}
     \item WalkHighlands (WH), from which we extracted data on the popularity, rating and accessibility of Munros. This data relies on contributions from registered users – they can select and rate the Munros they have climbed. We retrieved the data using web scraping for the main Munro tables and subpages; additionally, we manually copied the number of facilities for each type of accommodation from the relevant subpages. These methods were chosen after a careful assessment of the T\&Cs \cite{WHTC}.
     \item The Database of British and Irish Hills (DoBIH), from which we extracted geographical data on the Munros. The origins of this data can be traced in a \textquote{series of articles in Marhofn and Relative Matters magazine}, according to the website. The current editorial team consists of Graham Jackson, Chris Crocker, John Barnard, Simon Edwardes, George Gradwell, Jim Bloomer, and Dave Marshall. The T\&Cs of this dataset are quite liberal, as they impose \textquote{no restrictions on use of the data by third parties}, so long as the terms of the Creative Commons license are respected \cite{DoBIHTC}. Retrieving the data was easy, as it only involved downloading a readily available CSV file.
-    \item Simplemaps Cities Database (SCD), from which we extracted data on British cities' location and population. The data comes from the US National Geospatial-Intelligence Agency, and is freely available to use under the MIT license. Again, retrieving the data only involved downloading a CSV file.
+    \item Simplemaps Cities Database (SCD), from which we extracted data on British cities' location and population. The data comes from the US National Geospatial-Intelligence Agency, and is freely available to use under an MIT license \cite {SCDBT}. Again, retrieving the data only involved downloading a CSV file.
 \end{itemize}
 
 All web scraping was performed in accordance with James Densmore's rules for ethical web scraping \cite{EiWS}. As such, we only scraped data where no API was accessible, we always provided a “User Agent” string to make our intentions clear to the site owner – as well as to provide a way to contact us – and we requested data at a reasonable rate of at most 1 request per 10 seconds. Finally, we only saved the data we absolutely needed, and did not pass it off as our own.
