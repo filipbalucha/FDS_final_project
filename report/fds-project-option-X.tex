@@ -91,7 +91,7 @@ We are setting out to answer the following questions:
 \paragraph{Data provenance}
 We used three datasets:
 \begin{itemize}
-    \item \textbf{WalkHighlands (WH)}, from which we extracted data on the popularity, rating and accessibility of Munros. This data relies on contributions from registered users – they can select and rate the Munros they have climbed. We retrieved the data using web scraping for the main Munro tables and subpages; additionally, we manually copied the number of facilities for each type of accommodation from the relevant subpages. These methods were chosen after a careful assessment of the T\&Cs \cite{WHTC}.
+    \item \textbf{WalkHighlands (WH)}, from which we extracted data on the popularity of Munros as well as the accommodation facilities in their vicinity. This data relies on contributions from registered users – they can select and rate the Munros they have climbed. We retrieved the data using web scraping for the main Munro tables and subpages; additionally, we manually copied the number of facilities for each type of accommodation from the relevant subpages. These methods were chosen after a careful assessment of the T\&Cs \cite{WHTC}.
     \item \textbf{The Database of British and Irish Hills (DoBIH)}, from which we extracted geographical data on the Munros. The origins of this data can be traced in a \textquote{series of articles in Marhofn and Relative Matters magazine}, according to the website. The current editorial team consists of Graham Jackson, Chris Crocker, John Barnard, Simon Edwardes, George Gradwell, Jim Bloomer, and Dave Marshall. The T\&Cs of this dataset are quite liberal, as they impose \textquote{no restrictions on use of the data by third parties}, so long as the terms of the Creative Commons license are respected \cite{DoBIHTC}. Retrieving the data was easy, as it only involved downloading a readily available CSV file.
     \item \textbf{Simplemaps Cities Database (SCD)}, from which we extracted data on British cities' location and population. The data comes from the US National Geospatial-Intelligence Agency, and is freely available to use under an MIT license \cite {SCDBT}. Again, retrieving the data only involved downloading a CSV file.
 \end{itemize}
@@ -113,8 +113,6 @@ After processing the data and joining the resulting tables, we obtained a datase
         name & string & Name of the Munro \\ 
         altitude & integer & Altitude of the Munro [m] \\
         \hline
-        rating & float & Normalised rating on a scale of 0 to 5 by WH users\\
-        rating\_count & integer & Number of ratings for the Munro \\
         ascent\_count & integer & Number of ascents by WH users\\
         report\_count & integer & Number of reports from WH users for the Munro\\
         \hline
@@ -137,9 +135,7 @@ After processing the data and joining the resulting tables, we obtained a datase
     \end{tabular}
 \end{table}
 \paragraph{Data processing}
-% DECIDED clarify bayesian average
-After scraping WH data, we noticed that the rating count varied from values as low as 22 to as high as 317. Results for Munros with fewer ratings can be considered less reliable, as the sample is smaller. To remedy this, we wish to nudge such ratings closer to the mean for all ratings. To this end, we use Bayesian average. 
-% normalised the ratings since  We computed the Bayesian average, which pulls ratings that are based on few votes closer to the mean rating. It uses two fields: $m$, the prior mean, i.e. the mean rating for all Munros, and $C$, the number of ratings required for a decent estimate of the sample mean. In other words, $C$ is the number of observations necessary to “get away” from $m$. These values were determined using a joint distribution plot of “rating” and “rating\_count” to be $m = 3.6$ and $C = 60$.
+After scraping WH data, we 
 
 For the DoBIH data, we only chose the Munros. We kept only the relevant columns, which were name, altitude, island, county, and its latitude and longitude.
 
@@ -159,7 +155,7 @@ This section provides a summary of our data analysis process. It includes key vi
 % for group projects).
 % TODO: Centre caption
 \subsection{Assessment of the statistical significance of the relationship between Munro height and the number of ascents}
-To get an initial view of the data, we visualise the distributions of Munro ascent counts and heights (Figure~\ref{fds-project-template:fig:box_dist}). We observe that most Munros have been ascended 2500 to 3000-times. The associated box plot tells us that an ascent count greater than 11,000 is an outlier (Figure~\ref{fds-project-template:fig:box_dist_ascents}). We also notice that most Munros have an altitude just below 1000m, with any Munro higher than $1,230$m being an outlier (Figure~\ref{fds-project-template:fig:box_dist_altitude}).
+To get an initial view of the data, we visualise the distributions of Munro ascent counts and heights (Figure~\ref{fds-project-template:fig:box_dist}). We observe that most Munros have been ascended 2500 to 3000-times. The associated box plot tells us that an ascent count greater than 11,000 is an outlier (Figure~\ref{fds-project-template:fig:box_dist_ascents}). We also notice that most Munros have an altitude just below 1,000m, with any Munro higher than 1,230m being an outlier (Figure~\ref{fds-project-template:fig:box_dist_altitude}).
 \begin{figure} [h!]
     \centering
     \includegraphics{report/box_dist.pdf}
@@ -176,7 +172,7 @@ To get an initial view of the data, we visualise the distributions of Munro asce
     \caption{The distributions for number of ascents and altitude.}
       \label{fds-project-template:fig:box_dist}
 \end{figure}
-In order to better understand and identify some key outliers, it is worth having a look at a scatterplot of ascent count and altitude (Figure~\ref{fds-project-template:fig:scatterplot}). It comes as little surprise that the two most popular Munros are Ben Lomond and Ben Nevis. In fact, Ben Lomond takes the top spot despite being less than 1000 metres high. This could likely be explained by its extraordinary popularity with the people of Glasgow, Scotland's most populous city. It is within easy reach of said city, and is well-known as an accessible spot of natural beauty for Glaswegians. On the other hand, Ben Nevis' significant popularity was expected given its status as the tallest mountain in Britain. Its relatively isolated location in the North-West of Scotland does little to deter plenty of people from all over the UK from attempting the comparatively strenuous hike.
+In order to better understand and identify some key outliers, it is worth having a look at a scatterplot of ascent count and altitude (Figure~\ref{fds-project-template:fig:scatterplot}). It comes as little surprise that the two most popular Munros are Ben Lomond and Ben Nevis. In fact, Ben Lomond takes the top spot despite being less than 1,000 metres high. This could likely be explained by its extraordinary popularity with the people of Glasgow, Scotland's most populous city. It is within easy reach of said city, and is well-known as an accessible spot of natural beauty for Glaswegians. On the other hand, Ben Nevis' significant popularity was expected given its status as the tallest mountain in Britain. Its relatively isolated location in the North-West of Scotland does little to deter plenty of people from all over the UK from attempting the comparatively strenuous hike.
 % TODO: comment on the different scale in x and y-axis!!!
 \begin{figure} [h!]
   \centering
@@ -239,7 +235,7 @@ To validate our approach, we note that an assumption of linear regression is tha
   \label{fds-project-template:fig:uni_residuals}
 \end{figure}
 \subsection{Other factors that have a significant impact on Munro popularity}
-Moving on to our second question, we need to perform some feature selection on our data. The technique we will be using only expects continuous data, so we ignore the columns with categorical or boolean values. In addition, we ignore rating\_count, since it is not an inherent property of a Munro, and learning about its importance would not provide useful insight.
+Moving on to our second question, we need to perform some feature selection on our data. The technique we will be using only expects continuous data, so we ignore categorical or boolean variables.
 
 Now that we have our subset data with all relevant features, we standardise the dataset. This helps with numerical stability because some features have a vastly different range of values (e.g. population can be in the thousands, whereas hotel\_count is in the tens).
 
