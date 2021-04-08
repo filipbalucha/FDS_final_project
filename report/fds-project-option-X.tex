@@ -65,7 +65,7 @@
 % TODO: rename this file!!! absolutely crucial!
 \section{Overview}
 % 250 words maximum
-This paper answers a few key questions regarding Munro hiking by applying statistical methods on data that is freely available online. It aims to explore the reasons behind the popularity of specific hills, and then provides an appropriate clustering of Munros according to their features. In order to achieve this, we used techniques such as linear regression, principal component analysis, and K-Means clustering. The results from these techniques yielded good results enabling us to reach a number of solid conclusions. First of all, we have established the existence of a statistically significant relationship between Munro altitude and number of ascents. Furthermore, we have managed to identify several other factors that have an influence on Munro popularity – for example the numbers of neighbouring Munros, hotels, and the distance to the nearest city. Finally, we have divided the Munros into four well-defined clusters according to their features.
+This paper answers a few key questions regarding Munro hiking by applying statistical methods on data that is freely available online. It aims to explore the reasons behind the popularity of specific hills, and then provides an appropriate clustering of Munros according to their features. In order to achieve this, we use techniques such as linear regression, principal component analysis, and K-Means clustering. The results from these techniques yield good results, enabling us to reach a number of solid conclusions. First of all, we have established the existence of a statistically significant relationship between Munro altitude and number of ascents. Furthermore, we have managed to identify several other factors that have an influence on Munro popularity – for example the numbers of neighbouring Munros, hotels, and the distance to the nearest city. Finally, we have divided the Munros into four well-defined clusters according to their features.
 
 \section{Introduction}
 % Suggested 400 words
@@ -86,10 +86,12 @@ We are setting out to answer the following questions:
     \item What other factors have a significant impact on Munro popularity?
     \item Can Munros be clustered according to their features?
 \end{itemize}
+
+\newpage
 \section{Data}
 % Suggested 300 words
 \paragraph{Data provenance}
-We used three datasets:
+For the purposes of this paper, we used three datasets:
 \begin{itemize}
     \item \textbf{WalkHighlands (WH)}, from which we extracted data on the popularity of Munros as well as the accommodation facilities in their vicinity. This data relies on contributions from registered users – they can select and rate the Munros they have climbed. We retrieved the data using web scraping for the main Munro tables and subpages; additionally, we manually copied the number of facilities for each type of accommodation from the relevant subpages. These methods were chosen after a careful assessment of the T\&Cs \cite{WHTC}.
     \item \textbf{The Database of British and Irish Hills (DoBIH)}, from which we extracted geographical data on the Munros. The origins of this data can be traced in a \textquote{series of articles in Marhofn and Relative Matters magazine}, according to the website. The current editorial team consists of Graham Jackson, Chris Crocker, John Barnard, Simon Edwardes, George Gradwell, Jim Bloomer, and Dave Marshall. The T\&Cs of this dataset are quite liberal, as they impose \textquote{no restrictions on use of the data by third parties}, so long as the terms of the Creative Commons license are respected \cite{DoBIHTC}. Retrieving the data was easy, as it only involved downloading a readily available CSV file.
@@ -135,8 +137,6 @@ After processing the data and joining the resulting tables, we obtained a datase
     \end{tabular}
 \end{table}
 \paragraph{Data processing}
-After scraping WH data, we 
-
 For the DoBIH data, we only chose the Munros. We kept only the relevant columns, which were name, altitude, island, county, and its latitude and longitude.
 
 For the SCD data, we first filtered out cities not in the UK. Then, for each Munro, we computed the distance to and population of the nearest city, as well as the distance to the nearest large city. We considered any city with a population of at least 50,000 to be large, since the 10 largest Scottish cities fulfill this criterion. To represent the various distances from which hikers come, we also computed the total population within increasing ranges of distances from the Munro.
@@ -155,8 +155,8 @@ This section provides a summary of our data analysis process. It includes key vi
 % for group projects).
 % TODO: Centre caption
 \subsection{Assessment of the statistical significance of the relationship between Munro height and the number of ascents}
-To get an initial view of the data, we visualise the distributions of Munro ascent counts and heights (Figure~\ref{fds-project-template:fig:box_dist}). We observe that most Munros have been ascended 2500 to 3000-times. The associated box plot tells us that an ascent count greater than 11,000 is an outlier (Figure~\ref{fds-project-template:fig:box_dist_ascents}). We also notice that most Munros have an altitude just below 1,000m, with any Munro higher than 1,230m being an outlier (Figure~\ref{fds-project-template:fig:box_dist_altitude}).
-\begin{figure} [t]
+To get an initial view of the data, we visualise the distributions of Munro ascent counts and heights (Figure~\ref{fds-project-template:fig:box_dist}). We observe that most Munros have been ascended 2500 to 3000-times. The associated box plot tells us that a munro with ascent count greater than 11,000 is considered an outlier. (Figure~\ref{fds-project-template:fig:box_dist_ascents}). We also notice that most Munros have an altitude just below 1,000m, with any Munro higher than 1,230m being an outlier (Figure~\ref{fds-project-template:fig:box_dist_altitude}).
+\begin{figure} [t!]
     \centering
     \includegraphics{report/box_dist.pdf}
     \begin{minipage}[t]{.5\linewidth}
@@ -182,18 +182,15 @@ In order to better understand and identify some key outliers, it is worth having
   \label{fds-project-template:fig:scatterplot}
 \end{figure}
 
-We are now in a better position to answer our initial question. Judging by Figure~\ref{fds-project-template:fig:scatterplot}, there appears to be no clear relationship between Munro altitude and ascent count. However, the outliers (e.g. Ben Nevis) should exert a leverage and thus we can still expect to see a positive relationship between number of ascents and altitude. Nevertheless, our conclusions will unfortunately be marred by the large variance in the left-hand side of the scatterplot.
-% TODO: transition
-We use hypothesis testing. The null and alternate hypotheses are as follows:
-% DECIDED: change null hypothesis to: hypothesis that this matches what's used by statsmodels, so could be less confusing
+We are now in a better position to answer our initial question. Judging by Figure~\ref{fds-project-template:fig:scatterplot}, there appears to be a positive relationship between Munro altitude and ascent count. Moreover, the outliers (e.g. Ben Nevis) should also contribute to that relationship. To formally explore the relationship, we apply Ordinary Least Squares (OLS) linear regression. Consider the linear model: 
+$$y=\beta_0 + \beta_1 x$$
+where $x$ is altitude and $y$ is ascent count. To evaluate the statistical significance of the relationship, we define the associated null and alternate hypotheses as follows:
 \begin{align*}
-    H_0 &= \text{There is not a statistically significant relationship between altitude and number of ascents.}\\
-    H_\text{a} &= \text{There is a statistically significant relationship between altitude and number of ascents.}
+    H_0 &= \text{The coefficient of altitude in the linear model is equal to zero, i.e. $\beta_1=0$}\\
+    H_\text{a} &= \text{The coefficient of altitude in the linear model is not equal to zero, i.e. $\beta_1\neq0$}
 \end{align*}
-% DECIDED explain why log transform
-% TODO: fix transition here
-% TODO: motivation for OLS, introduce null hypothesis after linear regression
-Before applying Ordinary Least Squares (OLS) linear regression we need to make sure that our dependent variable is not highly skewed. In order to see if that is the case, we plot the distribution of Ascent Count and notice that it is right-skewed. In order to fix this skew, we log-transform ascent count. This yields a distribution which is less skewed and which looks approximately normal (Figure~\ref{fds-project-template:fig:dist_log_ascent_count}).
+
+Before applying linear regression, we make sure that the dependent variable is not highly skewed. Its distribution exhibits a right skew (Figure~\ref{fds-project-template:fig:box_dist_ascents}). The distribution is approximately log-normal because the histogram increases to its mode quite quickly and decreases thereafter. Furthermore, the mode is less than the median. To fix this, we log-transform the dependent variable, which yields a distribution that is less skewed and looks approximately normal (Figure~\ref{fds-project-template:fig:dist_log_ascent_count}).
 \begin{figure} [h!]
   \centering
   \includegraphics{report/ascent_count_distribution.pdf}
@@ -201,53 +198,51 @@ Before applying Ordinary Least Squares (OLS) linear regression we need to make s
   \label{fds-project-template:fig:dist_log_ascent_count}
 \end{figure}
 
-To aid numerical stability, we normalise the independent variable – i.e. center it around 0. Applying linear regression on the processed data yields the prediction seen in Figure~\ref{fds-project-template:fig:q1_prediction}. There exists a visible increasing trend in our prediction; now we need to confirm it using the values outputted by statsmodels.
+To aid numerical stability, we normalise the independent variable – i.e. center it around 0. Applying linear regression on the processed data yields a prediction that exhibits a visible increasing trend (Figure~\ref{fds-project-template:fig:q1_prediction}). To diagnose the fit numerically, we use the output of statsmodels.
 \begin{figure} [h!]
   \centering
   \includegraphics{report/q1_prediction.pdf}
-  \caption{Prediction over centered data}
+  \caption{Scatterplot of $\ln$(ascent count) against altitude along with fitted values of $\ln$(ascent count).}
   \label{fds-project-template:fig:q1_prediction}
 \end{figure}
 
-The $p$-value of 0.034 for altitude tells us that there is a $\approx 3.4\%$ probability that the relationship between altitude and ascent count may be due to chance. Since $0.034 < 0.05$, it allows us to reject the null hypothesis that the coefficient of altitude in the model equals 0 at the $5\%$ level. Thus, there is a statistically significant relationship between altitude and ascent count. However, we observe that at $0.016$, the $R^{2}$ value is quite low. This tells us that the model does not explain the variance in the data too well. This motivates the use of further predictors to aid our analysis.
+The $p$-value of 0.034 for altitude tells us that there is a $\approx 3.4\%$ probability that the relationship between altitude and ascent count may be due to chance. Since $0.034 < 0.05$, we reject the null hypothesis that the coefficient of altitude in the model is 0 at the $5\%$ level. Thus, there is a statistically significant relationship between altitude and ascent count. However, we observe that at $0.016$, the $R^{2}$ value is quite low. This indicates that the model does not predict the data well. This motivates the use of further predictors to aid our analysis.
 
-Since we normalised the independent variable, it has mean 0. Thus for the mean Munro, the expected value of $\ln$(Ascent count) is given by the intercept. Hence the expected ascent count for a Munro of mean altitude is $e^{\beta_0}=e^{8.4286}\approx 4576$. We now wish to interpret the slope $\beta_1$ of value 0.0008. Let $x$ be the independent variable, and $x^*$ its value upon normalisation, i.e. $x^*=x-\overline{x}$. The regression is of the form $\beta_0 + \beta_1x^* = \ln(y)$ so that $\beta_0 + \beta_1x_1^* = \ln(y_1)$ and $\beta_0 + \beta_1x_2^* = \ln(y_2)$ for two observations. Then
+Since we normalised altitude, it has mean 0. Thus for a Munro of mean altitude, the expected value of $\ln$(ascent count) is given by the intercept $\beta_0=8.4286$. The expected ascent count for a Munro of mean altitude is then $e^{\beta_0}=e^{8.4286}\approx 4576$. 
+
+We now interpret the slope $\beta_1=0.0008$. Let $x$ be the independent variable, and $x^*$ its value upon normalisation, i.e. $x^*=x-\overline{x}$. The regression is of the form $\beta_0 + \beta_1x^* = \ln(y)$ so that $\beta_0 + \beta_1x_1^* = \ln(y_1)$ and $\beta_0 + \beta_1x_2^* = \ln(y_2)$ for two observations. Then
 $$\beta_1(x_2 - x_1) = \beta_1\left((x_2 - \overline{x}) - (x_1 - \overline{x})\right) = \beta_1(x_2^* - x_1^*)  = \ln(y_2) - \ln(y_1) = \ln(y_2 / y_1)$$
-Consider a unit increase in $x$, i.e. $x_2-x_1=1$. This gives $e^{\beta_1} = y_2 / y_1$, which can finally be rewritten as $e^{\beta_1} - 1 = (y_2 - y_1) / y_1$. Thus, a unit increase in altitude leads the ascent count to increase by $100(e^{0.0008} - 1)\% \approx 0.08\%$. The confidence interval of $[5.57 \times 10^{-5}, 1.00\times10^{-3}]$ tells us that in $95\%$ of all samples that could be drawn the increase in ascent count will be within $[5.70\times10^{-3}, 1.00\times10^{-1}]\%$.
-
-To validate our approach, we note that an assumption of linear regression is that the residuals are normally distributed. This appears to be the case (Figure~\ref{fds-project-template:fig:uni_residuals_dist}). Furthermore, the variance of residuals does not change as a function of the predicted values of the independent variable (Figure~\ref{fds-project-template:fig:uni_residuals_yhat}). Thus, the dataset is not heteroscedastic. Therefore, our linear model was a reasonable choice for the problem at hand.
+Consider a unit increase in altitude, such that $x_2-x_1=1$. This gives $e^{\beta_1} = y_2 / y_1$, which can be rewritten as $e^{\beta_1} - 1 = (y_2 - y_1) / y_1$. A unit increase in altitude thus leads to a $100(e^{0.0008} - 1)\% \approx 0.08\%$ increase in altitude. The confidence interval of $[5.57 \times 10^{-5}, 1.00\times10^{-3}]$ tells us that in $95\%$ of all samples that could be drawn, the increase in ascent count will be within $[5.70\times10^{-3}, 1.00\times10^{-1}]\%$.
+% TODO y-axis numbering -1.5 to 1.5 on the right
+Finally, to validate our approach, we inspect the distribution of residuals (Figure~\ref{fds-project-template:fig:uni_residuals_dist}). They are approximately normally distributed, which is an assumption of linear regression. Furthermore, the variance of residuals does not change as a function of the predicted values of the independent variable (Figure~\ref{fds-project-template:fig:uni_residuals_yhat}). Thus, the dataset is not heteroscedastic. Therefore, linear model was a reasonable choice for the problem at hand.
 \begin{figure} [h!]
-  \centering
-  \includegraphics{report/uni_residuals.pdf}
-  \begin{minipage}[t]{.5\linewidth}
-        \centering
-        % TODO: Centre caption
-        \subcaption{A scatterplot of residuals against predictions.}
-        \label{fds-project-template:fig:uni_residuals_dist}
-    \end{minipage}%
-    % TODO: david doesn't use fitted - should we do that too?
+    \centering
+    \includegraphics{report/uni_residuals.pdf}
     \begin{minipage}[t]{.5\linewidth}
         \centering
-        \subcaption{The distribution of the residuals.}
+        \subcaption{Distribution of the residuals.}
+        \label{fds-project-template:fig:uni_residuals_dist}
+    \end{minipage}%
+    \begin{minipage}[t]{.5\linewidth}
+        \centering
+        \subcaption{Scatterplot of residuals against predictions.}
         \label{fds-project-template:fig:uni_residuals_yhat}
     \end{minipage}
-%   TODO: fix this caption
-  \caption{Residuals.}
-  \label{fds-project-template:fig:uni_residuals}
+    \caption{Residual plots for the univariate linear regression model.}
+    \label{fds-project-template:fig:uni_residuals}
 \end{figure}
-\subsection{Other factors that have a significant impact on Munro popularity}
-Moving on to our second question, we need to perform some feature selection on our data. The technique we will be using only expects continuous data, so we ignore categorical or boolean variables.
 
-Now that we have our subset data with all relevant features, we standardise the dataset. This helps with numerical stability because some features have a vastly different range of values (e.g. population can be in the thousands, whereas hotel\_count is in the tens).
+% –
+\subsection{Other factors that have a significant impact on Munro popularity}
+Moving on to our second question, we need to perform some feature selection on our data. The technique we will be using only expects continuous data, so we ignore categorical or boolean variables. We now standardise the dataset – this helps with numerical stability because some features have a vastly different range of values (e.g. population can be in the thousands, whereas hotel\_count is in the tens).
 
 We use scikit-learn's SelectKBest class to select features. We score the features using the scoring function f\_regression, which is equivalent to running a univariate linear regression test for each independent variable. According to the official documentation \cite{scikit-learn}, f\_regression first computes the Pearson correlation coefficient between the regressor and the target. It outputs a $p$-value, which corresponds to the null hypothesis that there is no linear interaction between between the regressor and the target. We pick the regressors whose $p$-value falls below a certain threshold. As in the previous section, we choose the threshold to be 0.05, such that the null hypothesis can be rejected at the $5\%$ level. That is, we pick only those regressors for which there is a $5\%$ probability that the linear interaction with the target is due to chance.
 
-Before we apply multivariate OLS linear regression, we ensure that there is not significant multicollinearity between our features since that could negatively affect numerical stability, and hence jeopardise the quality of our prediction. To this end, we inspect the correlation matrix for the selected independent features. All correlation coefficients are below 0.8, and so we do not need to remove any features.
+Before we apply multivariate OLS linear regression, we ensure that there is not significant multicollinearity between our features since that could negatively affect numerical stability, and hence jeopardise the quality of our model. To this end, we inspect the correlation matrix for the selected independent features. All correlation coefficients are below 0.8, and so we do not need to remove any features.
 
 We now apply OLS regression. We will use each of the standardised features as regressors. The target will be the log-transformed ascent count, for the same reason as in previous section. We find that the variables population\_25\_50 and hostel\_count both have quite high $p$-values of over 0.2. This is likely due to multicollinearity with other population- and accommodation-related features, and it is therefore safe to remove these.
 
-% DECIDED: explain F-statistic or remove it, favour space-saving
-After reapplying OLS, we obtain a good fit with an adjusted $R^{2}$ of 0.525 and an $F$-statistic of 45.39. In addition, we notice that all the features in model have a $p$-value of less than 0.01. This indicates the obtained coefficients are reliable.
+After reapplying OLS, we obtain a good fit with an adjusted $R^{2}$ of 0.525. In addition, we notice that all the features in model have a $p$-value of less than 0.01. This indicates the obtained coefficients are reliable.
 
 We now wish to interpret the output of statsmodels. Since the regressors are standardised and the target is log-transformed, we first need to transform them to an interpretable format. We are interested in the impact of a unit change in a regressor on the target. The linear regression is of the form 
 $$\beta_0+\beta_1z^{(1)}+ \dots + \beta_n z^{(n)}=\ln(y)$$ 
@@ -281,22 +276,41 @@ The intercept gives the expected value of ascent count on a log scale when all r
 
 We now plot the residuals of our fit against the predictions, as well as the distribution of our errors. As can be seen in Figure~\ref{fds-project-template:fig:multi_residuals_dist}, our errors are normally distributed, which is an assumption of linear regression, and there is no heteroscedasticity exhibited either. This means that using the linear model was a good choice.
 \begin{figure} [h!]
-  \centering
-  \includegraphics{report/multi_residuals_dist.pdf}
-  \caption{Distribution of Residuals}
-  \label{fds-project-template:fig:multi_residuals_dist}
+    \centering
+    \includegraphics{report/multi_residuals_dist.pdf}
+    \begin{minipage}[t]{.5\linewidth}
+        \centering
+        \subcaption{Distribution of the residuals.}
+        \label{fds-project-template:fig:uni_residuals_dist}
+    \end{minipage}%
+    \begin{minipage}[t]{.5\linewidth}
+        \centering
+        \subcaption{Scatterplot of residuals against predictions.}
+        \label{fds-project-template:fig:uni_residuals_yhat}
+    \end{minipage}
+    \caption{Residual plots for the multivariate linear regression model.}
+    \label{fds-project-template:fig:multi_residuals_dist}
 \end{figure}
-% TODO: explain why we look for the knee?
 \subsection{Clustering Munros according to their features}
 Moving on to our final question, we aim to cluster Munros according to the independent features. This may help us discover a sub-structure within the dataset and help us understand it better.
 
-Before performing K-Means Clustering, we need to reduce the number of independent vectors. This is because as a distance-based method, K-Means suffers from the \textquote{curse of dimensionality} and will perform poorly when applied to a vast dataset. Hence, we perform PCA on the dataset. In order to determine the appropriate number of components to be used, plot a scree plot to find the knee. Figure~\ref{fds-project-template:fig:scree_plot} shows that the first 3 principal components help explain a considerable amount of variance. Using the cumulative plot, we see that this is about $60\%$ of the variance. We thus transform the dataset using the first 3 principal components.
+Before performing K-Means Clustering, we need to reduce the number of independent variables. This is because as a distance-based method, K-Means suffers from the \textquote{curse of dimensionality} and will perform poorly when applied to a vast dataset. Hence, we perform PCA on the dataset. In order to determine the appropriate number of components to be used, we plot a scree plot to find the knee. It represents the point at which adding more principal components would not explain a significant variance in the data. Figure~\ref{fds-project-template:fig:scree_plot} shows that the first 3 principal components help explain a considerable amount of variance. Using the cumulative plot, we see that this is about $60\%$ of the variance. We thus transform the dataset using the first 3 principal components.
 \begin{figure} [h!]
-  % TODO: split into a and b!!!
-  \centering
-  \includegraphics{report/scree_plot.pdf}
-  \caption{Scree plot}
-  \label{fds-project-template:fig:scree_plot}
+    % TODO: split into a and b!!!
+    \centering
+    \includegraphics{report/scree_plot.pdf}
+    \begin{minipage}[t]{.5\linewidth}
+        \centering
+        \subcaption{Scree plot}
+        \label{fds-project-template:fig:scree_plot_def}
+    \end{minipage}%
+    \begin{minipage}[t]{.5\linewidth}
+        \centering
+        \subcaption{Cumulative scree plot}
+        \label{fds-project-template:fig:scree_plot_cum}
+    \end{minipage}
+    \caption{PCA diagnostics.}
+    \label{fds-project-template:fig:scree_plot}
 \end{figure}
 \begin{figure} [h!]
   \centering
@@ -304,8 +318,9 @@ Before performing K-Means Clustering, we need to reduce the number of independen
   \caption{K Scree plot}
   \label{fds-project-template:fig:k_screeplot}
 \end{figure}
-% TODO: explain why elbow?
-In order to determine the appropriate number of clusters, we inspect the inertia (i.e. the sum of squared errors) of our K-Means model with increasing number of clusters, as can be seen in Figure~\ref{fds-project-template:fig:k_screeplot}. There is a clear elbow at $k = 4$. Thus, the optimal number of clusters is 4. We now perform K-Means. Since we cluster in 3 dimensions, we plot the predictions on a 3D plot and indicate the clusters' centroids (see Figure~\ref{fds-project-template:fig:3d_clusters}). We now use the information about clusters to inspect the features that contribute to each cluster. To obtain a summary measure for each feature, we take the mean of each feature for each cluster.
+In order to determine the appropriate number of clusters, we inspect the inertia (i.e. the sum of squared errors) of our K-Means model with increasing number of clusters (Figure~\ref{fds-project-template:fig:k_screeplot}). 
+
+To find optimal number of clusters and avoid overfitting, we use the elbow method. As the number of clusters increases, the clusters can explain a greater fraction of variance, reducing inertia. However, there will be a point (the elbow) after which the inertia will decrease significantly \cite{wiki:elbow} – resulting in overfitting. There is a clear elbow at $k = 4$ (see Figure~\ref{fds-project-template:fig:3d_clusters}); thus, the optimal number of clusters is 4. We now perform K-Means. Since we cluster in 3 dimensions, we plot the predictions on a 3D plot and indicate the clusters' centroids (see Figure~\ref{fds-project-template:fig:3d_clusters}). We now use the information about clusters to inspect the features that contribute to each cluster. To obtain a summary measure for each feature, we take the mean of each feature for each cluster.
 
 % TODO: !!!better captions!!! (in fact, we should make sure all captions are perfect just in case)
 \begin{figure} [h!]
