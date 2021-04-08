@@ -114,9 +114,7 @@ After processing the data and joining the resulting tables, we obtained a datase
         \midrule
         name & string & Name of the Munro \\ 
         altitude & integer & Altitude of the Munro [m] \\
-        \hline
         ascent\_count & integer & Number of ascents by WH users\\
-        report\_count & integer & Number of reports from WH users for the Munro\\
         \hline
         region & string & Region in which the Munro is located \\
         county & string & County in which the Munro is located\\
@@ -137,7 +135,7 @@ After processing the data and joining the resulting tables, we obtained a datase
     \end{tabular}
 \end{table}
 \paragraph{Data processing}
-For the DoBIH data, we only chose the Munros. We kept only the relevant columns, which were name, altitude, island, county, and its latitude and longitude.
+For the DoBIH data, we only chose Munros. We kept only the relevant columns, which were name, altitude, island, county, and its latitude and longitude.
 
 For the SCD data, we first filtered out cities not in the UK. Then, for each Munro, we computed the distance to and population of the nearest city, as well as the distance to the nearest large city. We considered any city with a population of at least 50,000 to be large, since the 10 largest Scottish cities fulfill this criterion. To represent the various distances from which hikers come, we also computed the total population within increasing ranges of distances from the Munro.
 
@@ -153,10 +151,9 @@ This section provides a summary of our data analysis process. It includes key vi
 
 % Suggested 500 words for individual report; proportionately longer
 % for group projects).
-% TODO: Centre caption
 \subsection{Assessment of the statistical significance of the relationship between Munro height and the number of ascents}
-To get an initial view of the data, we visualise the distributions of Munro ascent counts and heights (Figure~\ref{fds-project-template:fig:box_dist}). We observe that most Munros have been ascended 2500 to 3000-times. The associated box plot tells us that a munro with ascent count greater than 11,000 is considered an outlier. (Figure~\ref{fds-project-template:fig:box_dist_ascents}). We also notice that most Munros have an altitude just below 1,000m, with any Munro higher than 1,230m being an outlier (Figure~\ref{fds-project-template:fig:box_dist_altitude}).
-\begin{figure} [t!]
+
+\begin{figure} [h!]
     \centering
     \includegraphics{report/box_dist.pdf}
     \begin{minipage}[t]{.5\linewidth}
@@ -166,19 +163,22 @@ To get an initial view of the data, we visualise the distributions of Munro asce
     \end{minipage}%
     \begin{minipage}[t]{.5\linewidth}
         \centering
-        \subcaption{The distribution of Munro altitude.}
+        \subcaption{The distribution of altitude.}
         \label{fds-project-template:fig:box_dist_altitude}
     \end{minipage}
-    \caption{The distributions for number of ascents and altitude.}
+    \caption{The respective distributions of number of ascents and altitude.}
       \label{fds-project-template:fig:box_dist}
 \end{figure}
 
-In order to better understand and identify some key outliers, it is worth having a look at a scatterplot of ascent count and altitude (Figure~\ref{fds-project-template:fig:scatterplot}). It comes as little surprise that the two most popular Munros are Ben Lomond and Ben Nevis. In fact, Ben Lomond takes the top spot despite being less than 1,000 metres high. This could likely be explained by its extraordinary popularity with the people of Glasgow, Scotland's most populous city. It is within easy reach of said city, and is well-known as an accessible spot of natural beauty for Glaswegians. On the other hand, Ben Nevis' significant popularity was expected given its status as the tallest mountain in Britain. Its relatively isolated location in the North-West of Scotland does little to deter plenty of people from all over the UK from attempting the comparatively strenuous hike.
+To get an initial view of the data, we visualise the distributions of Munro ascent counts and heights (Figure~\ref{fds-project-template:fig:box_dist}). We observe that most Munros have been ascended 2500 to 3000-times. The associated box plot tells us that a munro with ascent count greater than 11,000 is considered an outlier (Figure~\ref{fds-project-template:fig:box_dist_ascents}). We also notice that most Munros have an altitude just below 1,000m, with any Munro higher than 1,230m being an outlier (Figure~\ref{fds-project-template:fig:box_dist_altitude}).
+
+In order to better understand and identify some key outliers, it is worth having a look at the scatterplot of ascent count and altitude shown in Figure~\ref{fds-project-template:fig:scatterplot} (note the different increment on the two axes). It comes as little surprise that the two most popular Munros are Ben Lomond and Ben Nevis. In fact, Ben Lomond takes the top spot despite being less than 1,000 metres high. This could likely be explained by its extraordinary popularity with the people of Glasgow, Scotland's most populous city. It is within easy reach of said city, and is well-known as an accessible spot of natural beauty for Glaswegians. On the other hand, Ben Nevis' significant popularity was expected given its status as the tallest mountain in Britain. Its relatively isolated location in the North-West of Scotland does little to deter plenty of people from all over the UK from attempting the comparatively strenuous hike.
 % TODO: comment on the different scale in x and y-axis!!!
+
 \begin{figure} [h!]
   \centering
   \includegraphics{report/scatterplot.pdf}
-  \caption{Scatterplot of ascent count and altitude with key outliers highlighted.}
+  \caption{The scatterplot of ascent count and altitude with key outliers highlighted.}
   \label{fds-project-template:fig:scatterplot}
 \end{figure}
 
@@ -202,7 +202,7 @@ To aid numerical stability, we normalise the independent variable – i.e. cente
 \begin{figure} [h!]
   \centering
   \includegraphics{report/q1_prediction.pdf}
-  \caption{Scatterplot of $\ln$(ascent count) against altitude along with fitted values of $\ln$(ascent count).}
+  \caption{The scatterplot of $\ln$(ascent count) against altitude along with fitted values.}
   \label{fds-project-template:fig:q1_prediction}
 \end{figure}
 
@@ -220,19 +220,18 @@ Finally, to validate our approach, we inspect the distribution of residuals (Fig
     \includegraphics{report/uni_residuals.pdf}
     \begin{minipage}[t]{.5\linewidth}
         \centering
-        \subcaption{Distribution of the residuals.}
+        \subcaption{The distribution of the residuals.}
         \label{fds-project-template:fig:uni_residuals_dist}
     \end{minipage}%
     \begin{minipage}[t]{.5\linewidth}
         \centering
-        \subcaption{Scatterplot of residuals against predictions.}
+        \subcaption{The scatterplot of residuals against predictions.}
         \label{fds-project-template:fig:uni_residuals_yhat}
     \end{minipage}
-    \caption{Residual plots for the univariate linear regression model.}
+    \caption{The residual plots for the univariate linear regression model.}
     \label{fds-project-template:fig:uni_residuals}
 \end{figure}
 
-% –
 \subsection{Other factors that have a significant impact on Munro popularity}
 Moving on to our second question, we need to perform some feature selection on our data. The technique we will be using only expects continuous data, so we ignore categorical or boolean variables. We now standardise the dataset – this helps with numerical stability because some features have a vastly different range of values (e.g. population can be in the thousands, whereas hotel\_count is in the tens).
 
@@ -248,11 +247,11 @@ We now wish to interpret the output of statsmodels. Since the regressors are sta
 $$\beta_0+\beta_1z^{(1)}+ \dots + \beta_n z^{(n)}=\ln(y)$$ 
 where $z^{(i)}$ is the standardised $i$-th regressor. To interpret the response in the target to a unit increase in the $i$-regressor, we let $x^j = 0, (\forall j \neq i)$. Then we have $\beta_0 + \beta_i z^{(i)} = \ln(y)$. Now $\beta_i (z_2^{(i)} - z_1^{(i)}) = \ln(y_2) - \ln(y_1)=\ln(y_2/y_1)$. Since 
 $z^{(i)} = (x^{(i)} - \overline{x}^{(i)})/\sigma_{x^{(i)}}$
-due to standardisation, we may rewrite the above as $\beta_i (x_2^{(i)} - x_1^{(i)})/\sigma_{x^{(i)}} =\ln(y_2/y_1)$. Skipping steps similar to those in previous section, we arrive at $\exp(\beta_i / \sigma_{x^{(i)}}) - 1 = (y_2 - y_1) / y_1$. This result means that a unit increase in an original feature leads to a $100\left(\exp(\beta_i / \sigma_{x^{(i)}}) - 1\right)\%$ increase in ascent count; we use this value to transform our coefficients accordingly; the results can be seen in Table~\ref{table:2}.
+due to standardisation, we may rewrite the above as $\beta_i (x_2^{(i)} - x_1^{(i)})/\sigma_{x^{(i)}} =\ln(y_2/y_1)$. Skipping steps similar to those in previous section, we arrive at $\exp(\beta_i / \sigma_{x^{(i)}}) - 1 = (y_2 - y_1) / y_1$. This result means that a unit increase in an original feature leads to a $100\left(\exp(\beta_i / \sigma_{x^{(i)}}) - 1\right)\%$ increase in ascent count. We now transform the coefficients accordingly; the results can be seen in Table~\ref{table:2}.
 % NOTE: \phantom{-} allows us to align negative and positive numbers, please do not remove it
 \begin{table} [h!]
 \centering
-\caption{Interpretation of Transformed Coefficients}
+\caption{The values and confidence intervals of transformed coefficients.}
 \begin{tabular}{l l l l}
 \toprule
     Feature & 
@@ -274,21 +273,22 @@ pop\_75\_100 & $\phantom{-}3.53 \times 10^{-5}$ & $\phantom{-}2.81\times 10^{-5}
 
 The intercept gives the expected value of ascent count on a log scale when all regressors are 0. The intercept is 8.4286 which implies the expected number of ascents is then $e^{8.4286} \approx 4576$ ascents. The most dominant feature is neighbor\_count\_5\_20. Every extra neighbouring Munro within 5-20km reduces the ascent count by $ \approx 1.3\%$. The other dominant features are the number of hotels, wherein each extra hotel reduces ascent count by $\approx 0.71\%$, and the distance to the nearest city, such that each extra kilometer distance leads to a $\approx 0.5\%$ decrease in ascent count. As implied by the first section, altitude also has an impact on ascent count, albeit smaller. Namely, each meter of altitude increases ascent count by $\approx 0.87\%$. There is also a slight positive impact on ascent count associated with population within 0-25km and 50-100km.
 
+% TODO: fix references to figures
 We now plot the residuals of our fit against the predictions, as well as the distribution of our errors. As can be seen in Figure~\ref{fds-project-template:fig:multi_residuals_dist}, our errors are normally distributed, which is an assumption of linear regression, and there is no heteroscedasticity exhibited either. This means that using the linear model was a good choice.
 \begin{figure} [h!]
     \centering
     \includegraphics{report/multi_residuals_dist.pdf}
     \begin{minipage}[t]{.5\linewidth}
         \centering
-        \subcaption{Distribution of the residuals.}
-        \label{fds-project-template:fig:uni_residuals_dist}
+        \subcaption{The distribution of the residuals.}
+        \label{fds-project-template:fig:mul_residuals_dist}
     \end{minipage}%
     \begin{minipage}[t]{.5\linewidth}
         \centering
-        \subcaption{Scatterplot of residuals against predictions.}
-        \label{fds-project-template:fig:uni_residuals_yhat}
+        \subcaption{The scatterplot of residuals against predictions.}
+        \label{fds-project-template:fig:mul_residuals_yhat}
     \end{minipage}
-    \caption{Residual plots for the multivariate linear regression model.}
+    \caption{The residual plots for the multivariate linear regression model.}
     \label{fds-project-template:fig:multi_residuals_dist}
 \end{figure}
 \subsection{Clustering Munros according to their features}
@@ -301,15 +301,15 @@ Before performing K-Means Clustering, we need to reduce the number of independen
     \includegraphics{report/scree_plot.pdf}
     \begin{minipage}[t]{.5\linewidth}
         \centering
-        \subcaption{Scree plot}
+        \subcaption{Scree plot.}
         \label{fds-project-template:fig:scree_plot_def}
     \end{minipage}%
     \begin{minipage}[t]{.5\linewidth}
         \centering
-        \subcaption{Cumulative scree plot}
+        \subcaption{Cumulative scree plot.}
         \label{fds-project-template:fig:scree_plot_cum}
     \end{minipage}
-    \caption{PCA diagnostics.}
+    \caption{Visual diagnostics for PCA.}
     \label{fds-project-template:fig:scree_plot}
 \end{figure}
 \begin{figure} [h!]
@@ -320,15 +320,14 @@ Before performing K-Means Clustering, we need to reduce the number of independen
 \end{figure}
 In order to determine the appropriate number of clusters, we inspect the inertia (i.e. the sum of squared errors) of our K-Means model with increasing number of clusters (Figure~\ref{fds-project-template:fig:k_screeplot}). 
 
-To find optimal number of clusters and avoid overfitting, we use the elbow method. As the number of clusters increases, the clusters can explain a greater fraction of variance, reducing inertia. However, there will be a point (the elbow) after which the inertia will decrease significantly \cite{wiki:elbow} – resulting in overfitting. There is a clear elbow at $k = 4$ (see Figure~\ref{fds-project-template:fig:3d_clusters}); thus, the optimal number of clusters is 4. We now perform K-Means. Since we cluster in 3 dimensions, we plot the predictions on a 3D plot and indicate the clusters' centroids (see Figure~\ref{fds-project-template:fig:3d_clusters}). We now use the information about clusters to inspect the features that contribute to each cluster. To obtain a summary measure for each feature, we take the mean of each feature for each cluster.
+To find optimal number of clusters and avoid overfitting, we use the elbow method. As the number of clusters increases, the clusters can explain a greater fraction of variance, reducing inertia. However, there will be a point (the elbow) after which the inertia will decrease significantly \cite{wiki:elbow} – resulting in overfitting. There is a clear elbow at $k = 4$ (Figure~\ref{fds-project-template:fig:k_screeplot}); thus, the optimal number of clusters is 4. We now perform K-Means. Since we cluster in 3 dimensions, we plot the predictions on a 3D plot and indicate the clusters' centroids (Figure~\ref{fds-project-template:fig:3d_clusters}). We now use the information about clusters to inspect the features that contribute to each cluster. To obtain a summary measure for each feature, we compute its for each cluster.
 
-% TODO: !!!better captions!!! (in fact, we should make sure all captions are perfect just in case)
 \begin{figure} [h!]
   \centering
   \includegraphics{report/3d_clusters.pdf}
   \caption{3D Clustering of Munros}
   \label{fds-project-template:fig:3d_clusters}
-\end{figure} \\
+\end{figure}
 The average Munro in Cluster 1 has \textasciitilde 2000 inhabitants within 25km, while the nearest city has \textasciitilde 10,000 inhabitants and is \textasciitilde 35km away. This cluster has the largest population 25-100km away out of all clusters. At about 60, it also has the largest number of hotels. It also has a fair amount of bed and breakfast accomodations (about 50). It also has the lowest the number of neighbouring Munros: slightly above 2. Since there are very few neighbouring Munros and there are a lot of (presumably relatively high-end) hotels near these Munros, we expect this cluster to comprise of fairly \textquote{exclusive} Munros which are suitable for visitors from a larger city (which makes them quite popular, too). Two examples of Munros that fall into this category are Ben Lomond and Ben Lawers.
 
 The average Munro in Cluster 2 does not have a large city within 100km. The nearest city is about \textasciitilde 45km away with a population slightly higher than \textasciitilde 7,500. The dominant accommodation type for this cluster are cottages and camping sites, and there are relatively few B&Bs, hotels and hostels. It has about 25 neighboring Munros within 20km. We are therefore dealing with a region with a fairly high number of Munros, with relatively few accommodation facilities and also quite far away from any major cities. Munros that belong to this cluster are fairly isolated and slightly less popular - two examples would be Mount Keen and Ben Hope.
